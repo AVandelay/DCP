@@ -17,6 +17,7 @@ func assert<T: Equatable>(_ message: String, _ actual: T, _ expectation: T, func
 
 /// Day 1
 assert("Day 1", day1([10, 15, 3, 7], k: 17), true)
+assert("Day 1 binary search", day1_binarySearch([10, 15, 3, 7], k: 17), true)
 
 /// Day 2
 assert("Day 2", day2([1, 2, 3, 4, 5]), [120, 60, 40, 30, 24])
