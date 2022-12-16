@@ -7,5 +7,12 @@
 
 import Foundation
 
-print("Hello, World!")
+func assert<T: Equatable>(actual: T, expectation: T) {
+    if actual == expectation {
+        print("✅ actual: \(actual) matches expectation: \(expectation)")
+    } else {
+        print("❌ actual: \(actual) does not match expectation: \(expectation)")
+    }
+}
+
 
