@@ -22,3 +22,8 @@ assert("Day 1", twoSum_binarySearch([10, 15, 3, 7], k: 17), true)
 /// Day 2
 assert("Day 2", products([1, 2, 3, 4, 5]), [120, 60, 40, 30, 24])
 assert("Day 2", products([3, 2, 1]), [2, 3, 6])
+
+/// Day 3
+var node = Node("root", Node("left", Node("left.left")), Node("right"))
+let serializedString = serialize(root: node)
+assert("Day 3", deserialize(data: serializedString)!.left!.left!.value, "left.left")
