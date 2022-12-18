@@ -1,6 +1,6 @@
 
 
-func day2(_ nums: [Int]) -> [Int] {
+func products(_ nums: [Int]) -> [Int] {
     let prefixProducts = nums
         .reduce(into: [Int]()) { array, value in
             if let last = array.last {

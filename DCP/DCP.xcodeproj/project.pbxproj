@@ -63,6 +63,7 @@
 		BE86ECC9294BF70300ACA2BF /* DCP */ = {
 			isa = PBXGroup;
 			children = (
+				BE86ECDB294E5C2100ACA2BF /* Day 3 */,
 				BE86ECD7294D02F200ACA2BF /* Day 2 */,
 				BE86ECD3294BF7CA00ACA2BF /* Day 1 */,
 				BE86ECCA294BF70300ACA2BF /* main.swift */,
@@ -86,6 +87,13 @@
 				BE86ECD8294D033000ACA2BF /* Day2.md */,
 			);
 			path = "Day 2";
+			sourceTree = "<group>";
+		};
+		BE86ECDB294E5C2100ACA2BF /* Day 3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Day 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
