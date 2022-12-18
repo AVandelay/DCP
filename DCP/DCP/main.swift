@@ -27,3 +27,7 @@ assert("Day 2", products([3, 2, 1]), [2, 3, 6])
 var node = Node("root", Node("left", Node("left.left")), Node("right"))
 let serializedString = serialize(root: node)
 assert("Day 3", deserialize(data: serializedString)!.left!.left!.value, "left.left")
+
+/// Day 4
+assert("Day 4", findFirstMissingPositive([3, 4, -1, 1]), 2)
+assert("Day 4", findFirstMissingPositive([1, 2, 0]), 3)
