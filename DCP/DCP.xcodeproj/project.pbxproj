@@ -11,6 +11,7 @@
 		BE86ECF02950410600ACA2BF /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECD9294D034F00ACA2BF /* Day2.swift */; };
 		BE86ECF1295041E700ACA2BF /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECDD294ECD8800ACA2BF /* Day3.swift */; };
 		BE86ECF22950428100ACA2BF /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECE0294FC97D00ACA2BF /* Day4.swift */; };
+		BE86ECF62950FA1A00ACA2BF /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECF52950FA1900ACA2BF /* Day5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		BE86ECE0294FC97D00ACA2BF /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
 		BE86ECE2294FC98B00ACA2BF /* Day4.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day4.md; sourceTree = "<group>"; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE86ECF42950F9C800ACA2BF /* Day5.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day5.md; sourceTree = "<group>"; };
+		BE86ECF52950FA1900ACA2BF /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,7 @@
 		BE86ECC9294BF70300ACA2BF /* DCP */ = {
 			isa = PBXGroup;
 			children = (
+				BE86ECF32950F99E00ACA2BF /* Day 5 */,
 				BE86ECDF294FC96F00ACA2BF /* Day 4 */,
 				BE86ECDB294E5C2100ACA2BF /* Day 3 */,
 				BE86ECD7294D02F200ACA2BF /* Day 2 */,
@@ -118,6 +122,15 @@
 				BE86ECE2294FC98B00ACA2BF /* Day4.md */,
 			);
 			path = "Day 4";
+			sourceTree = "<group>";
+		};
+		BE86ECF32950F99E00ACA2BF /* Day 5 */ = {
+			isa = PBXGroup;
+			children = (
+				BE86ECF52950FA1900ACA2BF /* Day5.swift */,
+				BE86ECF42950F9C800ACA2BF /* Day5.md */,
+			);
+			path = "Day 5";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +182,7 @@
 				TargetAttributes = {
 					BE86ECC6294BF70300ACA2BF = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					BE86ECE629503EBF00ACA2BF = {
 						CreatedOnToolsVersion = 14.2;
@@ -217,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE86ECEF29503F1200ACA2BF /* Day1.swift in Sources */,
+				BE86ECF62950FA1A00ACA2BF /* Day5.swift in Sources */,
 				BE86ECF1295041E700ACA2BF /* Day3.swift in Sources */,
 				BE86ECF02950410600ACA2BF /* Day2.swift in Sources */,
 				BE86ECF22950428100ACA2BF /* Day4.swift in Sources */,
@@ -342,8 +357,15 @@
 		BE86ECCF294BF70300ACA2BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -351,7 +373,13 @@
 		BE86ECD0294BF70300ACA2BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
