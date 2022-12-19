@@ -29,3 +29,13 @@ func twoSum_binarySearch(_ nums: [Int], k: Int) -> Bool {
     }
     return false
 }
+
+import XCTest
+
+final class Day1: XCTestCase {
+
+    func test() {
+        XCTAssertTrue(twoSum_linear([10, 15, 3, 7], k: 17))
+        XCTAssertTrue(twoSum_binarySearch([10, 15, 3, 7], k: 17))
+    }
+}

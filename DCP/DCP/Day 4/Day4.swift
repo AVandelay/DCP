@@ -10,3 +10,13 @@ func findFirstMissingPositive(_ nums: [Int]) -> Int {
 
     return i
 }
+
+import XCTest
+
+final class Day4: XCTestCase {
+
+    func test() {
+        XCTAssertEqual(findFirstMissingPositive([3, 4, -1, 1]), 2)
+        XCTAssertEqual(findFirstMissingPositive([1, 2, 0]), 3)
+    }
+}

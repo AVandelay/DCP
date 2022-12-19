@@ -35,3 +35,13 @@ func products(_ nums: [Int]) -> [Int] {
 
     return result
 }
+
+import XCTest
+
+final class Day2: XCTestCase {
+
+    func test() {
+        XCTAssertEqual(products([1, 2, 3, 4, 5]), [120, 60, 40, 30, 24])
+        XCTAssertEqual(products([3, 2, 1]), [2, 3, 6])
+    }
+}

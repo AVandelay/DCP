@@ -39,3 +39,14 @@ func deserialize(data: String) -> Node? {
         .map(String.init)
     return buildTree(&serializedStrings)
 }
+
+import XCTest
+
+final class Day3: XCTestCase {
+
+    func test() {
+        let node = Node("root", Node("left", Node("left.left")), Node("right"))
+        let serializedString = serialize(root: node)
+        XCTAssertEqual(deserialize(data: serializedString)!.left!.left!.value, "left.left")
+    }
+}
