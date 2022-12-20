@@ -1,6 +1,6 @@
 
 
-func products(_ nums: [Int]) -> [Int] {
+fileprivate func products(_ nums: [Int]) -> [Int] {
     let prefixProducts = nums
         .reduce(into: [Int]()) { array, value in
             if let last = array.last {

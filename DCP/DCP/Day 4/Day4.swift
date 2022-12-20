@@ -1,6 +1,6 @@
 
 
-func findFirstMissingPositive(_ nums: [Int]) -> Int {
+fileprivate func findFirstMissingPositive(_ nums: [Int]) -> Int {
     let nums = Set(nums)
 
     var i = 1

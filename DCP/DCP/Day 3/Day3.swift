@@ -1,6 +1,6 @@
 
 
-final class Node {
+fileprivate final class Node {
     var value: String
     var left: Node?
     var right: Node?
@@ -14,13 +14,13 @@ final class Node {
     }
 }
 
-func serialize(root: Node?) -> String {
+fileprivate func serialize(root: Node?) -> String {
     guard let root = root else { return "#" }
 
     return "\(root.value) \(serialize(root: root.left)) \(serialize(root: root.right))"
 }
 
-func deserialize(data: String) -> Node? {
+fileprivate func deserialize(data: String) -> Node? {
     func buildTree(_ serializedStrings: inout [String]) -> Node? {
         guard !serializedStrings.isEmpty else { return nil }
 

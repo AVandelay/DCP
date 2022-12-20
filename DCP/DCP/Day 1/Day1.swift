@@ -1,6 +1,6 @@
 
 
-func twoSum_linear(_ nums: [Int], k: Int) -> Bool {
+fileprivate func twoSum_linear(_ nums: [Int], k: Int) -> Bool {
     var seen = Set<Int>()
     for num in nums {
         if seen.contains(k - num) {
@@ -13,7 +13,7 @@ func twoSum_linear(_ nums: [Int], k: Int) -> Bool {
     return false
 }
 
-func twoSum_binarySearch(_ nums: [Int], k: Int) -> Bool {
+fileprivate func twoSum_binarySearch(_ nums: [Int], k: Int) -> Bool {
     let sorted = nums.sorted()
     var left = 0
     var right = sorted.count - 1
