@@ -12,6 +12,7 @@
 		BE86ECF1295041E700ACA2BF /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECDD294ECD8800ACA2BF /* Day3.swift */; };
 		BE86ECF22950428100ACA2BF /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECE0294FC97D00ACA2BF /* Day4.swift */; };
 		BE86ECF62950FA1A00ACA2BF /* Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECF52950FA1900ACA2BF /* Day5.swift */; };
+		BE86ECF92952273300ACA2BF /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECF82952273300ACA2BF /* Day6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,8 @@
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECF42950F9C800ACA2BF /* Day5.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day5.md; sourceTree = "<group>"; };
 		BE86ECF52950FA1900ACA2BF /* Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day5.swift; sourceTree = "<group>"; };
+		BE86ECF82952273300ACA2BF /* Day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day6.swift; sourceTree = "<group>"; };
+		BE86ECFA2952274200ACA2BF /* Day6 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day6; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		BE86ECC9294BF70300ACA2BF /* DCP */ = {
 			isa = PBXGroup;
 			children = (
+				BE86ECF72952272400ACA2BF /* Day 6 */,
 				BE86ECF32950F99E00ACA2BF /* Day 5 */,
 				BE86ECDF294FC96F00ACA2BF /* Day 4 */,
 				BE86ECDB294E5C2100ACA2BF /* Day 3 */,
@@ -131,6 +135,15 @@
 				BE86ECF42950F9C800ACA2BF /* Day5.md */,
 			);
 			path = "Day 5";
+			sourceTree = "<group>";
+		};
+		BE86ECF72952272400ACA2BF /* Day 6 */ = {
+			isa = PBXGroup;
+			children = (
+				BE86ECF82952273300ACA2BF /* Day6.swift */,
+				BE86ECFA2952274200ACA2BF /* Day6 */,
+			);
+			path = "Day 6";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE86ECEF29503F1200ACA2BF /* Day1.swift in Sources */,
+				BE86ECF92952273300ACA2BF /* Day6.swift in Sources */,
 				BE86ECF62950FA1A00ACA2BF /* Day5.swift in Sources */,
 				BE86ECF1295041E700ACA2BF /* Day3.swift in Sources */,
 				BE86ECF02950410600ACA2BF /* Day2.swift in Sources */,
