@@ -1,48 +1,45 @@
 
 
-fileprivate final class Node {
-    var value: Int?
-    var both: Int?
+fileprivate final class XORLinkedListNode {
+    var value: Int
+    var both: Int
 
-    init(value: Int?) {
+    init(value: Int, both: Int) {
         self.value = value
+        self.both = both
     }
 }
 
 fileprivate final class XORLinkedList {
-    var head: Node?
-    var tail: Node?
-
-    init(_ head: Node? = nil, _ tail: Node? = nil) {
-        self.head = head
-        self.tail = tail
-    }
+    var head: XORLinkedListNode?
+    var tail: XORLinkedListNode?
 
     func add(element: Int) {
-        let node = Node(value: element)
-        guard head != nil else {
-            head = node
-            tail = node
-            node.both = head!.value! ^ tail!.value!
-            return
+        var newNode = XORLinkedListNode(value: element, both: 0)
+
+        if var tail = tail {
+            tail.both = tail.both ^ address(node: &newNode)
+            newNode.both = address(node: &tail)
+        } else {
+            head = newNode
         }
 
-        node.both = address(node: &tail!.both)
-        tail!.both = address(node: &tail!.both) ^ address(node: &node.value)
-        tail = node
+        tail = newNode
     }
 
-    func get(index: Int) -> Node? {
-        guard let node = head else { return nil }
-        var prevAddress = 0
+    func get(index: Int) -> XORLinkedListNode? {
+        var prev: XORLinkedListNode?
+        var current: XORLinkedListNode? = head
+        var i = 0
 
-        for _ in 0...index {
-            let nextAddress = prevAddress ^ address(node: &node.both!)
-
-            prevAddress = node.both!
-            node.both = nextAddress
+        while current != nil && i < index {
+            let next = current!.both ^ address(node: &prev)
+            prev = current
+            current = UnsafeMutablePointer<XORLinkedListNode>(bitPattern: next)?.pointee
+            i += 1
         }
-        return node
+
+        return current
     }
 
     func address(node: UnsafeRawPointer) -> Int {
@@ -58,7 +55,9 @@ final class Day6: XCTestCase {
         for value in 0...5 {
             ll.add(element: value)
         }
-        XCTAssertEqual(ll.get(index: 0)!.value, 0)
+        if let node = ll.get(index: 2) {
+            XCTAssertEqual(node.value, 2)
+        }
     }
 }
 
