@@ -18,8 +18,8 @@ fileprivate final class XORLinkedList {
         var newNode = XORLinkedListNode(value: element, both: 0)
 
         if var tail = tail {
-            tail.both = tail.both ^ address(node: &newNode)
-            newNode.both = address(node: &tail)
+            tail.both = tail.both ^ getPointer(for: &newNode)
+            newNode.both = getPointer(for: &tail)
         } else {
             head = newNode
         }
@@ -33,17 +33,21 @@ fileprivate final class XORLinkedList {
         var i = 0
 
         while current != nil && i < index {
-            let next = current!.both ^ address(node: &prev)
+            let next = current!.both ^ getPointer(for: &prev)
             prev = current
-            current = UnsafeMutablePointer<XORLinkedListNode>(bitPattern: next)?.pointee
+            current = dereferencePointer(for: next)
             i += 1
         }
 
         return current
     }
 
-    func address(node: UnsafeRawPointer) -> Int {
+    private func getPointer(for node: UnsafeRawPointer) -> Int {
         return Int(bitPattern: node)
+    }
+
+    private func dereferencePointer(for node: Int) -> XORLinkedListNode? {
+        return UnsafeMutablePointer<XORLinkedListNode>(bitPattern: node)?.pointee
     }
 }
 
