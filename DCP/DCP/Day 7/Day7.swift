@@ -1,40 +1,34 @@
 
 
-fileprivate func encodingsCount(input: String) -> Int {
-    let characters = Array(input)
-    var cache = Array(repeating: 0, count: characters.count)
+fileprivate func countDecodings(message: String) -> Int {
+    var dp = Array(repeating: 0, count: message.count + 1)
 
-    for i in 0..<cache.count {
-        // consider 1 digit
-        if characters[i] != "0" {
-            cache[i] += (i >= 1) ? cache[i-1] : 1
+    dp[0] = 1
+
+    for i in 1...message.count {
+        // if the current character is not '0', it can be decoded as a single character
+        if message[message.index(message.startIndex, offsetBy: i - 1)] != "0" {
+            dp[i] += dp[i - 1]
         }
 
-        // consider 2 digits
-        if i >= 1 {
-            guard let combined = Int(
-                characters[i-1...i]
-                    .map(String.init)
-                    .joined()
-            ) else {
-                fatalError()
+        // if the message has at least 2 characters, and the current and previous characters form a valid encoding (i.e., between 1 and 26),
+        // then they can be decoded as a single character
+        if i >= 2 {
+            let twoDigitEncoding = Int(String(message[message.index(message.startIndex, offsetBy: i - 2)...message.index(message.startIndex, offsetBy: i - 1)]))!
+            if twoDigitEncoding >= 1 && twoDigitEncoding <= 26 {
+                dp[i] += dp[i - 2]
             }
-
-            if 10...26 ~= combined {
-                cache[i] += (i >= 2) ? cache[i-2] : 1
-            }
-
         }
     }
 
-    return cache.last ?? 0
+    return dp[message.count]
 }
 
 import XCTest
 
 final class Day7: XCTestCase {
     func test() {
-        XCTAssertEqual(encodingsCount(input: "111"), 3)
-        XCTAssertEqual(encodingsCount(input: "001"), 0)
+        XCTAssertEqual(countDecodings(message: "111"), 3)
+        XCTAssertEqual(countDecodings(message: "001"), 0)
     }
 }
