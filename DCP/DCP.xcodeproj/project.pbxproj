@@ -15,6 +15,7 @@
 		BE86ECF92952273300ACA2BF /* Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECF82952273300ACA2BF /* Day6.swift */; };
 		BE86ED002953833B00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ECFF2953833B00ACA2BF /* Day7.swift */; };
 		BE86ED052954CEA100ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED032954CBC500ACA2BF /* Day8.swift */; };
+		BE86ED0929562AC400ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED0829562AC400ACA2BF /* Day9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,8 @@
 		BE86ECFF2953833B00ACA2BF /* Day7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day7.swift; sourceTree = "<group>"; };
 		BE86ED022954CB9100ACA2BF /* Day8.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day8.md; sourceTree = "<group>"; };
 		BE86ED032954CBC500ACA2BF /* Day8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day8.swift; sourceTree = "<group>"; };
+		BE86ED0729561F7C00ACA2BF /* Day9.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day9.md; sourceTree = "<group>"; };
+		BE86ED0829562AC400ACA2BF /* Day9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 		BE86ECC9294BF70300ACA2BF /* DCP */ = {
 			isa = PBXGroup;
 			children = (
+				BE86ED0629561F6600ACA2BF /* Day 9 */,
 				BE86ED012954CB7800ACA2BF /* Day 8 */,
 				BE86ECFD2953831B00ACA2BF /* Day 7 */,
 				BE86ECF72952272400ACA2BF /* Day 6 */,
@@ -170,6 +174,15 @@
 				BE86ED022954CB9100ACA2BF /* Day8.md */,
 			);
 			path = "Day 8";
+			sourceTree = "<group>";
+		};
+		BE86ED0629561F6600ACA2BF /* Day 9 */ = {
+			isa = PBXGroup;
+			children = (
+				BE86ED0829562AC400ACA2BF /* Day9.swift */,
+				BE86ED0729561F7C00ACA2BF /* Day9.md */,
+			);
+			path = "Day 9";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +289,7 @@
 				BE86ECF62950FA1A00ACA2BF /* Day5.swift in Sources */,
 				BE86ECF1295041E700ACA2BF /* Day3.swift in Sources */,
 				BE86ECF02950410600ACA2BF /* Day2.swift in Sources */,
+				BE86ED0929562AC400ACA2BF /* Day9.swift in Sources */,
 				BE86ECF22950428100ACA2BF /* Day4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
