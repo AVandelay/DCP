@@ -6,13 +6,13 @@ fileprivate func cons<A, B>(_ a: A, _ b: B) -> (() -> (A, B)) {
     }
 }
 
-fileprivate func car<A, B>(_ f: () -> (A, B)) -> A {
-    let (a, _) = f()
+fileprivate func car<A, B>(pair: () -> (A, B)) -> A {
+    let (a, _) = pair()
     return a
 }
 
-fileprivate func cdr<A, B>(_ f: () -> (A, B)) -> B {
-    let (_, b) = f()
+fileprivate func cdr<A, B>(pair: () -> (A, B)) -> B {
+    let (_, b) = pair()
     return b
 }
 
@@ -20,7 +20,8 @@ import XCTest
 
 final class Day5: XCTestCase {
     func test() {
-        XCTAssertEqual(car(cons(3, 4)), 3)
-        XCTAssertEqual(cdr(cons(3, 4)), 4)
+        let pair = cons(3, 4)
+        XCTAssertEqual(car(pair: pair), 3)
+        XCTAssertEqual(cdr(pair: pair), 4)
     }
 }
