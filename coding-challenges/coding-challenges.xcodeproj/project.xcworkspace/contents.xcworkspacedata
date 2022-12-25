@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/ken/Developer/westdorp/coding-challenges/coding-challenges/coding-challenges.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
