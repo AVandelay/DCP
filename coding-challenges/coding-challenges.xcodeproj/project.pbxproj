@@ -20,6 +20,7 @@
 		BE86ED4B2957F40F00ACA2BF /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED4A2957F40F00ACA2BF /* Day10.swift */; };
 		BE86ED4E2958D65F00ACA2BF /* Day11.md in Resources */ = {isa = PBXBuildFile; fileRef = BE86ED4D2958D65F00ACA2BF /* Day11.md */; };
 		BE86ED552958FBE900ACA2BF /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED4F2958D6B800ACA2BF /* Day11.swift */; };
+		BE86ED592958FFCA00ACA2BF /* 217-ContainsDuplicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED572958FFC600ACA2BF /* 217-ContainsDuplicate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,7 @@
 		BE86ED4A2957F40F00ACA2BF /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		BE86ED4D2958D65F00ACA2BF /* Day11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day11.md; sourceTree = "<group>"; };
 		BE86ED4F2958D6B800ACA2BF /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
+		BE86ED572958FFC600ACA2BF /* 217-ContainsDuplicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "217-ContainsDuplicate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				BE86ED562958FFA600ACA2BF /* 217. Contains Duplicate */,
 				BE86ED4429567A8300ACA2BF /* 1. Two Sum */,
 			);
 			path = leetcode;
@@ -237,6 +240,14 @@
 				BE86ED4D2958D65F00ACA2BF /* Day11.md */,
 			);
 			path = "Day 11";
+			sourceTree = "<group>";
+		};
+		BE86ED562958FFA600ACA2BF /* 217. Contains Duplicate */ = {
+			isa = PBXGroup;
+			children = (
+				BE86ED572958FFC600ACA2BF /* 217-ContainsDuplicate.swift */,
+			);
+			path = "217. Contains Duplicate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +364,7 @@
 				BE86ED3F2956786500ACA2BF /* Day3.swift in Sources */,
 				BE86ED422956789700ACA2BF /* Day6.swift in Sources */,
 				BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */,
+				BE86ED592958FFCA00ACA2BF /* 217-ContainsDuplicate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
