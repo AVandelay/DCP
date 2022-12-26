@@ -22,6 +22,9 @@
 		BE86ED552958FBE900ACA2BF /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED4F2958D6B800ACA2BF /* Day11.swift */; };
 		BE86ED592958FFCA00ACA2BF /* 217-ContainsDuplicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED572958FFC600ACA2BF /* 217-ContainsDuplicate.swift */; };
 		BE86ED5E295A1BC000ACA2BF /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED5C295A1BBA00ACA2BF /* Day12.swift */; };
+		BE86ED66295A316400ACA2BF /* 121-maxProfit.kt in Resources */ = {isa = PBXBuildFile; fileRef = BE86ED63295A316400ACA2BF /* 121-maxProfit.kt */; };
+		BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED64295A316400ACA2BF /* 121-maxProfit.swift */; };
+		BE86ED68295A316400ACA2BF /* 121-maxProfit.py in Resources */ = {isa = PBXBuildFile; fileRef = BE86ED65295A316400ACA2BF /* 121-maxProfit.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +68,9 @@
 		BE86ED572958FFC600ACA2BF /* 217-ContainsDuplicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "217-ContainsDuplicate.swift"; sourceTree = "<group>"; };
 		BE86ED5B295A18F400ACA2BF /* Day12.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day12.md; sourceTree = "<group>"; };
 		BE86ED5C295A1BBA00ACA2BF /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
+		BE86ED63295A316400ACA2BF /* 121-maxProfit.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "121-maxProfit.kt"; sourceTree = "<group>"; };
+		BE86ED64295A316400ACA2BF /* 121-maxProfit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "121-maxProfit.swift"; sourceTree = "<group>"; };
+		BE86ED65295A316400ACA2BF /* 121-maxProfit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "121-maxProfit.py"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +220,7 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				BE86ED62295A316400ACA2BF /* 121. Best Time to Buy and Sell Stock */,
 				BE86ED562958FFA600ACA2BF /* 217. Contains Duplicate */,
 				BE86ED4429567A8300ACA2BF /* 1. Two Sum */,
 			);
@@ -261,6 +268,16 @@
 				BE86ED5B295A18F400ACA2BF /* Day12.md */,
 			);
 			path = "Day 12";
+			sourceTree = "<group>";
+		};
+		BE86ED62295A316400ACA2BF /* 121. Best Time to Buy and Sell Stock */ = {
+			isa = PBXGroup;
+			children = (
+				BE86ED63295A316400ACA2BF /* 121-maxProfit.kt */,
+				BE86ED64295A316400ACA2BF /* 121-maxProfit.swift */,
+				BE86ED65295A316400ACA2BF /* 121-maxProfit.py */,
+			);
+			path = "121. Best Time to Buy and Sell Stock";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,7 +364,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE86ED66295A316400ACA2BF /* 121-maxProfit.kt in Resources */,
 				BE86ED4E2958D65F00ACA2BF /* Day11.md in Resources */,
+				BE86ED68295A316400ACA2BF /* 121-maxProfit.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +392,7 @@
 				BE86ED402956787000ACA2BF /* Day2.swift in Sources */,
 				BE86ED412956787B00ACA2BF /* Day1.swift in Sources */,
 				BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */,
+				BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */,
 				BE86ED4B2957F40F00ACA2BF /* Day10.swift in Sources */,
 				BE86ED3F2956786500ACA2BF /* Day3.swift in Sources */,
 				BE86ED422956789700ACA2BF /* Day6.swift in Sources */,
