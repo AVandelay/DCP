@@ -25,6 +25,7 @@
 		BE86ED66295A316400ACA2BF /* 121-maxProfit.kt in Resources */ = {isa = PBXBuildFile; fileRef = BE86ED63295A316400ACA2BF /* 121-maxProfit.kt */; };
 		BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED64295A316400ACA2BF /* 121-maxProfit.swift */; };
 		BE86ED68295A316400ACA2BF /* 121-maxProfit.py in Resources */ = {isa = PBXBuildFile; fileRef = BE86ED65295A316400ACA2BF /* 121-maxProfit.py */; };
+		BE86ED87295A640600ACA2BF /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED86295A640600ACA2BF /* Day13.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +72,8 @@
 		BE86ED63295A316400ACA2BF /* 121-maxProfit.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "121-maxProfit.kt"; sourceTree = "<group>"; };
 		BE86ED64295A316400ACA2BF /* 121-maxProfit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "121-maxProfit.swift"; sourceTree = "<group>"; };
 		BE86ED65295A316400ACA2BF /* 121-maxProfit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "121-maxProfit.py"; sourceTree = "<group>"; };
+		BE86ED86295A640600ACA2BF /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
+		BE86ED88295A641B00ACA2BF /* Day13.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day13.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 		BE86ED0B295677EE00ACA2BF /* daily-coding-problem */ = {
 			isa = PBXGroup;
 			children = (
+				BE86ED85295A63F000ACA2BF /* Day 13 */,
 				BE86ED5A295A18D700ACA2BF /* Day 12 */,
 				BE86ED4C2958D64A00ACA2BF /* Day 11 */,
 				BE86ED482957F3B900ACA2BF /* Day 10 */,
@@ -280,6 +284,15 @@
 			path = "121. Best Time to Buy and Sell Stock";
 			sourceTree = "<group>";
 		};
+		BE86ED85295A63F000ACA2BF /* Day 13 */ = {
+			isa = PBXGroup;
+			children = (
+				BE86ED86295A640600ACA2BF /* Day13.swift */,
+				BE86ED88295A641B00ACA2BF /* Day13.md */,
+			);
+			path = "Day 13";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,6 +405,7 @@
 				BE86ED402956787000ACA2BF /* Day2.swift in Sources */,
 				BE86ED412956787B00ACA2BF /* Day1.swift in Sources */,
 				BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */,
+				BE86ED87295A640600ACA2BF /* Day13.swift in Sources */,
 				BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */,
 				BE86ED4B2957F40F00ACA2BF /* Day10.swift in Sources */,
 				BE86ED3F2956786500ACA2BF /* Day3.swift in Sources */,
