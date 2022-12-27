@@ -26,6 +26,9 @@
 		BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED64295A316400ACA2BF /* 121-maxProfit.swift */; };
 		BE86ED68295A316400ACA2BF /* 121-maxProfit.py in Resources */ = {isa = PBXBuildFile; fileRef = BE86ED65295A316400ACA2BF /* 121-maxProfit.py */; };
 		BE86ED87295A640600ACA2BF /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED86295A640600ACA2BF /* Day13.swift */; };
+		BE86ED8B295B79BD00ACA2BF /* FindToppledBricks.md in Resources */ = {isa = PBXBuildFile; fileRef = BE86ED8A295B79BD00ACA2BF /* FindToppledBricks.md */; };
+		BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */; };
+		BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +77,9 @@
 		BE86ED65295A316400ACA2BF /* 121-maxProfit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "121-maxProfit.py"; sourceTree = "<group>"; };
 		BE86ED86295A640600ACA2BF /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
 		BE86ED88295A641B00ACA2BF /* Day13.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day13.md; sourceTree = "<group>"; };
+		BE86ED8A295B79BD00ACA2BF /* FindToppledBricks.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FindToppledBricks.md; sourceTree = "<group>"; };
+		BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindToppledBricks.swift; sourceTree = "<group>"; };
+		BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242-ValidAnagram.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 		BE86ECC9294BF70300ACA2BF /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				BE86ED89295B790D00ACA2BF /* GIQ */,
 				BE86ED4329567A5E00ACA2BF /* leetcode */,
 				BE86ED0B295677EE00ACA2BF /* daily-coding-problem */,
 			);
@@ -224,6 +231,7 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
 				BE86ED62295A316400ACA2BF /* 121. Best Time to Buy and Sell Stock */,
 				BE86ED562958FFA600ACA2BF /* 217. Contains Duplicate */,
 				BE86ED4429567A8300ACA2BF /* 1. Two Sum */,
@@ -291,6 +299,31 @@
 				BE86ED88295A641B00ACA2BF /* Day13.md */,
 			);
 			path = "Day 13";
+			sourceTree = "<group>";
+		};
+		BE86ED89295B790D00ACA2BF /* GIQ */ = {
+			isa = PBXGroup;
+			children = (
+				BE86ED8E295B7B7900ACA2BF /* Find Toppled Bricks */,
+			);
+			path = GIQ;
+			sourceTree = "<group>";
+		};
+		BE86ED8E295B7B7900ACA2BF /* Find Toppled Bricks */ = {
+			isa = PBXGroup;
+			children = (
+				BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */,
+				BE86ED8A295B79BD00ACA2BF /* FindToppledBricks.md */,
+			);
+			path = "Find Toppled Bricks";
+			sourceTree = "<group>";
+		};
+		BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */ = {
+			isa = PBXGroup;
+			children = (
+				BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */,
+			);
+			path = "242. Valid Anagram";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +412,7 @@
 			files = (
 				BE86ED66295A316400ACA2BF /* 121-maxProfit.kt in Resources */,
 				BE86ED4E2958D65F00ACA2BF /* Day11.md in Resources */,
+				BE86ED8B295B79BD00ACA2BF /* FindToppledBricks.md in Resources */,
 				BE86ED68295A316400ACA2BF /* 121-maxProfit.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,7 +442,9 @@
 				BE86ED87295A640600ACA2BF /* Day13.swift in Sources */,
 				BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */,
 				BE86ED4B2957F40F00ACA2BF /* Day10.swift in Sources */,
+				BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */,
 				BE86ED3F2956786500ACA2BF /* Day3.swift in Sources */,
+				BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */,
 				BE86ED422956789700ACA2BF /* Day6.swift in Sources */,
 				BE86ED5E295A1BC000ACA2BF /* Day12.swift in Sources */,
 				BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */,
