@@ -102,6 +102,6 @@ final class Day14: XCTestCase {
         let expectation = XCTestExpectation(description: "Publisher completed")
         piEstimate.cancel()
         expectation.fulfill()
-//        wait(for: [expectation], timeout: 1)
+        wait(for: [expectation], timeout: 1)
     }
 }

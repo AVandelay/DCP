@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-ValidParentheses.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */,
+			);
+			path = "20. Valid Parentheses";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +246,7 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */,
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
 				BE86ED62295A316400ACA2BF /* 121. Best Time to Buy and Sell Stock */,
 				BE86ED562958FFA600ACA2BF /* 217. Contains Duplicate */,
@@ -447,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE86ED4729567AEF00ACA2BF /* 1-TwoSum.swift in Sources */,
+				BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */,
 				BE86ED3D2956785400ACA2BF /* Day5.swift in Sources */,
 				BE86ED552958FBE900ACA2BF /* Day11.swift in Sources */,
 				BE86ED3E2956785F00ACA2BF /* Day4.swift in Sources */,
