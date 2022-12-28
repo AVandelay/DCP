@@ -29,6 +29,8 @@
 		BE86ED8B295B79BD00ACA2BF /* FindToppledBricks.md in Resources */ = {isa = PBXBuildFile; fileRef = BE86ED8A295B79BD00ACA2BF /* FindToppledBricks.md */; };
 		BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */; };
 		BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */; };
+		BE86EDC0295CB57100ACA2BF /* Day14.md in Resources */ = {isa = PBXBuildFile; fileRef = BE86EDBF295CB57100ACA2BF /* Day14.md */; };
+		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +82,8 @@
 		BE86ED8A295B79BD00ACA2BF /* FindToppledBricks.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FindToppledBricks.md; sourceTree = "<group>"; };
 		BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindToppledBricks.swift; sourceTree = "<group>"; };
 		BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242-ValidAnagram.swift"; sourceTree = "<group>"; };
+		BE86EDBF295CB57100ACA2BF /* Day14.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day14.md; sourceTree = "<group>"; };
+		BE86EDC1295CB5C700ACA2BF /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 		BE86ED0B295677EE00ACA2BF /* daily-coding-problem */ = {
 			isa = PBXGroup;
 			children = (
+				BE86EDBE295CB56100ACA2BF /* Day 14 */,
 				BE86ED85295A63F000ACA2BF /* Day 13 */,
 				BE86ED5A295A18D700ACA2BF /* Day 12 */,
 				BE86ED4C2958D64A00ACA2BF /* Day 11 */,
@@ -326,6 +331,15 @@
 			path = "242. Valid Anagram";
 			sourceTree = "<group>";
 		};
+		BE86EDBE295CB56100ACA2BF /* Day 14 */ = {
+			isa = PBXGroup;
+			children = (
+				BE86EDC1295CB5C700ACA2BF /* Day14.swift */,
+				BE86EDBF295CB57100ACA2BF /* Day14.md */,
+			);
+			path = "Day 14";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE86EDC0295CB57100ACA2BF /* Day14.md in Resources */,
 				BE86ED66295A316400ACA2BF /* 121-maxProfit.kt in Resources */,
 				BE86ED4E2958D65F00ACA2BF /* Day11.md in Resources */,
 				BE86ED8B295B79BD00ACA2BF /* FindToppledBricks.md in Resources */,
@@ -441,6 +456,7 @@
 				BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */,
 				BE86ED87295A640600ACA2BF /* Day13.swift in Sources */,
 				BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */,
+				BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */,
 				BE86ED4B2957F40F00ACA2BF /* Day10.swift in Sources */,
 				BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */,
 				BE86ED3F2956786500ACA2BF /* Day3.swift in Sources */,
