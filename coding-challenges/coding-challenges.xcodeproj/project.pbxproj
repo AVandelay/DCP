@@ -10,6 +10,7 @@
 		BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */; };
 		BE41E0CC295E0E5400273902 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CB295E0E5400273902 /* Day15.swift */; };
 		BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */; };
+		BE41E0F3295F552000273902 /* Day16.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0F2295F552000273902 /* Day16.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -53,6 +54,8 @@
 		BE41E0CA295E0E2400273902 /* Day15.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day15.md; sourceTree = "<group>"; };
 		BE41E0CB295E0E5400273902 /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53-MaximumSubarray.swift"; sourceTree = "<group>"; };
+		BE41E0F1295F54A300273902 /* Day16.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day16.md; sourceTree = "<group>"; };
+		BE41E0F2295F552000273902 /* Day16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16.swift; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -136,6 +139,15 @@
 			path = "53. Maximum Subarray";
 			sourceTree = "<group>";
 		};
+		BE41E0F0295F548100273902 /* Day 16 */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E0F2295F552000273902 /* Day16.swift */,
+				BE41E0F1295F54A300273902 /* Day16.md */,
+			);
+			path = "Day 16";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +178,7 @@
 		BE86ED0B295677EE00ACA2BF /* daily-coding-problem */ = {
 			isa = PBXGroup;
 			children = (
+				BE41E0F0295F548100273902 /* Day 16 */,
 				BE41E0C9295E0DB100273902 /* Day 15 */,
 				BE86EDBE295CB56100ACA2BF /* Day 14 */,
 				BE86ED85295A63F000ACA2BF /* Day 13 */,
@@ -498,6 +511,7 @@
 				BE86ED4B2957F40F00ACA2BF /* Day10.swift in Sources */,
 				BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */,
 				BE86ED3F2956786500ACA2BF /* Day3.swift in Sources */,
+				BE41E0F3295F552000273902 /* Day16.swift in Sources */,
 				BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */,
 				BE86ED422956789700ACA2BF /* Day6.swift in Sources */,
 				BE86ED5E295A1BC000ACA2BF /* Day12.swift in Sources */,
