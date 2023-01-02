@@ -1,5 +1,6 @@
 
-func maxSubarray(_ nums: [Int]) -> Int {
+
+fileprivate func maxSubarray(_ nums: [Int]) -> Int {
     guard !nums.isEmpty else { return 0 }
     guard nums.count > 1 else { return nums.first! }
 

@@ -1,6 +1,6 @@
 
 
-func isAnagram(_ s: String, t: String) -> Bool {
+fileprivate func isAnagram(_ s: String, t: String) -> Bool {
     guard s.count == t.count else { return false }
 
     let frequencyS = s.reduce(into: [:]) { (counts, char) in

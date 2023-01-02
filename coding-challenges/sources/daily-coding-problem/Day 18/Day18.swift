@@ -1,6 +1,6 @@
 
 
-func maxOfSubarrays(arr: [Int], k: Int) {
+fileprivate func maxOfSubarrays(arr: [Int], k: Int) {
     // Initialize deque to store the indices of the elements in the window
     var dq = [Int]()
 

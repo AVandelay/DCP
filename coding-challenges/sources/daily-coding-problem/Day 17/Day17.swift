@@ -1,6 +1,6 @@
 
 
-func longestAbsolutePath(fileSystem: String) -> Int {
+fileprivate func longestAbsolutePath(fileSystem: String) -> Int {
     // Split the file system into lines
     let lines = fileSystem.split(separator: "\n")
     // Initialize a dictionary to store the path lengths for each depth level

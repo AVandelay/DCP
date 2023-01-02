@@ -5,7 +5,7 @@
 ///  3. Generate a random number p between 0 and 1.
 ///  4. If p is less than or equal to 1/n, set reservoir to be x.
 ///  5. Repeat steps 2-4 for each element in the stream.
-func pickRandomElement<T>(stream: AnySequence<T>) -> T? {
+fileprivate func pickRandomElement<T>(stream: AnySequence<T>) -> T? {
     var reservoir: T?
     stream.enumerated().forEach { (n, x) in
         let p = Double.random(in: 0..<1)

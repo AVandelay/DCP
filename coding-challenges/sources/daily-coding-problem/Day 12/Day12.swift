@@ -1,6 +1,6 @@
 
 
-func climbStaircase(steps: Int) -> Int {
+fileprivate func climbStaircase(steps: Int) -> Int {
     if steps < 2 { return 1 }
 
     var ways = [Int](repeating: 1, count: steps + 1)

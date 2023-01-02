@@ -2,7 +2,7 @@
 
 from bisect import bisect_left
 
-def two_sum(numbers, k):
+def sum_exists(numbers, k):
     sorted_numbers = sorted(numbers)
     
     for i in range(len(sorted_numbers)):

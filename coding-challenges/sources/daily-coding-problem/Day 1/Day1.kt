@@ -2,7 +2,7 @@ fun main() {
     println(twoSum(listOf(10, 15, 3, 7), 17) == true)
 }
 
-fun twoSum(numbers: List<Int>, k: Int): Boolean  {
+fun sumExists(numbers: List<Int>, k: Int): Boolean  {
     // Sort the list of numbers
     val sortedNumbers = numbers.sorted()
     

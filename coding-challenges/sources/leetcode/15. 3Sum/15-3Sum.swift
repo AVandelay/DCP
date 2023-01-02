@@ -1,6 +1,6 @@
 
 
-func threeSum(_ nums: [Int]) -> [[Int]] {
+fileprivate func threeSum(_ nums: [Int]) -> [[Int]] {
     // Return an empty array if the input array has fewer than 3 elements
     guard nums.count > 2 else { return  [] }
 

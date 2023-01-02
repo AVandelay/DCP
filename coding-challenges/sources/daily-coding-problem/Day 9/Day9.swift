@@ -1,6 +1,6 @@
 
 
-func largestSum(numbers: [Int]) -> Int {
+fileprivate func largestSum(numbers: [Int]) -> Int {
     guard !numbers.isEmpty else { return 0 }
 
     guard numbers.count != 1 else { return numbers.first! }

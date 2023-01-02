@@ -1,6 +1,6 @@
 
 
-func isValid(_ s: String) -> Bool {
+fileprivate func isValid(_ s: String) -> Bool {
     let brackets: [Character: Character] = [")": "(", "]": "[", "}": "{"]
     var stack = [Character]()
     for c in s {

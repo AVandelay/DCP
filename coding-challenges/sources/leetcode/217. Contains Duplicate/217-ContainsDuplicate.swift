@@ -1,6 +1,6 @@
 
 
-func containsDuplicate(_ nums: [Int]) -> Bool {
+fileprivate func containsDuplicate(_ nums: [Int]) -> Bool {
     nums.count != Set(nums).count
 }
 

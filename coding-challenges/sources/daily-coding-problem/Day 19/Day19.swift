@@ -1,6 +1,6 @@
 
 
-func buildHouses(_ matrix: [[Int]]) -> Int {
+fileprivate func buildHouses(_ matrix: [[Int]]) -> Int {
     // Initialize variables
     var lowestCost = 0
     var lowestCostIndex = -1

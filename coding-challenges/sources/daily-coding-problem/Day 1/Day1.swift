@@ -1,6 +1,6 @@
 
 
-fileprivate func twoSum_linear(_ nums: [Int], k: Int) -> Bool {
+fileprivate func sumExists_linear(_ nums: [Int], k: Int) -> Bool {
     var seen = Set<Int>()
     for num in nums {
         if seen.contains(k - num) {
@@ -13,7 +13,7 @@ fileprivate func twoSum_linear(_ nums: [Int], k: Int) -> Bool {
     return false
 }
 
-fileprivate func twoSum_binarySearch(_ nums: [Int], k: Int) -> Bool {
+fileprivate func sumExists_binarySearch(_ nums: [Int], k: Int) -> Bool {
     let sorted = nums.sorted()
     var left = 0
     var right = sorted.count - 1
@@ -35,7 +35,7 @@ import XCTest
 final class Day1: XCTestCase {
 
     func test() {
-        XCTAssertTrue(twoSum_linear([10, 15, 3, 7], k: 17))
-        XCTAssertTrue(twoSum_binarySearch([10, 15, 3, 7], k: 17))
+        XCTAssertTrue(sumExists_linear([10, 15, 3, 7], k: 17))
+        XCTAssertTrue(sumExists_binarySearch([10, 15, 3, 7], k: 17))
     }
 }

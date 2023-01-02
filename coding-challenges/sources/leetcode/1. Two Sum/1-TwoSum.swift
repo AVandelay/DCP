@@ -1,6 +1,4 @@
-/**
- # [Two Sum](https://leetcode.com/problems/two-sum/)
- */
+
 
 fileprivate func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
     var dic = [Int: Int]()
