@@ -18,6 +18,7 @@
 		BE41E10429635C8C00273902 /* Day19.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E10329635C8C00273902 /* Day19.swift */; };
 		BE41E1082963814400273902 /* 219-ContainsDuplicateII.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1072963814400273902 /* 219-ContainsDuplicateII.swift */; };
 		BE41E1292964B06900273902 /* 144-BinaryTreePreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1282964B06900273902 /* 144-BinaryTreePreorderTraversal.swift */; };
+		BE41E12D2964B93400273902 /* Day20.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E12C2964B93400273902 /* Day20.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -93,6 +94,8 @@
 		BE41E1252964AD3500273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1272964B02300273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1282964B06900273902 /* 144-BinaryTreePreorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "144-BinaryTreePreorderTraversal.swift"; sourceTree = "<group>"; };
+		BE41E12B2964B8F000273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E12C2964B93400273902 /* Day20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day20.swift; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -233,6 +236,29 @@
 			path = "144. Binary Tree Preorder Traversal";
 			sourceTree = "<group>";
 		};
+		BE41E12A2964B8D800273902 /* Day 20 */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E12B2964B8F000273902 /* README.md */,
+				BE41E12C2964B93400273902 /* Day20.swift */,
+			);
+			path = "Day 20";
+			sourceTree = "<group>";
+		};
+		BE41E12E2964F70F00273902 /* 145. Binary Tree Postorder Traversal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "145. Binary Tree Postorder Traversal";
+			sourceTree = "<group>";
+		};
+		BE41E12F2964F72700273902 /* 94. Binary Tree Inorder Traversal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "94. Binary Tree Inorder Traversal";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +289,7 @@
 		BE86ED0B295677EE00ACA2BF /* daily-coding-problem */ = {
 			isa = PBXGroup;
 			children = (
+				BE41E12A2964B8D800273902 /* Day 20 */,
 				BE41E10229635C7E00273902 /* Day 19 */,
 				BE41E0FB296215AF00273902 /* Day 18 */,
 				BE41E0F72960CD5800273902 /* Day 17 */,
@@ -370,6 +397,8 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				BE41E12F2964F72700273902 /* 94. Binary Tree Inorder Traversal */,
+				BE41E12E2964F70F00273902 /* 145. Binary Tree Postorder Traversal */,
 				BE86ED4429567A8300ACA2BF /* 1. Two Sum */,
 				BE41E0FF29622D1B00273902 /* 15. 3Sum */,
 				BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */,
@@ -594,6 +623,7 @@
 				BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */,
 				BE86ED402956787000ACA2BF /* Day2.swift in Sources */,
 				BE41E10429635C8C00273902 /* Day19.swift in Sources */,
+				BE41E12D2964B93400273902 /* Day20.swift in Sources */,
 				BE86ED412956787B00ACA2BF /* Day1.swift in Sources */,
 				BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */,
 				BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */,
