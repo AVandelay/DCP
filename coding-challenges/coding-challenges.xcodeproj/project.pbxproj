@@ -17,6 +17,7 @@
 		BE41E10129622D2D00273902 /* 15-3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E10029622D2D00273902 /* 15-3Sum.swift */; };
 		BE41E10429635C8C00273902 /* Day19.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E10329635C8C00273902 /* Day19.swift */; };
 		BE41E1082963814400273902 /* 219-ContainsDuplicateII.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1072963814400273902 /* 219-ContainsDuplicateII.swift */; };
+		BE41E1292964B06900273902 /* 144-BinaryTreePreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1282964B06900273902 /* 144-BinaryTreePreorderTraversal.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -90,6 +91,8 @@
 		BE41E1232964AD2000273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1242964AD2A00273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1252964AD3500273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1272964B02300273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1282964B06900273902 /* 144-BinaryTreePreorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "144-BinaryTreePreorderTraversal.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -219,6 +222,15 @@
 				BE41E1232964AD2000273902 /* README.md */,
 			);
 			path = "219. Contains Duplicate II";
+			sourceTree = "<group>";
+		};
+		BE41E1262964AFFC00273902 /* 144. Binary Tree Preorder Traversal */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1282964B06900273902 /* 144-BinaryTreePreorderTraversal.swift */,
+				BE41E1272964B02300273902 /* README.md */,
+			);
+			path = "144. Binary Tree Preorder Traversal";
 			sourceTree = "<group>";
 		};
 		BE86ECBE294BF70300ACA2BF = {
@@ -363,6 +375,7 @@
 				BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */,
 				BE41E0CD295E1E2100273902 /* 53. Maximum Subarray */,
 				BE86ED62295A316400ACA2BF /* 121. Best Time to Buy and Sell Stock */,
+				BE41E1262964AFFC00273902 /* 144. Binary Tree Preorder Traversal */,
 				BE86ED562958FFA600ACA2BF /* 217. Contains Duplicate */,
 				BE41E1062963811B00273902 /* 219. Contains Duplicate II */,
 				BE41E0F4295F6BEB00273902 /* 238. Product of Array Except Self */,
@@ -584,6 +597,7 @@
 				BE86ED412956787B00ACA2BF /* Day1.swift in Sources */,
 				BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */,
 				BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */,
+				BE41E1292964B06900273902 /* 144-BinaryTreePreorderTraversal.swift in Sources */,
 				BE86ED87295A640600ACA2BF /* Day13.swift in Sources */,
 				BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */,
 				BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */,
