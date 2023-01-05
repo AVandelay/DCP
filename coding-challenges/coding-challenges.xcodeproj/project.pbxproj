@@ -23,6 +23,7 @@
 		BE41E1352964F8A100273902 /* 145-BinaryTreePostorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1342964F8A100273902 /* 145-BinaryTreePostorderTraversal.swift */; };
 		BE41E13C2965F0CD00273902 /* Day21.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E13B2965F0CD00273902 /* Day21.swift */; };
 		BE41E1402966127800273902 /* 1228-MissingNumberInArithmeticProgression.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E13F2966127800273902 /* 1228-MissingNumberInArithmeticProgression.swift */; };
+		BE41E1442966483D00273902 /* 366-FindLeavesOfBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1432966483D00273902 /* 366-FindLeavesOfBinaryTree.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -108,6 +109,8 @@
 		BE41E13B2965F0CD00273902 /* Day21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day21.swift; sourceTree = "<group>"; };
 		BE41E13E2966124200273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E13F2966127800273902 /* 1228-MissingNumberInArithmeticProgression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1228-MissingNumberInArithmeticProgression.swift"; sourceTree = "<group>"; };
+		BE41E1422966481200273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1432966483D00273902 /* 366-FindLeavesOfBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "366-FindLeavesOfBinaryTree.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -293,6 +296,15 @@
 			path = "1228. Missing Number In Arithmetic Progression";
 			sourceTree = "<group>";
 		};
+		BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1432966483D00273902 /* 366-FindLeavesOfBinaryTree.swift */,
+				BE41E1422966481200273902 /* README.md */,
+			);
+			path = "366. Find Leaves of Binary Tree";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -444,6 +456,7 @@
 				BE41E1062963811B00273902 /* 219. Contains Duplicate II */,
 				BE41E0F4295F6BEB00273902 /* 238. Product of Array Except Self */,
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
+				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
 			);
 			path = leetcode;
@@ -680,6 +693,7 @@
 				BE86ED422956789700ACA2BF /* Day6.swift in Sources */,
 				BE41E0FA2960CE6300273902 /* Day17.swift in Sources */,
 				BE86ED5E295A1BC000ACA2BF /* Day12.swift in Sources */,
+				BE41E1442966483D00273902 /* 366-FindLeavesOfBinaryTree.swift in Sources */,
 				BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */,
 				BE86ED592958FFCA00ACA2BF /* 217-ContainsDuplicate.swift in Sources */,
 				BE41E10129622D2D00273902 /* 15-3Sum.swift in Sources */,
