@@ -30,6 +30,8 @@
 		BE41E155296A207200273902 /* Day24.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E154296A207200273902 /* Day24.swift */; };
 		BE41E159296A889A00273902 /* Day25.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E158296A889A00273902 /* Day25.swift */; };
 		BE41E15C296C872E00273902 /* Day26.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E15B296C872E00273902 /* Day26.swift */; };
+		BE41E161296CB45D00273902 /* 496-NextGreaterElementI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E160296CB45D00273902 /* 496-NextGreaterElementI.swift */; };
+		BE41E165296DF43B00273902 /* Day27.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E164296DF43B00273902 /* Day27.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -129,6 +131,10 @@
 		BE41E158296A889A00273902 /* Day25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day25.swift; sourceTree = "<group>"; };
 		BE41E15B296C872E00273902 /* Day26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day26.swift; sourceTree = "<group>"; };
 		BE41E15D296C873E00273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E15F296CB41600273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E160296CB45D00273902 /* 496-NextGreaterElementI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "496-NextGreaterElementI.swift"; sourceTree = "<group>"; };
+		BE41E163296DF40D00273902 /* Day27.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day27.md; sourceTree = "<group>"; };
+		BE41E164296DF43B00273902 /* Day27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day27.swift; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -385,6 +391,24 @@
 			path = "Day 26";
 			sourceTree = "<group>";
 		};
+		BE41E15E296CB40300273902 /* 496. Next Greater Element I */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E160296CB45D00273902 /* 496-NextGreaterElementI.swift */,
+				BE41E15F296CB41600273902 /* README.md */,
+			);
+			path = "496. Next Greater Element I";
+			sourceTree = "<group>";
+		};
+		BE41E162296DF3F700273902 /* Day 27 */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E164296DF43B00273902 /* Day27.swift */,
+				BE41E163296DF40D00273902 /* Day27.md */,
+			);
+			path = "Day 27";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +440,7 @@
 		BE86ED0B295677EE00ACA2BF /* daily-coding-problem */ = {
 			isa = PBXGroup;
 			children = (
+				BE41E162296DF3F700273902 /* Day 27 */,
 				BE41E15A296C871E00273902 /* Day 26 */,
 				BE41E156296A881700273902 /* Day 25 */,
 				BE41E152296A1A2800273902 /* Day 24 */,
@@ -543,6 +568,7 @@
 				BE41E0F4295F6BEB00273902 /* 238. Product of Array Except Self */,
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
+				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
 			);
 			path = leetcode;
@@ -784,11 +810,13 @@
 				BE41E1352964F8A100273902 /* 145-BinaryTreePostorderTraversal.swift in Sources */,
 				BE86ED422956789700ACA2BF /* Day6.swift in Sources */,
 				BE41E0FA2960CE6300273902 /* Day17.swift in Sources */,
+				BE41E165296DF43B00273902 /* Day27.swift in Sources */,
 				BE86ED5E295A1BC000ACA2BF /* Day12.swift in Sources */,
 				BE41E1442966483D00273902 /* 366-FindLeavesOfBinaryTree.swift in Sources */,
 				BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */,
 				BE86ED592958FFCA00ACA2BF /* 217-ContainsDuplicate.swift in Sources */,
 				BE41E10129622D2D00273902 /* 15-3Sum.swift in Sources */,
+				BE41E161296CB45D00273902 /* 496-NextGreaterElementI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
