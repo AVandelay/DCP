@@ -133,7 +133,7 @@
 		BE41E15D296C873E00273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E15F296CB41600273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E160296CB45D00273902 /* 496-NextGreaterElementI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "496-NextGreaterElementI.swift"; sourceTree = "<group>"; };
-		BE41E163296DF40D00273902 /* Day27.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Day27.md; sourceTree = "<group>"; };
+		BE41E163296DF40D00273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E164296DF43B00273902 /* Day27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day27.swift; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -404,7 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				BE41E164296DF43B00273902 /* Day27.swift */,
-				BE41E163296DF40D00273902 /* Day27.md */,
+				BE41E163296DF40D00273902 /* README.md */,
 			);
 			path = "Day 27";
 			sourceTree = "<group>";
