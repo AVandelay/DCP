@@ -44,6 +44,7 @@
 		BE41E192296F828F00273902 /* Day318.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E191296F79FA00273902 /* Day318.swift */; };
 		BE41E194296F83AC00273902 /* Day337.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E193296F83AC00273902 /* Day337.swift */; };
 		BE41E19A2970B11D00273902 /* 67-AddBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1992970B11D00273902 /* 67-AddBinary.swift */; };
+		BE41E19C2972179900273902 /* 9-PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E19B2972179900273902 /* 9-PalindromeNumber.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -172,6 +173,7 @@
 		BE41E1962970917500273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E19829709C1300273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1992970B11D00273902 /* 67-AddBinary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "67-AddBinary.swift"; sourceTree = "<group>"; };
+		BE41E19B2972179900273902 /* 9-PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9-PalindromeNumber.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -557,6 +559,7 @@
 		BE41E19729709BFC00273902 /* 9. Palindrome Number */ = {
 			isa = PBXGroup;
 			children = (
+				BE41E19B2972179900273902 /* 9-PalindromeNumber.swift */,
 				BE41E19829709C1300273902 /* README.md */,
 			);
 			path = "9. Palindrome Number";
@@ -718,13 +721,13 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				BE41E19729709BFC00273902 /* 9. Palindrome Number */,
-				BE41E1952970915B00273902 /* 67. Add Binary */,
 				BE86ED4429567A8300ACA2BF /* 1. Two Sum */,
+				BE41E19729709BFC00273902 /* 9. Palindrome Number */,
 				BE41E167296E08C400273902 /* 11. Container With Most Water */,
 				BE41E0FF29622D1B00273902 /* 15. 3Sum */,
 				BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */,
 				BE41E0CD295E1E2100273902 /* 53. Maximum Subarray */,
+				BE41E1952970915B00273902 /* 67. Add Binary */,
 				BE41E12F2964F72700273902 /* 94. Binary Tree Inorder Traversal */,
 				BE86ED62295A316400ACA2BF /* 121. Best Time to Buy and Sell Stock */,
 				BE41E1262964AFFC00273902 /* 144. Binary Tree Preorder Traversal */,
@@ -947,6 +950,7 @@
 				BE41E1512968C65E00273902 /* UnderscorifySubstring.swift in Sources */,
 				BE41E15C296C872E00273902 /* Day26.swift in Sources */,
 				BE41E1082963814400273902 /* 219-ContainsDuplicateII.swift in Sources */,
+				BE41E19C2972179900273902 /* 9-PalindromeNumber.swift in Sources */,
 				BE86ED3D2956785400ACA2BF /* Day5.swift in Sources */,
 				BE41E0F6295F6C1500273902 /* 238-ProductOfArrayExceptSelf.swift in Sources */,
 				BE41E14829677E8800273902 /* Day22.swift in Sources */,
