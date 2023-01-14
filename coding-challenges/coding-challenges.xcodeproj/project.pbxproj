@@ -45,6 +45,8 @@
 		BE41E194296F83AC00273902 /* Day337.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E193296F83AC00273902 /* Day337.swift */; };
 		BE41E19A2970B11D00273902 /* 67-AddBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1992970B11D00273902 /* 67-AddBinary.swift */; };
 		BE41E19C2972179900273902 /* 9-PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E19B2972179900273902 /* 9-PalindromeNumber.swift */; };
+		BE41E19F29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E19E29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift */; };
+		BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1A129722CA200273902 /* SerializeAndDeserializeLinkedList.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -174,6 +176,9 @@
 		BE41E19829709C1300273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1992970B11D00273902 /* 67-AddBinary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "67-AddBinary.swift"; sourceTree = "<group>"; };
 		BE41E19B2972179900273902 /* 9-PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9-PalindromeNumber.swift"; sourceTree = "<group>"; };
+		BE41E19E29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "297-SerializeAndDeserializeBinaryTree.swift"; sourceTree = "<group>"; };
+		BE41E1A029722C6900273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1A129722CA200273902 /* SerializeAndDeserializeLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializeAndDeserializeLinkedList.swift; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -550,8 +555,8 @@
 		BE41E1952970915B00273902 /* 67. Add Binary */ = {
 			isa = PBXGroup;
 			children = (
-				BE41E1962970917500273902 /* README.md */,
 				BE41E1992970B11D00273902 /* 67-AddBinary.swift */,
+				BE41E1962970917500273902 /* README.md */,
 			);
 			path = "67. Add Binary";
 			sourceTree = "<group>";
@@ -563,6 +568,16 @@
 				BE41E19829709C1300273902 /* README.md */,
 			);
 			path = "9. Palindrome Number";
+			sourceTree = "<group>";
+		};
+		BE41E19D29722C3600273902 /* 297. Serialize and Deserialize Binary Tree */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E19E29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift */,
+				BE41E1A129722CA200273902 /* SerializeAndDeserializeLinkedList.swift */,
+				BE41E1A029722C6900273902 /* README.md */,
+			);
+			path = "297. Serialize and Deserialize Binary Tree";
 			sourceTree = "<group>";
 		};
 		BE86ECBE294BF70300ACA2BF = {
@@ -736,6 +751,7 @@
 				BE41E1062963811B00273902 /* 219. Contains Duplicate II */,
 				BE41E0F4295F6BEB00273902 /* 238. Product of Array Except Self */,
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
+				BE41E19D29722C3600273902 /* 297. Serialize and Deserialize Binary Tree */,
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
@@ -966,7 +982,9 @@
 				BE41E10429635C8C00273902 /* Day19.swift in Sources */,
 				BE41E12D2964B93400273902 /* Day20.swift in Sources */,
 				BE86ED412956787B00ACA2BF /* Day1.swift in Sources */,
+				BE41E19F29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */,
 				BE41E188296F4CA900273902 /* Day148.swift in Sources */,
+				BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */,
 				BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */,
 				BE41E155296A207200273902 /* Day24.swift in Sources */,
 				BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */,
