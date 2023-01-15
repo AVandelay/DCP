@@ -12,6 +12,9 @@
  *  The function uses dynamic programming to count the number of different non-empty palindromic subsequences in the input string
  */
 func countPalindromicSubsequences(_ s: String) -> Int {
+    guard !s.isEmpty else { return 0 }
+    guard s.count > 1 else { return 1 }
+
     let mod = 1_000_000_007
     let n = s.count
     let chars = Array(s)
