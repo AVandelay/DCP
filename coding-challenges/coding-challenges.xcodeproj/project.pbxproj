@@ -48,6 +48,7 @@
 		BE41E19F29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E19E29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift */; };
 		BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1A129722CA200273902 /* SerializeAndDeserializeLinkedList.swift */; };
 		BE41E1A72973203000273902 /* 772-BasicCalculatorIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1A62973203000273902 /* 772-BasicCalculatorIII.swift */; };
+		BE41E1AB2973711600273902 /* 362-DesignHitCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1AA2973711600273902 /* 362-DesignHitCounter.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -182,6 +183,8 @@
 		BE41E1A129722CA200273902 /* SerializeAndDeserializeLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializeAndDeserializeLinkedList.swift; sourceTree = "<group>"; };
 		BE41E1A529731FF800273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1A62973203000273902 /* 772-BasicCalculatorIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "772-BasicCalculatorIII.swift"; sourceTree = "<group>"; };
+		BE41E1A9297370E600273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1AA2973711600273902 /* 362-DesignHitCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "362-DesignHitCounter.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -592,6 +595,15 @@
 			path = "772. Basic Calculator III";
 			sourceTree = "<group>";
 		};
+		BE41E1A8297370D000273902 /* 362. Design Hit Counter */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1AA2973711600273902 /* 362-DesignHitCounter.swift */,
+				BE41E1A9297370E600273902 /* README.md */,
+			);
+			path = "362. Design Hit Counter";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -764,6 +776,7 @@
 				BE41E0F4295F6BEB00273902 /* 238. Product of Array Except Self */,
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
 				BE41E19D29722C3600273902 /* 297. Serialize and Deserialize Binary Tree */,
+				BE41E1A8297370D000273902 /* 362. Design Hit Counter */,
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
 				BE41E1A429731FDC00273902 /* 772. Basic Calculator III */,
@@ -1025,6 +1038,7 @@
 				BE41E165296DF43B00273902 /* Day27.swift in Sources */,
 				BE86ED5E295A1BC000ACA2BF /* Day12.swift in Sources */,
 				BE41E1442966483D00273902 /* 366-FindLeavesOfBinaryTree.swift in Sources */,
+				BE41E1AB2973711600273902 /* 362-DesignHitCounter.swift in Sources */,
 				BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */,
 				BE41E1A72973203000273902 /* 772-BasicCalculatorIII.swift in Sources */,
 				BE86ED592958FFCA00ACA2BF /* 217-ContainsDuplicate.swift in Sources */,
