@@ -49,6 +49,7 @@
 		BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1A129722CA200273902 /* SerializeAndDeserializeLinkedList.swift */; };
 		BE41E1A72973203000273902 /* 772-BasicCalculatorIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1A62973203000273902 /* 772-BasicCalculatorIII.swift */; };
 		BE41E1AB2973711600273902 /* 362-DesignHitCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1AA2973711600273902 /* 362-DesignHitCounter.swift */; };
+		BE41E1AF29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1AE29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -185,6 +186,8 @@
 		BE41E1A62973203000273902 /* 772-BasicCalculatorIII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "772-BasicCalculatorIII.swift"; sourceTree = "<group>"; };
 		BE41E1A9297370E600273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1AA2973711600273902 /* 362-DesignHitCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "362-DesignHitCounter.swift"; sourceTree = "<group>"; };
+		BE41E1AD29737EB900273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1AE29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "730-CountDifferentPalindromicSubsequences.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -604,6 +607,15 @@
 			path = "362. Design Hit Counter";
 			sourceTree = "<group>";
 		};
+		BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1AE29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift */,
+				BE41E1AD29737EB900273902 /* README.md */,
+			);
+			path = "730. Count Different Palindromic Subsequences";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -779,6 +791,7 @@
 				BE41E1A8297370D000273902 /* 362. Design Hit Counter */,
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
+				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
 				BE41E1A429731FDC00273902 /* 772. Basic Calculator III */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
 			);
@@ -1005,6 +1018,7 @@
 				BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */,
 				BE41E186296F330D00273902 /* Day93.swift in Sources */,
 				BE86ED402956787000ACA2BF /* Day2.swift in Sources */,
+				BE41E1AF29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift in Sources */,
 				BE41E10429635C8C00273902 /* Day19.swift in Sources */,
 				BE41E12D2964B93400273902 /* Day20.swift in Sources */,
 				BE86ED412956787B00ACA2BF /* Day1.swift in Sources */,
