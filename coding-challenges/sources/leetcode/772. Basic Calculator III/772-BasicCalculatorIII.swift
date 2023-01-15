@@ -15,8 +15,7 @@
  *      - Space: `O(n)` where n is the length of the input string
  *
 */
-
-func calculate(_ s: String) -> Int {
+fileprivate func calculate(_ s: String) -> Int {
     // queue to store the output values in reverse polish notation
     var outputQueue = [String]()
     // stack to store the operators
@@ -31,7 +30,10 @@ func calculate(_ s: String) -> Int {
         let char = s[s.index(s.startIndex, offsetBy: i)]
 
         // ignore whitespaces
-        guard !char.isWhitespace else { continue }
+        guard !char.isWhitespace else {
+            i += 1
+            continue
+        }
 
         if isUnary {
             // if the next operator is unary,
@@ -71,7 +73,7 @@ func calculate(_ s: String) -> Int {
 
         else {
             // if the next character is an operator, it checks the operator precedence and pops operators
-            // from the operatorsStack and adds them and adds it to the outputQueue until the stack is empty
+            // from the operatorsStack and adds them to the outputQueue until the stack is empty
             // or the operator at the top of the stack has lower precedence. It then pushes the current operator
             // to the operatorStack
             while !operatorsStack.isEmpty,
