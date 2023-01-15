@@ -50,6 +50,8 @@
 		BE41E1A72973203000273902 /* 772-BasicCalculatorIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1A62973203000273902 /* 772-BasicCalculatorIII.swift */; };
 		BE41E1AB2973711600273902 /* 362-DesignHitCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1AA2973711600273902 /* 362-DesignHitCounter.swift */; };
 		BE41E1AF29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1AE29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift */; };
+		BE41E1B8297498C600273902 /* 629-KInversePairsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1B7297498C600273902 /* 629-KInversePairsArray.swift */; };
+		BE41E1BC2974BDB600273902 /* 227-BasicCalculatorII.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1BB2974BDB600273902 /* 227-BasicCalculatorII.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -188,6 +190,10 @@
 		BE41E1AA2973711600273902 /* 362-DesignHitCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "362-DesignHitCounter.swift"; sourceTree = "<group>"; };
 		BE41E1AD29737EB900273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1AE29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "730-CountDifferentPalindromicSubsequences.swift"; sourceTree = "<group>"; };
+		BE41E1B62974988A00273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1B7297498C600273902 /* 629-KInversePairsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "629-KInversePairsArray.swift"; sourceTree = "<group>"; };
+		BE41E1BA2974BD8C00273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1BB2974BDB600273902 /* 227-BasicCalculatorII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "227-BasicCalculatorII.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -616,6 +622,24 @@
 			path = "730. Count Different Palindromic Subsequences";
 			sourceTree = "<group>";
 		};
+		BE41E1B52974987500273902 /* 629. K Inverse Pairs Array */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1B7297498C600273902 /* 629-KInversePairsArray.swift */,
+				BE41E1B62974988A00273902 /* README.md */,
+			);
+			path = "629. K Inverse Pairs Array";
+			sourceTree = "<group>";
+		};
+		BE41E1B92974BD7700273902 /* 227. Basic Calculator II */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1BB2974BDB600273902 /* 227-BasicCalculatorII.swift */,
+				BE41E1BA2974BD8C00273902 /* README.md */,
+			);
+			path = "227. Basic Calculator II";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -785,12 +809,14 @@
 				BE41E12E2964F70F00273902 /* 145. Binary Tree Postorder Traversal */,
 				BE86ED562958FFA600ACA2BF /* 217. Contains Duplicate */,
 				BE41E1062963811B00273902 /* 219. Contains Duplicate II */,
+				BE41E1B92974BD7700273902 /* 227. Basic Calculator II */,
 				BE41E0F4295F6BEB00273902 /* 238. Product of Array Except Self */,
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
 				BE41E19D29722C3600273902 /* 297. Serialize and Deserialize Binary Tree */,
 				BE41E1A8297370D000273902 /* 362. Design Hit Counter */,
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
+				BE41E1B52974987500273902 /* 629. K Inverse Pairs Array */,
 				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
 				BE41E1A429731FDC00273902 /* 772. Basic Calculator III */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
@@ -1003,6 +1029,7 @@
 				BE41E13C2965F0CD00273902 /* Day21.swift in Sources */,
 				BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */,
 				BE41E1512968C65E00273902 /* UnderscorifySubstring.swift in Sources */,
+				BE41E1B8297498C600273902 /* 629-KInversePairsArray.swift in Sources */,
 				BE41E15C296C872E00273902 /* Day26.swift in Sources */,
 				BE41E1082963814400273902 /* 219-ContainsDuplicateII.swift in Sources */,
 				BE41E19C2972179900273902 /* 9-PalindromeNumber.swift in Sources */,
@@ -1056,6 +1083,7 @@
 				BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */,
 				BE41E1A72973203000273902 /* 772-BasicCalculatorIII.swift in Sources */,
 				BE86ED592958FFCA00ACA2BF /* 217-ContainsDuplicate.swift in Sources */,
+				BE41E1BC2974BDB600273902 /* 227-BasicCalculatorII.swift in Sources */,
 				BE41E19A2970B11D00273902 /* 67-AddBinary.swift in Sources */,
 				BE41E10129622D2D00273902 /* 15-3Sum.swift in Sources */,
 				BE41E161296CB45D00273902 /* 496-NextGreaterElementI.swift in Sources */,
