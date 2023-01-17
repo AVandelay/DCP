@@ -55,6 +55,7 @@
 		BE41E1C02974C99D00273902 /* 150-EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1BF2974C99D00273902 /* 150-EvaluateReversePolishNotation.swift */; };
 		BE41E1C42974CD6800273902 /* 224-BasicCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1C32974CD6800273902 /* 224-BasicCalculator.swift */; };
 		BE41E1CC29761E5500273902 /* 284-PeekingIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1CB29761E5500273902 /* 284-PeekingIterator.swift */; };
+		BE41E1D029770E0200273902 /* KadanesAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1CF29770E0200273902 /* KadanesAlgorithm.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -203,6 +204,8 @@
 		BE41E1C32974CD6800273902 /* 224-BasicCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "224-BasicCalculator.swift"; sourceTree = "<group>"; };
 		BE41E1CA29761E4600273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1CB29761E5500273902 /* 284-PeekingIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "284-PeekingIterator.swift"; sourceTree = "<group>"; };
+		BE41E1CE29770D5700273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1CF29770E0200273902 /* KadanesAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KadanesAlgorithm.swift; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -418,6 +421,7 @@
 		BE41E14D2968C08900273902 /* AlgoExpert */ = {
 			isa = PBXGroup;
 			children = (
+				BE41E1CD29770D3F00273902 /* Kadane's Algorithm */,
 				BE41E14E2968C09100273902 /* Underscorify String */,
 			);
 			path = AlgoExpert;
@@ -674,6 +678,15 @@
 				BE41E1CA29761E4600273902 /* README.md */,
 			);
 			path = "284. Peeking Iterator";
+			sourceTree = "<group>";
+		};
+		BE41E1CD29770D3F00273902 /* Kadane's Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1CF29770E0200273902 /* KadanesAlgorithm.swift */,
+				BE41E1CE29770D5700273902 /* README.md */,
+			);
+			path = "Kadane's Algorithm";
 			sourceTree = "<group>";
 		};
 		BE86ECBE294BF70300ACA2BF = {
@@ -1089,6 +1102,7 @@
 				BE41E10429635C8C00273902 /* Day19.swift in Sources */,
 				BE41E12D2964B93400273902 /* Day20.swift in Sources */,
 				BE86ED412956787B00ACA2BF /* Day1.swift in Sources */,
+				BE41E1D029770E0200273902 /* KadanesAlgorithm.swift in Sources */,
 				BE41E19F29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */,
 				BE41E188296F4CA900273902 /* Day148.swift in Sources */,
 				BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */,
