@@ -1,1 +1,1 @@
-# (Add Binary)[https://leetcode.com/problems/add-binary/]
+# [Add Binary](https://leetcode.com/problems/add-binary/)

@@ -1,1 +1,1 @@
-# (Basic Calculator)[https://leetcode.com/problems/basic-calculator/]
+# [Basic Calculator](https://leetcode.com/problems/basic-calculator/)

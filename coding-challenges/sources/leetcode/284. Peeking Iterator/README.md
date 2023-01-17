@@ -1,1 +1,1 @@
-# (Peeking Iterator)[https://leetcode.com/problems/peeking-iterator/]
+# [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)

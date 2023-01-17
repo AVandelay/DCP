@@ -1,1 +1,1 @@
-# (Design Hit Counter)[https://leetcode.com/problems/design-hit-counter/]
+# [Design Hit Counter](https://leetcode.com/problems/design-hit-counter/)
