@@ -54,6 +54,7 @@
 		BE41E1BC2974BDB600273902 /* 227-BasicCalculatorII.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1BB2974BDB600273902 /* 227-BasicCalculatorII.swift */; };
 		BE41E1C02974C99D00273902 /* 150-EvaluateReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1BF2974C99D00273902 /* 150-EvaluateReversePolishNotation.swift */; };
 		BE41E1C42974CD6800273902 /* 224-BasicCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1C32974CD6800273902 /* 224-BasicCalculator.swift */; };
+		BE41E1CC29761E5500273902 /* 284-PeekingIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1CB29761E5500273902 /* 284-PeekingIterator.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -200,6 +201,8 @@
 		BE41E1BF2974C99D00273902 /* 150-EvaluateReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "150-EvaluateReversePolishNotation.swift"; sourceTree = "<group>"; };
 		BE41E1C22974CD5500273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1C32974CD6800273902 /* 224-BasicCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "224-BasicCalculator.swift"; sourceTree = "<group>"; };
+		BE41E1CA29761E4600273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1CB29761E5500273902 /* 284-PeekingIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "284-PeekingIterator.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -664,6 +667,15 @@
 			path = "224. Basic Calculator";
 			sourceTree = "<group>";
 		};
+		BE41E1C929761E3200273902 /* 284. Peeking Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1CB29761E5500273902 /* 284-PeekingIterator.swift */,
+				BE41E1CA29761E4600273902 /* README.md */,
+			);
+			path = "284. Peeking Iterator";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -838,6 +850,7 @@
 				BE41E1B92974BD7700273902 /* 227. Basic Calculator II */,
 				BE41E0F4295F6BEB00273902 /* 238. Product of Array Except Self */,
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
+				BE41E1C929761E3200273902 /* 284. Peeking Iterator */,
 				BE41E19D29722C3600273902 /* 297. Serialize and Deserialize Binary Tree */,
 				BE41E1A8297370D000273902 /* 362. Design Hit Counter */,
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
@@ -1063,6 +1076,7 @@
 				BE41E0F6295F6C1500273902 /* 238-ProductOfArrayExceptSelf.swift in Sources */,
 				BE41E14829677E8800273902 /* Day22.swift in Sources */,
 				BE41E14C2968A2D600273902 /* Day23.swift in Sources */,
+				BE41E1CC29761E5500273902 /* 284-PeekingIterator.swift in Sources */,
 				BE86ED552958FBE900ACA2BF /* Day11.swift in Sources */,
 				BE86ED3E2956785F00ACA2BF /* Day4.swift in Sources */,
 				BE41E0CC295E0E5400273902 /* Day15.swift in Sources */,
