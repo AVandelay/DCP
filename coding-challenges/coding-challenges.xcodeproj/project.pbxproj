@@ -59,6 +59,7 @@
 		BE41E1D42977126900273902 /* StableInternships.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1D32977126900273902 /* StableInternships.swift */; };
 		BE41E1DA297760D800273902 /* 996-NumberOfSquarefulArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1D9297760D800273902 /* 996-NumberOfSquarefulArrays.swift */; };
 		BE41E1E329789C4000273902 /* 146-LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1E229789C4000273902 /* 146-LRUCache.swift */; };
+		BE41E1E72978A5E700273902 /* 916-WordSubsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -215,6 +216,8 @@
 		BE41E1D9297760D800273902 /* 996-NumberOfSquarefulArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "996-NumberOfSquarefulArrays.swift"; sourceTree = "<group>"; };
 		BE41E1E129789C1900273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1E229789C4000273902 /* 146-LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "146-LRUCache.swift"; sourceTree = "<group>"; };
+		BE41E1E52978A5B900273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "916-WordSubsets.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -726,6 +729,15 @@
 			path = "146. LRU Cache";
 			sourceTree = "<group>";
 		};
+		BE41E1E42978A5A200273902 /* 916. Word Subsets */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */,
+				BE41E1E52978A5B900273902 /* README.md */,
+			);
+			path = "916. Word Subsets";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -909,6 +921,7 @@
 				BE41E1B52974987500273902 /* 629. K Inverse Pairs Array */,
 				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
 				BE41E1A429731FDC00273902 /* 772. Basic Calculator III */,
+				BE41E1E42978A5A200273902 /* 916. Word Subsets */,
 				BE41E1D72977608400273902 /* 996. Number of Squareful Arrays */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
 			);
@@ -1132,6 +1145,7 @@
 				BE86ED552958FBE900ACA2BF /* Day11.swift in Sources */,
 				BE86ED3E2956785F00ACA2BF /* Day4.swift in Sources */,
 				BE41E0CC295E0E5400273902 /* Day15.swift in Sources */,
+				BE41E1E72978A5E700273902 /* 916-WordSubsets.swift in Sources */,
 				BE41E190296F75B500273902 /* Day273.swift in Sources */,
 				BE41E182296E178200273902 /* Day53.swift in Sources */,
 				BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */,
