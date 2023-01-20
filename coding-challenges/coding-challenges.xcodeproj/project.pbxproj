@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE34AA692979F3DF0055AB4A /* 722-RemoveComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA682979F3DF0055AB4A /* 722-RemoveComments.swift */; };
 		BE34AA6D297A002F0055AB4A /* 13-RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA6C297A002F0055AB4A /* 13-RomanToInteger.swift */; };
+		BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA70297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift */; };
 		BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */; };
 		BE41E0CC295E0E5400273902 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CB295E0E5400273902 /* Day15.swift */; };
 		BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */; };
@@ -100,6 +101,8 @@
 		BE34AA682979F3DF0055AB4A /* 722-RemoveComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "722-RemoveComments.swift"; sourceTree = "<group>"; };
 		BE34AA6B2979FFEE0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE34AA6C297A002F0055AB4A /* 13-RomanToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "13-RomanToInteger.swift"; sourceTree = "<group>"; };
+		BE34AA6F297A07660055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE34AA70297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "158-ReadNCharactersGivenread4II-CallMultipleTimes.swift"; sourceTree = "<group>"; };
 		BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-ValidParentheses.swift"; sourceTree = "<group>"; };
 		BE41E0CB295E0E5400273902 /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53-MaximumSubarray.swift"; sourceTree = "<group>"; };
@@ -281,6 +284,15 @@
 				BE34AA6B2979FFEE0055AB4A /* README.md */,
 			);
 			path = "13. Roman to Integer";
+			sourceTree = "<group>";
+		};
+		BE34AA6E297A074E0055AB4A /* 158. Read N Characters Given read4 II - Call Multiple Times */ = {
+			isa = PBXGroup;
+			children = (
+				BE34AA70297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift */,
+				BE34AA6F297A07660055AB4A /* README.md */,
+			);
+			path = "158. Read N Characters Given read4 II - Call Multiple Times";
 			sourceTree = "<group>";
 		};
 		BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */ = {
@@ -932,6 +944,7 @@
 				BE41E12E2964F70F00273902 /* 145. Binary Tree Postorder Traversal */,
 				BE41E1E029789C0600273902 /* 146. LRU Cache */,
 				BE41E1BD2974C97000273902 /* 150. Evaluate Reverse Polish Notation */,
+				BE34AA6E297A074E0055AB4A /* 158. Read N Characters Given read4 II - Call Multiple Times */,
 				BE86ED562958FFA600ACA2BF /* 217. Contains Duplicate */,
 				BE41E1062963811B00273902 /* 219. Contains Duplicate II */,
 				BE41E1C12974CD4300273902 /* 224. Basic Calculator */,
@@ -1197,6 +1210,7 @@
 				BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */,
 				BE41E159296A889A00273902 /* Day25.swift in Sources */,
 				BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */,
+				BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */,
 				BE41E1C42974CD6800273902 /* 224-BasicCalculator.swift in Sources */,
 				BE41E0FD296215BD00273902 /* Day18.swift in Sources */,
 				BE41E1312964F7F400273902 /* 94-BinaryTreeInorderTraversal.swift in Sources */,
