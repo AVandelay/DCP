@@ -12,6 +12,7 @@
 		BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA70297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift */; };
 		BE34AA75297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA74297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift */; };
 		BE34AA81297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA80297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift */; };
+		BE34AA84297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA83297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift */; };
 		BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */; };
 		BE41E0CC295E0E5400273902 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CB295E0E5400273902 /* Day15.swift */; };
 		BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */; };
@@ -109,6 +110,8 @@
 		BE34AA74297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "348-DesignTic-Tac-Toe.swift"; sourceTree = "<group>"; };
 		BE34AA7F297B2BA00055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE34AA80297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "895-MaximumFrequencyStack .swift"; sourceTree = "<group>"; };
+		BE34AA83297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "823-BinaryTreesWithFactors.swift"; sourceTree = "<group>"; };
+		BE34AA85297B387D0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-ValidParentheses.swift"; sourceTree = "<group>"; };
 		BE41E0CB295E0E5400273902 /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53-MaximumSubarray.swift"; sourceTree = "<group>"; };
@@ -317,6 +320,15 @@
 				BE34AA7F297B2BA00055AB4A /* README.md */,
 			);
 			path = "895. Maximum Frequency Stack ";
+			sourceTree = "<group>";
+		};
+		BE34AA82297B385B0055AB4A /* 823. Binary Trees With Factors */ = {
+			isa = PBXGroup;
+			children = (
+				BE34AA83297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift */,
+				BE34AA85297B387D0055AB4A /* README.md */,
+			);
+			path = "823. Binary Trees With Factors";
 			sourceTree = "<group>";
 		};
 		BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */ = {
@@ -985,6 +997,7 @@
 				BE34AA662979F3B00055AB4A /* 722. Remove Comments */,
 				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
 				BE41E1A429731FDC00273902 /* 772. Basic Calculator III */,
+				BE34AA82297B385B0055AB4A /* 823. Binary Trees With Factors */,
 				BE34AA7E297B2B8C0055AB4A /* 895. Maximum Frequency Stack  */,
 				BE41E1E42978A5A200273902 /* 916. Word Subsets */,
 				BE41E1D72977608400273902 /* 996. Number of Squareful Arrays */,
@@ -1232,6 +1245,7 @@
 				BE41E1DA297760D800273902 /* 996-NumberOfSquarefulArrays.swift in Sources */,
 				BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */,
 				BE41E1C02974C99D00273902 /* 150-EvaluateReversePolishNotation.swift in Sources */,
+				BE34AA84297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift in Sources */,
 				BE41E1292964B06900273902 /* 144-BinaryTreePreorderTraversal.swift in Sources */,
 				BE86ED87295A640600ACA2BF /* Day13.swift in Sources */,
 				BE41E1402966127800273902 /* 1228-MissingNumberInArithmeticProgression.swift in Sources */,
