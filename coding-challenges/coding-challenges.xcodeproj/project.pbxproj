@@ -10,6 +10,7 @@
 		BE34AA692979F3DF0055AB4A /* 722-RemoveComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA682979F3DF0055AB4A /* 722-RemoveComments.swift */; };
 		BE34AA6D297A002F0055AB4A /* 13-RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA6C297A002F0055AB4A /* 13-RomanToInteger.swift */; };
 		BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA70297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift */; };
+		BE34AA75297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA74297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift */; };
 		BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */; };
 		BE41E0CC295E0E5400273902 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CB295E0E5400273902 /* Day15.swift */; };
 		BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */; };
@@ -103,6 +104,8 @@
 		BE34AA6C297A002F0055AB4A /* 13-RomanToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "13-RomanToInteger.swift"; sourceTree = "<group>"; };
 		BE34AA6F297A07660055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE34AA70297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "158-ReadNCharactersGivenread4II-CallMultipleTimes.swift"; sourceTree = "<group>"; };
+		BE34AA73297A26080055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE34AA74297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "348-DesignTic-Tac-Toe.swift"; sourceTree = "<group>"; };
 		BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-ValidParentheses.swift"; sourceTree = "<group>"; };
 		BE41E0CB295E0E5400273902 /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53-MaximumSubarray.swift"; sourceTree = "<group>"; };
@@ -293,6 +296,15 @@
 				BE34AA6F297A07660055AB4A /* README.md */,
 			);
 			path = "158. Read N Characters Given read4 II - Call Multiple Times";
+			sourceTree = "<group>";
+		};
+		BE34AA72297A25F10055AB4A /* 348. Design Tic-Tac-Toe */ = {
+			isa = PBXGroup;
+			children = (
+				BE34AA74297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift */,
+				BE34AA73297A26080055AB4A /* README.md */,
+			);
+			path = "348. Design Tic-Tac-Toe";
 			sourceTree = "<group>";
 		};
 		BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */ = {
@@ -953,6 +965,7 @@
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
 				BE41E1C929761E3200273902 /* 284. Peeking Iterator */,
 				BE41E19D29722C3600273902 /* 297. Serialize and Deserialize Binary Tree */,
+				BE34AA72297A25F10055AB4A /* 348. Design Tic-Tac-Toe */,
 				BE41E1A8297370D000273902 /* 362. Design Hit Counter */,
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
@@ -1176,6 +1189,7 @@
 				BE41E15C296C872E00273902 /* Day26.swift in Sources */,
 				BE41E1082963814400273902 /* 219-ContainsDuplicateII.swift in Sources */,
 				BE41E19C2972179900273902 /* 9-PalindromeNumber.swift in Sources */,
+				BE34AA75297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift in Sources */,
 				BE86ED3D2956785400ACA2BF /* Day5.swift in Sources */,
 				BE41E0F6295F6C1500273902 /* 238-ProductOfArrayExceptSelf.swift in Sources */,
 				BE41E14829677E8800273902 /* Day22.swift in Sources */,
