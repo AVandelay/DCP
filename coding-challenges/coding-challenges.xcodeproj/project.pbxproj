@@ -66,6 +66,7 @@
 		BE41E1DA297760D800273902 /* 996-NumberOfSquarefulArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1D9297760D800273902 /* 996-NumberOfSquarefulArrays.swift */; };
 		BE41E1E329789C4000273902 /* 146-LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1E229789C4000273902 /* 146-LRUCache.swift */; };
 		BE41E1E72978A5E700273902 /* 916-WordSubsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */; };
+		BE46115029885C5800DAE7B1 /* Day132.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46114F29885C5800DAE7B1 /* Day132.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -236,6 +237,8 @@
 		BE41E1E229789C4000273902 /* 146-LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "146-LRUCache.swift"; sourceTree = "<group>"; };
 		BE41E1E52978A5B900273902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "916-WordSubsets.swift"; sourceTree = "<group>"; };
+		BE46114E29885C0C00DAE7B1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE46114F29885C5800DAE7B1 /* Day132.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day132.swift; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -810,6 +813,15 @@
 			path = "916. Word Subsets";
 			sourceTree = "<group>";
 		};
+		BE46114D298859DB00DAE7B1 /* Day 132 */ = {
+			isa = PBXGroup;
+			children = (
+				BE46114F29885C5800DAE7B1 /* Day132.swift */,
+				BE46114E29885C0C00DAE7B1 /* README.md */,
+			);
+			path = "Day 132";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -848,6 +860,7 @@
 				BE41E176296E15C100273902 /* Day 210 */,
 				BE41E174296E153400273902 /* Day 196 */,
 				BE41E172296E14FB00273902 /* Day 148 */,
+				BE46114D298859DB00DAE7B1 /* Day 132 */,
 				BE41E170296E14C900273902 /* Day 93 */,
 				BE41E16D296E143C00273902 /* Day 74 */,
 				BE41E16B296E140300273902 /* Day 53 */,
@@ -1214,6 +1227,7 @@
 				BE41E1B8297498C600273902 /* 629-KInversePairsArray.swift in Sources */,
 				BE41E15C296C872E00273902 /* Day26.swift in Sources */,
 				BE41E1082963814400273902 /* 219-ContainsDuplicateII.swift in Sources */,
+				BE46115029885C5800DAE7B1 /* Day132.swift in Sources */,
 				BE41E19C2972179900273902 /* 9-PalindromeNumber.swift in Sources */,
 				BE34AA75297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift in Sources */,
 				BE86ED3D2956785400ACA2BF /* Day5.swift in Sources */,
