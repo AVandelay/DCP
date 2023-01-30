@@ -8,7 +8,7 @@
  This allows for constant time insertions (O(1)) and retrievals (O(n)) of the number of hits in the last 5 minutes.
  The space complexity is O(n) where n is the buffer size.
  */
-class HitCounter {
+fileprivate class HitCounter {
 
     // MARK: - Properties
 
