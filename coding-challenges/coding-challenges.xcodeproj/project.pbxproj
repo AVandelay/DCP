@@ -90,6 +90,7 @@
 		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
 		BEBA17C92989AA7F00D2E75C /* JigsawPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */; };
 		BEBA17CB2989B2A500D2E75C /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */; };
+		BEBA17CD2989B95600D2E75C /* ElevatorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17CC2989B95600D2E75C /* ElevatorSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -270,6 +271,7 @@
 		BEBA17C4298898BC00D2E75C /* Day319.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day319.swift; sourceTree = "<group>"; };
 		BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawPuzzle.swift; sourceTree = "<group>"; };
 		BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
+		BEBA17CC2989B95600D2E75C /* ElevatorSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1161,6 +1163,7 @@
 			children = (
 				BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */,
 				BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */,
+				BEBA17CC2989B95600D2E75C /* ElevatorSystem.swift */,
 			);
 			path = "Chapter 7";
 			sourceTree = "<group>";
@@ -1304,6 +1307,7 @@
 				BE41E19F29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */,
 				BE41E188296F4CA900273902 /* Day148.swift in Sources */,
 				BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */,
+				BEBA17CD2989B95600D2E75C /* ElevatorSystem.swift in Sources */,
 				BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */,
 				BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */,
 				BE41E155296A207200273902 /* Day24.swift in Sources */,
