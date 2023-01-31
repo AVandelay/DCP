@@ -86,6 +86,7 @@
 		BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */; };
 		BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */; };
 		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
+		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -260,6 +261,8 @@
 		BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindToppledBricks.swift; sourceTree = "<group>"; };
 		BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242-ValidAnagram.swift"; sourceTree = "<group>"; };
 		BE86EDC1295CB5C700ACA2BF /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
+		BEBA17BF298886A200D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEBA17C0298886C700D2E75C /* Day219.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day219.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -857,6 +860,7 @@
 				BE41E17C296E16A500273902 /* Day 318 */,
 				BE41E17A296E165F00273902 /* Day 273 */,
 				BE41E178296E161D00273902 /* Day 233 */,
+				BEBA17BE2988868C00D2E75C /* Day 219 */,
 				BE41E176296E15C100273902 /* Day 210 */,
 				BE41E174296E153400273902 /* Day 196 */,
 				BE41E172296E14FB00273902 /* Day 148 */,
@@ -1117,6 +1121,15 @@
 			path = "Day 14";
 			sourceTree = "<group>";
 		};
+		BEBA17BE2988868C00D2E75C /* Day 219 */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17C0298886C700D2E75C /* Day219.swift */,
+				BEBA17BF298886A200D2E75C /* README.md */,
+			);
+			path = "Day 219";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1235,6 +1248,7 @@
 				BE41E14829677E8800273902 /* Day22.swift in Sources */,
 				BE41E14C2968A2D600273902 /* Day23.swift in Sources */,
 				BE41E1CC29761E5500273902 /* 284-PeekingIterator.swift in Sources */,
+				BEBA17C1298886C700D2E75C /* Day219.swift in Sources */,
 				BE86ED552958FBE900ACA2BF /* Day11.swift in Sources */,
 				BE86ED3E2956785F00ACA2BF /* Day4.swift in Sources */,
 				BE34AA81297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift in Sources */,
