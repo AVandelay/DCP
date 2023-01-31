@@ -87,6 +87,7 @@
 		BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */; };
 		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
 		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
+		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -263,6 +264,8 @@
 		BE86EDC1295CB5C700ACA2BF /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		BEBA17BF298886A200D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17C0298886C700D2E75C /* Day219.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day219.swift; sourceTree = "<group>"; };
+		BEBA17C32988983100D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEBA17C4298898BC00D2E75C /* Day319.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day319.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -857,6 +860,7 @@
 			isa = PBXGroup;
 			children = (
 				BE41E17F296E170800273902 /* Day 337 */,
+				BEBA17C22988981D00D2E75C /* Day 319 */,
 				BE41E17C296E16A500273902 /* Day 318 */,
 				BE41E17A296E165F00273902 /* Day 273 */,
 				BE41E178296E161D00273902 /* Day 233 */,
@@ -1130,6 +1134,15 @@
 			path = "Day 219";
 			sourceTree = "<group>";
 		};
+		BEBA17C22988981D00D2E75C /* Day 319 */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17C4298898BC00D2E75C /* Day319.swift */,
+				BEBA17C32988983100D2E75C /* README.md */,
+			);
+			path = "Day 319";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1268,6 +1281,7 @@
 				BE41E19F29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */,
 				BE41E188296F4CA900273902 /* Day148.swift in Sources */,
 				BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */,
+				BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */,
 				BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */,
 				BE41E155296A207200273902 /* Day24.swift in Sources */,
 				BE41E1DA297760D800273902 /* 996-NumberOfSquarefulArrays.swift in Sources */,
