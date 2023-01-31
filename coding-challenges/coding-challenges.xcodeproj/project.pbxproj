@@ -89,6 +89,7 @@
 		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
 		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
 		BEBA17C92989AA7F00D2E75C /* JigsawPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */; };
+		BEBA17CB2989B2A500D2E75C /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -268,6 +269,7 @@
 		BEBA17C32988983100D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17C4298898BC00D2E75C /* Day319.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day319.swift; sourceTree = "<group>"; };
 		BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawPuzzle.swift; sourceTree = "<group>"; };
+		BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1158,6 +1160,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */,
+				BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */,
 			);
 			path = "Chapter 7";
 			sourceTree = "<group>";
@@ -1306,6 +1309,7 @@
 				BE41E155296A207200273902 /* Day24.swift in Sources */,
 				BE41E1DA297760D800273902 /* 996-NumberOfSquarefulArrays.swift in Sources */,
 				BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */,
+				BEBA17CB2989B2A500D2E75C /* ParkingLot.swift in Sources */,
 				BE41E1C02974C99D00273902 /* 150-EvaluateReversePolishNotation.swift in Sources */,
 				BE34AA84297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift in Sources */,
 				BE41E1292964B06900273902 /* 144-BinaryTreePreorderTraversal.swift in Sources */,
