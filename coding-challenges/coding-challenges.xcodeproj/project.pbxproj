@@ -91,6 +91,8 @@
 		BEBA17C92989AA7F00D2E75C /* JigsawPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */; };
 		BEBA17CB2989B2A500D2E75C /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */; };
 		BEBA17CD2989B95600D2E75C /* ElevatorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17CC2989B95600D2E75C /* ElevatorSystem.swift */; };
+		BEBA17D12989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D02989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift */; };
+		BEBA17D52989D22200D2E75C /* 729-MyCalendarI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D42989D22200D2E75C /* 729-MyCalendarI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -272,6 +274,10 @@
 		BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawPuzzle.swift; sourceTree = "<group>"; };
 		BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
 		BEBA17CC2989B95600D2E75C /* ElevatorSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatorSystem.swift; sourceTree = "<group>"; };
+		BEBA17CF2989C4B400D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.documentation.markup; };
+		BEBA17D02989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "380-InsertDeleteGetRandomO(1).swift"; sourceTree = "<group>"; };
+		BEBA17D32989D20600D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEBA17D42989D22200D2E75C /* 729-MyCalendarI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "729-MyCalendarI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1020,9 +1026,11 @@
 				BE34AA72297A25F10055AB4A /* 348. Design Tic-Tac-Toe */,
 				BE41E1A8297370D000273902 /* 362. Design Hit Counter */,
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
+				BEBA17CE2989C4A300D2E75C /* 380. Insert Delete GetRandom O(1) */,
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
 				BE41E1B52974987500273902 /* 629. K Inverse Pairs Array */,
 				BE34AA662979F3B00055AB4A /* 722. Remove Comments */,
+				BEBA17D22989D1F400D2E75C /* 729. My Calendar I */,
 				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
 				BE41E1A429731FDC00273902 /* 772. Basic Calculator III */,
 				BE34AA82297B385B0055AB4A /* 823. Binary Trees With Factors */,
@@ -1168,6 +1176,24 @@
 			path = "Chapter 7";
 			sourceTree = "<group>";
 		};
+		BEBA17CE2989C4A300D2E75C /* 380. Insert Delete GetRandom O(1) */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17D02989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift */,
+				BEBA17CF2989C4B400D2E75C /* README.md */,
+			);
+			path = "380. Insert Delete GetRandom O(1)";
+			sourceTree = "<group>";
+		};
+		BEBA17D22989D1F400D2E75C /* 729. My Calendar I */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17D42989D22200D2E75C /* 729-MyCalendarI.swift */,
+				BEBA17D32989D20600D2E75C /* README.md */,
+			);
+			path = "729. My Calendar I";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1297,6 +1323,7 @@
 				BE41E182296E178200273902 /* Day53.swift in Sources */,
 				BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */,
 				BE41E186296F330D00273902 /* Day93.swift in Sources */,
+				BEBA17D12989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift in Sources */,
 				BE86ED402956787000ACA2BF /* Day2.swift in Sources */,
 				BE41E1AF29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift in Sources */,
 				BE34AA692979F3DF0055AB4A /* 722-RemoveComments.swift in Sources */,
@@ -1322,6 +1349,7 @@
 				BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */,
 				BE41E159296A889A00273902 /* Day25.swift in Sources */,
 				BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */,
+				BEBA17D52989D22200D2E75C /* 729-MyCalendarI.swift in Sources */,
 				BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */,
 				BE41E1C42974CD6800273902 /* 224-BasicCalculator.swift in Sources */,
 				BE41E0FD296215BD00273902 /* Day18.swift in Sources */,
