@@ -88,6 +88,7 @@
 		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
 		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
 		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
+		BEBA17C92989AA7F00D2E75C /* JigsawPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -266,6 +267,7 @@
 		BEBA17C0298886C700D2E75C /* Day219.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day219.swift; sourceTree = "<group>"; };
 		BEBA17C32988983100D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17C4298898BC00D2E75C /* Day319.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day319.swift; sourceTree = "<group>"; };
+		BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigsawPuzzle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -848,6 +850,7 @@
 		BE86ECC9294BF70300ACA2BF /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				BEBA17C62989AA3C00D2E75C /* Cracking The Coding Interview */,
 				BE41E14D2968C08900273902 /* AlgoExpert */,
 				BE86ED89295B790D00ACA2BF /* GIQ */,
 				BE86ED4329567A5E00ACA2BF /* leetcode */,
@@ -1143,6 +1146,22 @@
 			path = "Day 319";
 			sourceTree = "<group>";
 		};
+		BEBA17C62989AA3C00D2E75C /* Cracking The Coding Interview */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17C72989AA6E00D2E75C /* Chapter 7 */,
+			);
+			path = "Cracking The Coding Interview";
+			sourceTree = "<group>";
+		};
+		BEBA17C72989AA6E00D2E75C /* Chapter 7 */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */,
+			);
+			path = "Chapter 7";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1266,6 +1285,7 @@
 				BE86ED3E2956785F00ACA2BF /* Day4.swift in Sources */,
 				BE34AA81297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift in Sources */,
 				BE41E0CC295E0E5400273902 /* Day15.swift in Sources */,
+				BEBA17C92989AA7F00D2E75C /* JigsawPuzzle.swift in Sources */,
 				BE41E1E72978A5E700273902 /* 916-WordSubsets.swift in Sources */,
 				BE41E190296F75B500273902 /* Day273.swift in Sources */,
 				BE41E182296E178200273902 /* Day53.swift in Sources */,
