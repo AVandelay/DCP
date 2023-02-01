@@ -93,6 +93,7 @@
 		BEBA17CD2989B95600D2E75C /* ElevatorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17CC2989B95600D2E75C /* ElevatorSystem.swift */; };
 		BEBA17D12989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D02989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift */; };
 		BEBA17D52989D22200D2E75C /* 729-MyCalendarI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D42989D22200D2E75C /* 729-MyCalendarI.swift */; };
+		BEBA17D82989F93700D2E75C /* 295-FindMedianFromDataStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D72989F93700D2E75C /* 295-FindMedianFromDataStream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -278,6 +279,8 @@
 		BEBA17D02989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "380-InsertDeleteGetRandomO(1).swift"; sourceTree = "<group>"; };
 		BEBA17D32989D20600D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17D42989D22200D2E75C /* 729-MyCalendarI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "729-MyCalendarI.swift"; sourceTree = "<group>"; };
+		BEBA17D72989F93700D2E75C /* 295-FindMedianFromDataStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "295-FindMedianFromDataStream.swift"; sourceTree = "<group>"; };
+		BEBA17D92989F94700D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1022,6 +1025,7 @@
 				BE41E0F4295F6BEB00273902 /* 238. Product of Array Except Self */,
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
 				BE41E1C929761E3200273902 /* 284. Peeking Iterator */,
+				BEBA17D62989F91D00D2E75C /* 295. Find Median from Data Stream */,
 				BE41E19D29722C3600273902 /* 297. Serialize and Deserialize Binary Tree */,
 				BE34AA72297A25F10055AB4A /* 348. Design Tic-Tac-Toe */,
 				BE41E1A8297370D000273902 /* 362. Design Hit Counter */,
@@ -1194,6 +1198,15 @@
 			path = "729. My Calendar I";
 			sourceTree = "<group>";
 		};
+		BEBA17D62989F91D00D2E75C /* 295. Find Median from Data Stream */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17D72989F93700D2E75C /* 295-FindMedianFromDataStream.swift */,
+				BEBA17D92989F94700D2E75C /* README.md */,
+			);
+			path = "295. Find Median from Data Stream";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1298,6 +1311,7 @@
 				BE86ED4729567AEF00ACA2BF /* 1-TwoSum.swift in Sources */,
 				BE41E18A296F542900273902 /* Day196.swift in Sources */,
 				BE41E16A296E090C00273902 /* 11-ContainerWithMostWater.swift in Sources */,
+				BEBA17D82989F93700D2E75C /* 295-FindMedianFromDataStream.swift in Sources */,
 				BE41E13C2965F0CD00273902 /* Day21.swift in Sources */,
 				BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */,
 				BE41E1512968C65E00273902 /* UnderscorifySubstring.swift in Sources */,
