@@ -95,6 +95,8 @@
 		BEBA17D52989D22200D2E75C /* 729-MyCalendarI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D42989D22200D2E75C /* 729-MyCalendarI.swift */; };
 		BEBA17D82989F93700D2E75C /* 295-FindMedianFromDataStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D72989F93700D2E75C /* 295-FindMedianFromDataStream.swift */; };
 		BEBA17DD298A24AC00D2E75C /* 1166-DesignFileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17DC298A24AC00D2E75C /* 1166-DesignFileSystem.swift */; };
+		BEBA17E0298A3AD800D2E75C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BEBA17DF298A3AD800D2E75C /* README.md */; };
+		BEBA17E2298A3B0400D2E75C /* 2193-MinimumNumberOfMovesToMakePalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17E1298A3B0400D2E75C /* 2193-MinimumNumberOfMovesToMakePalindrome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -284,6 +286,8 @@
 		BEBA17D92989F94700D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17DB298A249A00D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17DC298A24AC00D2E75C /* 1166-DesignFileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1166-DesignFileSystem.swift"; sourceTree = "<group>"; };
+		BEBA17DF298A3AD800D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEBA17E1298A3B0400D2E75C /* 2193-MinimumNumberOfMovesToMakePalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2193-MinimumNumberOfMovesToMakePalindrome.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1046,6 +1050,7 @@
 				BE41E1D72977608400273902 /* 996. Number of Squareful Arrays */,
 				BEBA17DA298A248900D2E75C /* 1166. Design File System */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
+				BEBA17DE298A3AC900D2E75C /* 2193. Minimum Number of Moves to Make Palindrome */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -1220,6 +1225,15 @@
 			path = "1166. Design File System";
 			sourceTree = "<group>";
 		};
+		BEBA17DE298A3AC900D2E75C /* 2193. Minimum Number of Moves to Make Palindrome */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17E1298A3B0400D2E75C /* 2193-MinimumNumberOfMovesToMakePalindrome.swift */,
+				BEBA17DF298A3AD800D2E75C /* README.md */,
+			);
+			path = "2193. Minimum Number of Moves to Make Palindrome";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1304,6 +1318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBA17E0298A3AD800D2E75C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1374,6 +1389,7 @@
 				BE86ED87295A640600ACA2BF /* Day13.swift in Sources */,
 				BE41E1402966127800273902 /* 1228-MissingNumberInArithmeticProgression.swift in Sources */,
 				BE86ED67295A316400ACA2BF /* 121-maxProfit.swift in Sources */,
+				BEBA17E2298A3B0400D2E75C /* 2193-MinimumNumberOfMovesToMakePalindrome.swift in Sources */,
 				BE41E159296A889A00273902 /* Day25.swift in Sources */,
 				BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */,
 				BEBA17D52989D22200D2E75C /* 729-MyCalendarI.swift in Sources */,
