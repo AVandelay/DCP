@@ -94,6 +94,7 @@
 		BEBA17D12989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D02989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift */; };
 		BEBA17D52989D22200D2E75C /* 729-MyCalendarI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D42989D22200D2E75C /* 729-MyCalendarI.swift */; };
 		BEBA17D82989F93700D2E75C /* 295-FindMedianFromDataStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17D72989F93700D2E75C /* 295-FindMedianFromDataStream.swift */; };
+		BEBA17DD298A24AC00D2E75C /* 1166-DesignFileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17DC298A24AC00D2E75C /* 1166-DesignFileSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -281,6 +282,8 @@
 		BEBA17D42989D22200D2E75C /* 729-MyCalendarI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "729-MyCalendarI.swift"; sourceTree = "<group>"; };
 		BEBA17D72989F93700D2E75C /* 295-FindMedianFromDataStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "295-FindMedianFromDataStream.swift"; sourceTree = "<group>"; };
 		BEBA17D92989F94700D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEBA17DB298A249A00D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEBA17DC298A24AC00D2E75C /* 1166-DesignFileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1166-DesignFileSystem.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1041,6 +1044,7 @@
 				BE34AA7E297B2B8C0055AB4A /* 895. Maximum Frequency Stack  */,
 				BE41E1E42978A5A200273902 /* 916. Word Subsets */,
 				BE41E1D72977608400273902 /* 996. Number of Squareful Arrays */,
+				BEBA17DA298A248900D2E75C /* 1166. Design File System */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
 			);
 			path = leetcode;
@@ -1205,6 +1209,15 @@
 				BEBA17D92989F94700D2E75C /* README.md */,
 			);
 			path = "295. Find Median from Data Stream";
+			sourceTree = "<group>";
+		};
+		BEBA17DA298A248900D2E75C /* 1166. Design File System */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17DB298A249A00D2E75C /* README.md */,
+				BEBA17DC298A24AC00D2E75C /* 1166-DesignFileSystem.swift */,
+			);
+			path = "1166. Design File System";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1380,6 +1393,7 @@
 				BE41E0F3295F552000273902 /* Day16.swift in Sources */,
 				BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */,
 				BE41E1352964F8A100273902 /* 145-BinaryTreePostorderTraversal.swift in Sources */,
+				BEBA17DD298A24AC00D2E75C /* 1166-DesignFileSystem.swift in Sources */,
 				BE34AA6D297A002F0055AB4A /* 13-RomanToInteger.swift in Sources */,
 				BE86ED422956789700ACA2BF /* Day6.swift in Sources */,
 				BE41E0FA2960CE6300273902 /* Day17.swift in Sources */,
