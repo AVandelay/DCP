@@ -68,6 +68,7 @@
 		BE41E1E72978A5E700273902 /* 916-WordSubsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */; };
 		BE46115029885C5800DAE7B1 /* Day132.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46114F29885C5800DAE7B1 /* Day132.swift */; };
 		BE6362A4298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362A3298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift */; };
+		BE6362AC298CDAB000A6F4C3 /* 706-DesignHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362AB298CDAB000A6F4C3 /* 706-DesignHashMap.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -253,6 +254,8 @@
 		BE46114F29885C5800DAE7B1 /* Day132.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day132.swift; sourceTree = "<group>"; };
 		BE6362A3298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1774-ClosestDessertCost.swift"; sourceTree = "<group>"; };
 		BE6362A5298A433600A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE6362AB298CDAB000A6F4C3 /* 706-DesignHashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "706-DesignHashMap.swift"; sourceTree = "<group>"; };
+		BE6362AD298CDAC000A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -862,6 +865,15 @@
 			path = "1774. Closest Dessert Cost";
 			sourceTree = "<group>";
 		};
+		BE6362AA298CDA9000A6F4C3 /* 706. Design HashMap */ = {
+			isa = PBXGroup;
+			children = (
+				BE6362AB298CDAB000A6F4C3 /* 706-DesignHashMap.swift */,
+				BE6362AD298CDAC000A6F4C3 /* README.md */,
+			);
+			path = "706. Design HashMap";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -1052,6 +1064,7 @@
 				BEBA17CE2989C4A300D2E75C /* 380. Insert Delete GetRandom O(1) */,
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
 				BE41E1B52974987500273902 /* 629. K Inverse Pairs Array */,
+				BE6362AA298CDA9000A6F4C3 /* 706. Design HashMap */,
 				BE34AA662979F3B00055AB4A /* 722. Remove Comments */,
 				BEBA17D22989D1F400D2E75C /* 729. My Calendar I */,
 				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
@@ -1232,8 +1245,8 @@
 		BEBA17DA298A248900D2E75C /* 1166. Design File System */ = {
 			isa = PBXGroup;
 			children = (
-				BEBA17DB298A249A00D2E75C /* README.md */,
 				BEBA17DC298A24AC00D2E75C /* 1166-DesignFileSystem.swift */,
+				BEBA17DB298A249A00D2E75C /* README.md */,
 			);
 			path = "1166. Design File System";
 			sourceTree = "<group>";
@@ -1381,6 +1394,7 @@
 				BE41E186296F330D00273902 /* Day93.swift in Sources */,
 				BEBA17D12989C4E800D2E75C /* 380-InsertDeleteGetRandomO(1).swift in Sources */,
 				BE86ED402956787000ACA2BF /* Day2.swift in Sources */,
+				BE6362AC298CDAB000A6F4C3 /* 706-DesignHashMap.swift in Sources */,
 				BE41E1AF29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift in Sources */,
 				BE34AA692979F3DF0055AB4A /* 722-RemoveComments.swift in Sources */,
 				BE41E10429635C8C00273902 /* Day19.swift in Sources */,
