@@ -69,6 +69,7 @@
 		BE46115029885C5800DAE7B1 /* Day132.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46114F29885C5800DAE7B1 /* Day132.swift */; };
 		BE6362A4298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362A3298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift */; };
 		BE6362AC298CDAB000A6F4C3 /* 706-DesignHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362AB298CDAB000A6F4C3 /* 706-DesignHashMap.swift */; };
+		BE6362B1298CE6C400A6F4C3 /* 981-TimeBasedKey-ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362B0298CE40700A6F4C3 /* 981-TimeBasedKey-ValueStore.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -256,6 +257,8 @@
 		BE6362A5298A433600A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE6362AB298CDAB000A6F4C3 /* 706-DesignHashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "706-DesignHashMap.swift"; sourceTree = "<group>"; };
 		BE6362AD298CDAC000A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE6362AF298CE3F300A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE6362B0298CE40700A6F4C3 /* 981-TimeBasedKey-ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "981-TimeBasedKey-ValueStore.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -874,6 +877,15 @@
 			path = "706. Design HashMap";
 			sourceTree = "<group>";
 		};
+		BE6362AE298CE3E300A6F4C3 /* 981. Time Based Key-Value Store */ = {
+			isa = PBXGroup;
+			children = (
+				BE6362B0298CE40700A6F4C3 /* 981-TimeBasedKey-ValueStore.swift */,
+				BE6362AF298CE3F300A6F4C3 /* README.md */,
+			);
+			path = "981. Time Based Key-Value Store";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -1072,6 +1084,7 @@
 				BE34AA82297B385B0055AB4A /* 823. Binary Trees With Factors */,
 				BE34AA7E297B2B8C0055AB4A /* 895. Maximum Frequency Stack  */,
 				BE41E1E42978A5A200273902 /* 916. Word Subsets */,
+				BE6362AE298CE3E300A6F4C3 /* 981. Time Based Key-Value Store */,
 				BE41E1D72977608400273902 /* 996. Number of Squareful Arrays */,
 				BEBA17DA298A248900D2E75C /* 1166. Design File System */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
@@ -1405,6 +1418,7 @@
 				BE41E188296F4CA900273902 /* Day148.swift in Sources */,
 				BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */,
 				BEBA17CD2989B95600D2E75C /* ElevatorSystem.swift in Sources */,
+				BE6362B1298CE6C400A6F4C3 /* 981-TimeBasedKey-ValueStore.swift in Sources */,
 				BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */,
 				BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */,
 				BE41E155296A207200273902 /* Day24.swift in Sources */,
