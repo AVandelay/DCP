@@ -70,6 +70,7 @@
 		BE6362A4298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362A3298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift */; };
 		BE6362AC298CDAB000A6F4C3 /* 706-DesignHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362AB298CDAB000A6F4C3 /* 706-DesignHashMap.swift */; };
 		BE6362B1298CE6C400A6F4C3 /* 981-TimeBasedKey-ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362B0298CE40700A6F4C3 /* 981-TimeBasedKey-ValueStore.swift */; };
+		BE6362B5298D860600A6F4C3 /* 716-MaxStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362B4298D860600A6F4C3 /* 716-MaxStack.swift */; };
 		BE86ED3A2956781E00ACA2BF /* Day9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED30295677EE00ACA2BF /* Day9.swift */; };
 		BE86ED3B2956783400ACA2BF /* Day8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED1F295677EE00ACA2BF /* Day8.swift */; };
 		BE86ED3C2956783C00ACA2BF /* Day7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED2A295677EE00ACA2BF /* Day7.swift */; };
@@ -100,6 +101,7 @@
 		BEBA17DD298A24AC00D2E75C /* 1166-DesignFileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17DC298A24AC00D2E75C /* 1166-DesignFileSystem.swift */; };
 		BEBA17E0298A3AD800D2E75C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BEBA17DF298A3AD800D2E75C /* README.md */; };
 		BEBA17E2298A3B0400D2E75C /* 2193-MinimumNumberOfMovesToMakePalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17E1298A3B0400D2E75C /* 2193-MinimumNumberOfMovesToMakePalindrome.swift */; };
+		BEF764222995A0150050171B /* 836-RectangleOverlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF764212995A0150050171B /* 836-RectangleOverlap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -259,6 +261,8 @@
 		BE6362AD298CDAC000A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE6362AF298CE3F300A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE6362B0298CE40700A6F4C3 /* 981-TimeBasedKey-ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "981-TimeBasedKey-ValueStore.swift"; sourceTree = "<group>"; };
+		BE6362B3298D85F200A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE6362B4298D860600A6F4C3 /* 716-MaxStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "716-MaxStack.swift"; sourceTree = "<group>"; };
 		BE86ECC7294BF70300ACA2BF /* coding-challenges */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "coding-challenges"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ECE729503EBF00ACA2BF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE86ED0E295677EE00ACA2BF /* Day2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
@@ -297,6 +301,8 @@
 		BEBA17DC298A24AC00D2E75C /* 1166-DesignFileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1166-DesignFileSystem.swift"; sourceTree = "<group>"; };
 		BEBA17DF298A3AD800D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17E1298A3B0400D2E75C /* 2193-MinimumNumberOfMovesToMakePalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2193-MinimumNumberOfMovesToMakePalindrome.swift"; sourceTree = "<group>"; };
+		BEF7642029959FFB0050171B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEF764212995A0150050171B /* 836-RectangleOverlap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "836-RectangleOverlap.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -886,6 +892,15 @@
 			path = "981. Time Based Key-Value Store";
 			sourceTree = "<group>";
 		};
+		BE6362B2298D85E100A6F4C3 /* 716. Max Stack */ = {
+			isa = PBXGroup;
+			children = (
+				BE6362B4298D860600A6F4C3 /* 716-MaxStack.swift */,
+				BE6362B3298D85F200A6F4C3 /* README.md */,
+			);
+			path = "716. Max Stack";
+			sourceTree = "<group>";
+		};
 		BE86ECBE294BF70300ACA2BF = {
 			isa = PBXGroup;
 			children = (
@@ -1077,11 +1092,13 @@
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
 				BE41E1B52974987500273902 /* 629. K Inverse Pairs Array */,
 				BE6362AA298CDA9000A6F4C3 /* 706. Design HashMap */,
+				BE6362B2298D85E100A6F4C3 /* 716. Max Stack */,
 				BE34AA662979F3B00055AB4A /* 722. Remove Comments */,
 				BEBA17D22989D1F400D2E75C /* 729. My Calendar I */,
 				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
 				BE41E1A429731FDC00273902 /* 772. Basic Calculator III */,
 				BE34AA82297B385B0055AB4A /* 823. Binary Trees With Factors */,
+				BEF7641F29959FE60050171B /* 836. Rectangle Overlap */,
 				BE34AA7E297B2B8C0055AB4A /* 895. Maximum Frequency Stack  */,
 				BE41E1E42978A5A200273902 /* 916. Word Subsets */,
 				BE6362AE298CE3E300A6F4C3 /* 981. Time Based Key-Value Store */,
@@ -1273,6 +1290,15 @@
 			path = "2193. Minimum Number of Moves to Make Palindrome";
 			sourceTree = "<group>";
 		};
+		BEF7641F29959FE60050171B /* 836. Rectangle Overlap */ = {
+			isa = PBXGroup;
+			children = (
+				BEF764212995A0150050171B /* 836-RectangleOverlap.swift */,
+				BEF7642029959FFB0050171B /* README.md */,
+			);
+			path = "836. Rectangle Overlap";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1434,7 +1460,9 @@
 				BEBA17E2298A3B0400D2E75C /* 2193-MinimumNumberOfMovesToMakePalindrome.swift in Sources */,
 				BE41E159296A889A00273902 /* Day25.swift in Sources */,
 				BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */,
+				BE6362B5298D860600A6F4C3 /* 716-MaxStack.swift in Sources */,
 				BEBA17D52989D22200D2E75C /* 729-MyCalendarI.swift in Sources */,
+				BEF764222995A0150050171B /* 836-RectangleOverlap.swift in Sources */,
 				BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */,
 				BE41E1C42974CD6800273902 /* 224-BasicCalculator.swift in Sources */,
 				BE41E0FD296215BD00273902 /* Day18.swift in Sources */,
