@@ -153,3 +153,51 @@ struct Dog: Animal {
 In this example, the Dog struct conforms to the Animal protocol by providing implementations for the name property and the makeSound() method. By using protocols, you can create types that conform to a specific interface or behavior, while also providing the flexibility to swap out different implementations as needed.
 </details>
 
+<details>
+<summary>What is Automatic Reference Counting in Swift?</summary>
+
+Automatic Reference Counting (ARC) is a memory management feature in Swift that automatically tracks and manages the memory usage of objects and deallocates them when they are no longer needed.
+
+In Swift, every time you create an instance of a class, the runtime system allocates memory to store the instance's data and creates a reference to that instance. The reference count is the number of references to the instance. When the reference count drops to zero, it means that there are no more references to the instance, and the runtime system deallocates the memory used by the instance.
+
+ARC automatically manages the reference count of objects in your code, ensuring that objects are deallocated as soon as they are no longer needed. ARC works by keeping track of the references to an object and incrementing and decrementing the reference count as references are added and removed.
+
+ARC also provides a way to break retain cycles, which occur when two or more objects hold strong references to each other, creating a situation where their reference count never drops to zero. To break a retain cycle, you can use a weak or unowned reference to one of the objects, which does not increment the reference count and allows the reference count to drop to zero when the other references are removed.
+
+Here's an example of a simple class that uses ARC:
+
+```swift
+class Person {
+    var name: String
+    init(name: String) {
+        self.name = name
+        print("\(name) is being initialized")
+    }
+    deinit {
+        print("\(name) is being deinitialized")
+    }
+}
+
+var person1: Person?
+var person2: Person?
+var person3: Person?
+
+person1 = Person(name: "Alice")
+person2 = person1
+person3 = person1
+
+person1 = nil
+person2 = nil
+person3 = nil
+```
+
+In this example, three Person instances are created and assigned to the variables person1, person2, and person3. When these variables are set to nil, the reference count of
+
+One possible analogy for Automatic Reference Counting (ARC) in Swift is a library book checkout system.
+
+When a library user checks out a book, the librarian notes that the book has one reference, because one person is currently using it. If another library user checks out the same book, the librarian notes that the book has two references, because two people are currently using it. When a user returns a book, the librarian notes that the book has one less reference, because one user is no longer using it. When the reference count of the book drops to zero, the book is no longer in use, and can be removed from the system.
+
+In this analogy, the books are objects in memory, and the library users are the references to those objects. When a reference is created to an object, the reference count is incremented. When a reference is removed, the reference count is decremented. When the reference count of an object drops to zero, it means that the object is no longer in use, and can be deallocated.
+
+Just as a library book checkout system ensures that books are only removed from the system when they are no longer in use, ARC in Swift ensures that objects are only deallocated when they are no longer needed. By automatically managing the reference count of objects in memory, ARC ensures that memory is used efficiently and that objects are deallocated in a safe and controlled manner.
+</details>
