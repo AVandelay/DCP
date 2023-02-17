@@ -109,3 +109,47 @@ class Employee: Person {
 
 In this example, the Employee class inherits all of the properties and methods of the Person class, and adds two new properties (jobTitle and salary) and one new method (sayJobTitle). By using inheritance, you can reuse the existing behavior and properties of the Person class, while also adding additional functionality specific to the Employee class.
 </details>
+
+<details>
+<summary>What is protocol oriented programming? Which features do protocols have in Swift?</summary>
+
+Protocol-oriented programming (POP) is a programming paradigm in Swift that emphasizes the use of protocols to define interfaces and behavior, instead of relying on class inheritance. In POP, you create small, composable protocols that define specific functionality or behavior, and then use those protocols to build complex, reusable systems.
+
+Protocols in Swift are a type that defines a blueprint of properties, methods, and other requirements that a conforming type must implement. Protocols provide several key features in Swift, including:
+
+Interface abstraction: Protocols allow you to abstract away the implementation details of a type and define a more general interface that can be used to interact with any conforming type. This can help make your code more modular and easier to test.
+
+Composition: Protocols allow you to define small, composable units of behavior that can be combined to create larger, more complex systems. By breaking down your code into smaller, more manageable pieces, you can create code that is easier to understand and maintain.
+
+Multiple inheritance: Unlike classes, Swift protocols support multiple inheritance, which means that a single type can conform to multiple protocols. This can help you avoid the problems of traditional class inheritance, such as tight coupling and the diamond problem.
+
+Default implementations: Protocols in Swift can provide default implementations for methods and properties, which can make it easier to create conforming types by reducing the amount of boilerplate code that you need to write.
+
+A good analogy to understand protocols in Swift is to think of them like a recipe. A recipe provides a set of instructions that define how to make a specific dish, and you can use that recipe to create the dish using different ingredients. Similarly, a protocol provides a set of requirements that define how to implement a specific behavior or functionality, and you can use that protocol to create different types that conform to the protocol.
+
+Here's an example of how to use protocols in Swift. Let's say you have a protocol Animal that defines the basic behavior of an animal:
+
+```swift
+protocol Animal {
+    var name: String { get }
+    func makeSound()
+}
+```
+
+In this example, the Animal protocol defines two requirements: a name property and a makeSound() method. Any type that conforms to the Animal protocol must provide an implementation for these requirements.
+
+You can use this protocol to define different types of animals, such as a Dog:
+
+```swift
+struct Dog: Animal {
+    var name: String
+    
+    func makeSound() {
+        print("Woof!")
+    }
+}
+```
+
+In this example, the Dog struct conforms to the Animal protocol by providing implementations for the name property and the makeSound() method. By using protocols, you can create types that conform to a specific interface or behavior, while also providing the flexibility to swap out different implementations as needed.
+</details>
+
