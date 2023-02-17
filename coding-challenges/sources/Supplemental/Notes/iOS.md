@@ -496,3 +496,43 @@ class MyViewController: UIViewController, CustomViewDelegate {
 In this example, the `CustomViewDelegate` protocol defines a method that will be called by the custom view when the button is tapped. The `CustomView` class defines a weak reference to a delegate object, and calls the delegate method when the button is tapped. The `MyViewController` class implements the `CustomViewDelegate` protocol, and sets itself as the delegate for the custom view. When the button is tapped, the `customViewDidTapButton` method is called on the view controller.
 
 </details>
+
+# Concurrency
+
+<details>
+<summary>What is concurrency?</summary>
+
+Concurrency is a programming technique that involves executing multiple tasks or operations at the same time, in order to improve performance, responsiveness, and user experience. Concurrency is especially important in iOS development, where users expect apps to be fast, responsive, and able to handle multiple tasks simultaneously.
+
+There are a variety of tools and techniques available for implementing concurrency in iOS, including:
+
+1. Grand Central Dispatch (GCD): GCD is a low-level API provided by Apple for concurrent programming. It provides a simple and efficient way to execute code on a background thread, and can be used to perform tasks asynchronously and in parallel. GCD uses dispatch queues to manage the execution of tasks, and provides both serial and concurrent queues.
+2. Operation and OperationQueue: The Operation and OperationQueue classes provide a higher-level abstraction for concurrent programming. They allow you to define and manage complex tasks as individual operations, which can be combined and scheduled on an operation queue. Operations can also be cancelled, paused, and resumed, and can be used to implement dependency chains and priorities.
+3. Asynchronous Programming with Async/Await: Swift's Async/Await feature provides a declarative way to write asynchronous code, using familiar and intuitive syntax. Async/Await allows you to write code that looks and behaves like synchronous code, but is executed asynchronously on a background thread. Async/Await can be used in combination with other concurrency techniques, such as GCD and OperationQueue.
+4. Combine: Combine is a reactive programming framework that provides a declarative and composable way to handle asynchronous events and data streams. Combine uses publishers and subscribers to create data flow pipelines that can handle complex asynchronous logic, and can be used to implement reactive user interfaces, network requests, and more.
+</details>
+
+<details>
+<summary>What is a race condition?</summary>
+
+A race condition is a common problem in concurrent programming where the behavior of an application is dependent on the timing or order of events, and where the outcome of those events is unpredictable or undefined. A race condition occurs when two or more threads or processes access a shared resource at the same time, and at least one of the accesses is a write operation. The order of these accesses is not deterministic or predictable, and the outcome of the program can be unpredictable or undefined.
+
+Race conditions can result in a variety of problems, including data corruption, memory leaks, crashes, deadlocks, or unexpected behavior. For example, if two threads are both trying to increment the value of a shared variable, it's possible that the final value of the variable will not be the expected result, because the two threads may overwrite each other's changes.
+
+Race conditions can be difficult to detect and reproduce, because their behavior is dependent on the timing and execution order of events, which can vary from run to run or from one system to another. To avoid race conditions, it's important to use appropriate synchronization techniques, such as locks, semaphores, and atomic operations, to ensure that only one thread or process can access a shared resource at a time. It's also important to write code that is resilient to race conditions, by using defensive programming techniques, error handling, and testing.
+
+</details>
+
+<details>
+<summary>What is a deadlock?</summary>
+
+A deadlock is a situation in concurrent programming where two or more threads or processes are waiting for each other to release a shared resource, such as a lock or a mutex. As a result, each thread is blocked, and unable to proceed with its execution, leading to a standstill or a "deadlock" situation.
+
+Deadlocks can occur when two or more threads or processes have acquired different resources, and each one needs the other resource to proceed. For example, if thread A is holding a lock on resource X, and thread B is holding a lock on resource Y, but both threads need access to both resources X and Y to proceed, they can become deadlocked.
+
+Deadlocks can also occur when one thread is waiting for another thread to complete, but the second thread is also waiting for the first thread to complete. This can occur if both threads are blocking on a condition variable or other synchronization mechanism, and neither one can proceed until the other does.
+
+Circular waits such as this can occur in any system that uses locks or other forms of synchronization to manage concurrent access to shared resources. They can be especially common in distributed systems, where multiple nodes or processes are coordinating their activities, but can also occur in single-machine systems.
+
+Deadlocks can be a serious problem in concurrent programming, because they can cause a program to hang or crash, and can be difficult to detect and diagnose. To avoid deadlocks, it's important to use appropriate synchronization techniques, such as locks, semaphores, and condition variables, to ensure that threads are not blocking each other indefinitely. It's also important to design your program to avoid circular dependencies or infinite loops that can lead to deadlocks.
+</details>
