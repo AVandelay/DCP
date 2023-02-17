@@ -287,7 +287,7 @@
 		BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242-ValidAnagram.swift"; sourceTree = "<group>"; };
 		BE86EDC1295CB5C700ACA2BF /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneAppLauncher.swift; sourceTree = "<group>"; };
-		BEA6A6AE29A0102B000F233A /* Swift.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Swift.md; sourceTree = "<group>"; };
+		BEA6A6AE29A0102B000F233A /* iOS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = iOS.md; sourceTree = "<group>"; };
 		BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "875-KokoEatingBananas.swift"; sourceTree = "<group>"; };
 		BEB7E54E299AF5D4005582D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17BF298886A200D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -1256,7 +1256,7 @@
 		BEB7E550299C0FAB005582D1 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				BEA6A6AE29A0102B000F233A /* Swift.md */,
+				BEA6A6AE29A0102B000F233A /* iOS.md */,
 			);
 			path = Notes;
 			sourceTree = "<group>";

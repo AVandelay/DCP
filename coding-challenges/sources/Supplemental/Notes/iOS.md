@@ -1,4 +1,7 @@
 
+
+# Swift
+
 <details>
 <summary>What are optionals in Swift and what are their benefits?</summary>
 
@@ -152,6 +155,8 @@ struct Dog: Animal {
 
 In this example, the Dog struct conforms to the Animal protocol by providing implementations for the name property and the makeSound() method. By using protocols, you can create types that conform to a specific interface or behavior, while also providing the flexibility to swap out different implementations as needed.
 </details>
+
+# Memory Management
 
 <details>
 <summary>What is Automatic Reference Counting in Swift?</summary>
