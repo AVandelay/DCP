@@ -382,3 +382,117 @@ The view controller sets the closure property on the custom view, and defines th
 Overall, the choice between protocol-based and closure-based delegation depends on the specific requirements of your application. Protocol-based delegation can be more flexible and expressive, but requires more boilerplate code. Closure-based delegation can be more concise and easier to read, but may be less flexible in some cases.
 
 </details>
+
+<details>
+<summary>What is the observer pattern?</summary>
+
+The Observer pattern is a design pattern used to define a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically. The subject maintains a list of its dependents (observers) and notifies them automatically of any changes, usually by calling a method on the observer.
+
+In iOS, the Observer pattern is commonly used for event handling and notification mechanisms. Here are a few ways to implement the Observer pattern in iOS:
+
+# Key-Value Observing (KVO)
+
+Key-Value Observing (KVO) is a built-in mechanism provided by Cocoa and Cocoa Touch that allows objects to observe changes to the properties of another object. You can register an observer for a specific key path on an object, and the observer will be notified whenever the value of that key path changes.
+
+Here's an example of using KVO to observe changes to a property on a view controller:
+
+```swift
+class MyViewController: UIViewController {
+    @objc dynamic var myProperty: String = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        addObserver(self, forKeyPath: "myProperty", options: .new, context: nil)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "myProperty" {
+            // do something when the property changes
+        }
+    }
+}
+```
+
+In this example, the view controller's `myProperty` property is marked as dynamic and observed using the `addObserver(_:forKeyPath:options:context:)` method. When the property changes, the `observeValue(forKeyPath:of:change:context:)` method is called on the observer, and the observer can update its state or take other actions as needed.
+
+# NotificationCenter
+
+NotificationCenter is another built-in mechanism provided by Cocoa and Cocoa Touch that allows objects to communicate with each other without having to know about each other directly. Objects can register to receive notifications from the notification center, and can be notified automatically when a notification is posted.
+
+Here's an example of using NotificationCenter to post and receive a notification:
+
+```swift
+// post a notification
+NotificationCenter.default.post(name: Notification.Name("MyNotification"), object: nil)
+
+// register to receive the notification
+NotificationCenter.default.addObserver(forName: Notification.Name("MyNotification"), object: nil, queue: nil) { notification in
+    // do something when the notification is received
+}
+```
+
+In this example, the first line posts a notification with the name "MyNotification". The second line registers to receive the notification, and the closure is executed when the notification is received.
+
+# Combine
+
+In Combine, a Publisher emits values over time, and one or more Subscribers receive and handle those values. Publishers and Subscribers are generic types that can be used with a wide range of data types, and can be composed and combined in powerful ways to create complex data flow pipelines.
+
+To implement the Observer pattern using Combine, you can mark a property of an object as `@Published`, which makes it a publisher. Then, you can use the `$` syntax to create a key path to the published property, which can be used to create a subscriber that will be notified when the property's value changes.
+
+For example, here's how you could use Combine to observe changes to a property on an object:
+```swift
+import Combine
+
+class MyObject {
+    @Published var myProperty: String = ""
+}
+
+let myObject = MyObject()
+
+let cancellable = myObject.$myProperty.sink { newValue in
+    print("myProperty changed to \(newValue)")
+}
+
+myObject.myProperty = "new value"
+```
+
+In this example, the `MyObject` class has a property `myProperty` that is marked with `@Published`, which makes it a publisher. The `$myProperty` syntax creates a key path to the published property, which can be used to create a subscriber using the `sink` method. When the property is changed, the subscriber closure is called with the new value.
+
+# Delegation
+
+Delegation is a mechanism that allows **one object to customize the behavior of one other object**, often in response to specific events or requests. The delegate object conforms to a protocol that defines the methods that can be called by the other object.
+
+Here's an example of using delegation to customize the behavior of a custom view:
+
+```swift
+protocol CustomViewDelegate: AnyObject {
+    func customViewDidTapButton(_ customView: CustomView)
+}
+
+class CustomView: UIView {
+    weak var delegate: CustomViewDelegate?
+    
+    @IBAction func buttonTapped() {
+        delegate?.customViewDidTapButton(self)
+    }
+}
+
+class MyViewController: UIViewController, CustomViewDelegate {
+    let customView = CustomView()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        customView.delegate = self
+    }
+    
+    func customViewDidTapButton(_ customView: CustomView) {
+        // do something when the button is tapped
+    }
+}
+```
+
+In this example, the `CustomViewDelegate` protocol defines a method that will be called by the custom view when the button is tapped. The `CustomView` class defines a weak reference to a delegate object, and calls the delegate method when the button is tapped. The `MyViewController` class implements the `CustomViewDelegate` protocol, and sets itself as the delegate for the custom view. When the button is tapped, the `customViewDidTapButton` method is called on the view controller.
+
+</details>
