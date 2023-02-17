@@ -53,3 +53,59 @@ Classes: Classes are a basic reference type in Swift, and are used to encapsulat
 Closures: Closures are another reference type in Swift, and are used to capture and encapsulate behavior. When you create a new closure, a reference to the closure is made in memory.
 A good analogy to understand reference types in Swift is to think of them like tickets to a concert. If you have a ticket to a concert, and you give that ticket to a friend, you and your friend are both attending the same concert. Similarly, when you create a reference to a reference type in Swift, both the original reference and the new reference point to the same underlying data in memory, and changes made to one reference will affect the values of all the other references that point to the same data.
 </details>
+
+<details>
+<summary>Which additional capabilities do classes provide compared to structs
+in Swift?</summary>
+
+In Swift, classes provide several additional capabilities compared to structs, including:
+
+Inheritance: Classes allow you to define a new class that is a modified version of an existing class. This is known as inheritance, and it allows you to reuse code and behavior from existing classes, while also adding or modifying behavior as needed.
+
+Type casting: Classes allow you to perform type casting to check the type of an instance at runtime, or to treat an instance as an instance of a subclass. This can be useful in situations where you need to perform different operations on instances of different classes.
+
+Deinitialization: Classes provide a deinitializer, which is a method that is called automatically when an instance is deallocated. This allows you to perform cleanup operations or release resources that the instance was using.
+
+Reference semantics: As I mentioned earlier, classes are reference types, which means that multiple variables can reference the same underlying data in memory. This can be useful in situations where you need to share data between different parts of your code, or when you need to modify a large object in place.
+
+A good analogy to understand the differences between classes and structs in Swift is to think of them like blueprints for a house. A class is like a blueprint for a custom home, where you can modify the design or add additional rooms as needed. A struct, on the other hand, is like a blueprint for a pre-fabricated house, where the design is fixed and cannot be changed.
+
+Here's an example of how inheritance works in Swift. Let's say you have a base class Person that defines basic information about a person, such as their name and age:
+
+```swift
+class Person {
+    var name: String
+    var age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+    
+    func sayHello() {
+        print("Hello, my name is \(name)!")
+    }
+}
+```
+
+You can use inheritance to create a new class Employee that inherits from Person, and adds additional information about their job, such as their job title and salary:
+
+```swift
+class Employee: Person {
+    var jobTitle: String
+    var salary: Double
+    
+    init(name: String, age: Int, jobTitle: String, salary: Double) {
+        self.jobTitle = jobTitle
+        self.salary = salary
+        super.init(name: name, age: age)
+    }
+    
+    func sayJobTitle() {
+        print("I am a \(jobTitle)!")
+    }
+}
+```
+
+In this example, the Employee class inherits all of the properties and methods of the Person class, and adds two new properties (jobTitle and salary) and one new method (sayJobTitle). By using inheritance, you can reuse the existing behavior and properties of the Person class, while also adding additional functionality specific to the Employee class.
+</details>
