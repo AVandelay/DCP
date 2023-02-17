@@ -30,3 +30,26 @@ In this example, the if let statement checks if name has a value, and if it does
 
 Optionals are a powerful feature that can help you write more robust and error-free code in Swift, especially in situations where values might be missing or unavailable.
 </details>
+
+<details>
+<summary>What is the difference between value and reference types in Swift?</summary>
+
+In Swift, there are two basic kinds of types: value types and reference types. The difference between them has to do with how they are stored in memory and how they are passed around in your code.
+
+Value types are types that store their data directly in memory, and are copied when they are assigned to a new variable, passed as a parameter to a function, or returned from a function. This means that each copy of a value type has its own unique memory address, and changing the value of one copy does not affect the values of other copies.
+
+Some examples of value types in Swift include:
+
+Structs: Structs are a basic value type in Swift, and are used to encapsulate data and behavior. When you create a new instance of a struct, a copy of the struct is made in memory.
+Enums: Enums are another value type in Swift, and are used to represent a finite set of possible values. When you create a new instance of an enum, a copy of the enum is made in memory.
+Basic types: Basic types like Int, Double, and Bool are also value types in Swift, and are stored directly in memory.
+A good analogy to understand value types in Swift is to think of them like apples. If you have two apples, and you take a bite out of one apple, the other apple is still whole and unchanged. Similarly, when you copy a value type in Swift, each copy has its own unique memory address, and changes made to one copy do not affect the values of other copies.
+
+Reference types, on the other hand, are types that store a reference to their data in memory, and are not copied when they are assigned to a new variable, passed as a parameter to a function, or returned from a function. This means that multiple variables can reference the same underlying data in memory, and changes made to one variable will affect the values of all the other variables that reference the same data.
+
+Some examples of reference types in Swift include:
+
+Classes: Classes are a basic reference type in Swift, and are used to encapsulate data and behavior. When you create a new instance of a class, a reference to the class is made in memory.
+Closures: Closures are another reference type in Swift, and are used to capture and encapsulate behavior. When you create a new closure, a reference to the closure is made in memory.
+A good analogy to understand reference types in Swift is to think of them like tickets to a concert. If you have a ticket to a concert, and you give that ticket to a friend, you and your friend are both attending the same concert. Similarly, when you create a reference to a reference type in Swift, both the original reference and the new reference point to the same underlying data in memory, and changes made to one reference will affect the values of all the other references that point to the same data.
+</details>
