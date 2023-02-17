@@ -206,3 +206,93 @@ In this analogy, the books are objects in memory, and the library users are the 
 
 Just as a library book checkout system ensures that books are only removed from the system when they are no longer in use, ARC in Swift ensures that objects are only deallocated when they are no longer needed. By automatically managing the reference count of objects in memory, ARC ensures that memory is used efficiently and that objects are deallocated in a safe and controlled manner.
 </details>
+
+<details>
+<summary>What is the difference between a weak and a strong reference?</summary>
+
+In Swift, references are used to keep track of objects in memory. There are strong and weak references. The main difference between the two is how they affect the reference count of an object and its lifetime.
+
+A strong reference is the default type of reference in Swift. When you create a strong reference to an object, the reference count of the object is incremented by 1, and the object remains in memory as long as there is at least one strong reference to it. When all strong references to an object are removed, the reference count drops to 0, and the object is deallocated.
+
+A weak reference, on the other hand, does not increment the reference count of an object. When you create a weak reference to an object, the object's reference count is not increased, and the object remains in memory only if there is at least one strong reference to it. If all strong references to an object are removed, the reference count drops to 0, and the object is deallocated, regardless of whether there are any weak references to it.
+
+The primary use case for weak references is to avoid retain cycles, which occur when two or more objects hold strong references to each other, creating a situation where their reference count never drops to zero. By using a weak reference to one of the objects, you break the retain cycle and ensure that the objects are deallocated when they are no longer needed.
+
+Here's an example of how to use a weak reference in Swift:
+
+```swift
+class Person {
+    var name: String
+    weak var spouse: Person?
+    init(name: String) {
+        self.name = name
+    }
+}
+
+var alice: Person? = Person(name: "Alice")
+var bob: Person? = Person(name: "Bob")
+
+alice?.spouse = bob
+bob?.spouse = alice
+
+alice = nil
+bob = nil // both Person instances are now deallocated
+```
+
+In this example, two Person instances are created and assigned to the variables `alice` and `bob`. When the spouse property is set for each person, a weak reference is used to avoid creating a retain cycle. When `alice` and `bob` are set to `nil`, the reference count of each instance is decremented, and the `deinit` method is called for each instance, which prints a message indicating that the instance is being deallocated.
+
+In summary, a strong reference increments the reference count of an object, and keeps the object in memory as long as there is at least one strong reference to it, while a weak reference does not increment the reference count, and does not prevent the object from being deallocated when all strong references to it are removed.
+
+</details>
+
+<details>
+<summary>What the difference between a weak and an unowned reference?</summary>
+
+In Swift, there are two types of reference that don't keep a strong hold on the object they reference: weak and unowned references. While both types of reference are used to break strong reference cycles and avoid memory leaks, they differ in how they behave when the object being referenced is deallocated.
+
+A weak reference is used when the referenced object can be deallocated, and the reference must be set to nil automatically. The variable holding the weak reference is optional and can be set to nil at any time. If the object is deallocated, the weak reference is automatically set to `nil` to avoid accessing deallocated memory. In other words, _a weak reference is optional and can never be assumed to have a value_.
+
+An unowned reference is used when it is known that the referenced object will never be deallocated before the reference is used. The variable holding the unowned reference is non-optional and is not set to nil automatically. If the object is deallocated before the reference is used, a runtime error will occur. In other words, _an unowned reference is non-optional and must have a value at all times_.
+
+Here's an example that demonstrates the difference between weak and unowned references:
+
+```swift
+class Person {
+    var name: String
+    weak var spouse: Person?
+    init(name: String) {
+        self.name = name
+    }
+    deinit {
+        print("\(name) is being deallocated")
+    }
+}
+
+class Apartment {
+    var unit: String
+    unowned var tenant: Person
+    init(unit: String, tenant: Person) {
+        self.unit = unit
+        self.tenant = tenant
+    }
+    deinit {
+        print("Apartment \(unit) is being deallocated")
+    }
+}
+
+var alice: Person? = Person(name: "Alice")
+var bob: Person? = Person(name: "Bob")
+alice?.spouse = bob
+bob?.spouse = alice
+
+var apartment: Apartment? = Apartment(unit: "101", tenant: alice!)
+
+alice = nil
+bob = nil
+apartment = nil // Prints "Alice is being deallocated" and "Apartment 101 is being deallocated"
+```
+
+In this example, two `Person` instances are created and assigned to the variables `alice` and `bob`. A weak reference is used to break the strong reference cycle between the two instances. An `Apartment` instance is also created, with a non-optional unowned reference to the `alice` instance. When `alice`, `bob`, and `apartment` are set to nil, the reference count of each instance is decremented, and the `deinit` method is called for each instance, which prints a message indicating that the instance is being deallocated.
+
+In summary, the difference between weak and unowned references is that a weak reference is optional and can be set to nil automatically, while an unowned reference is non-optional and can result in a runtime error if the referenced object is deallocated before the reference is used.
+</details>
