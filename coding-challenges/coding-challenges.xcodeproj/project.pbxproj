@@ -90,6 +90,7 @@
 		BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */; };
 		BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */; };
 		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
+		BEA6A6AC299FF9B8000F233A /* iPhoneAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */; };
 		BEB7E54D299AF5C1005582D1 /* 875-KokoEatingBananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */; };
 		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
 		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
@@ -285,6 +286,7 @@
 		BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindToppledBricks.swift; sourceTree = "<group>"; };
 		BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242-ValidAnagram.swift"; sourceTree = "<group>"; };
 		BE86EDC1295CB5C700ACA2BF /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
+		BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneAppLauncher.swift; sourceTree = "<group>"; };
 		BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "875-KokoEatingBananas.swift"; sourceTree = "<group>"; };
 		BEB7E54E299AF5D4005582D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17BF298886A200D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -563,8 +565,6 @@
 		BE41E14D2968C08900273902 /* AlgoExpert */ = {
 			isa = PBXGroup;
 			children = (
-				BE41E1CD29770D3F00273902 /* Kadane's Algorithm */,
-				BE41E1D129770F1800273902 /* Stable Internships */,
 				BE41E14E2968C09100273902 /* Underscorify String */,
 			);
 			path = AlgoExpert;
@@ -924,7 +924,7 @@
 		BE86ECC9294BF70300ACA2BF /* sources */ = {
 			isa = PBXGroup;
 			children = (
-				BEBA17C62989AA3C00D2E75C /* Cracking The Coding Interview */,
+				BEB7E54F299C0F9D005582D1 /* Supplemental */,
 				BE41E14D2968C08900273902 /* AlgoExpert */,
 				BE86ED89295B790D00ACA2BF /* GIQ */,
 				BE86ED4329567A5E00ACA2BF /* leetcode */,
@@ -1213,6 +1213,26 @@
 			path = "Day 14";
 			sourceTree = "<group>";
 		};
+		BEA6A6A9299FF963000F233A /* Object Oriented Design */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */,
+				BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */,
+				BEBA17CC2989B95600D2E75C /* ElevatorSystem.swift */,
+				BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */,
+			);
+			path = "Object Oriented Design";
+			sourceTree = "<group>";
+		};
+		BEA6A6AA299FF971000F233A /* Famous Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				BE41E1CD29770D3F00273902 /* Kadane's Algorithm */,
+				BE41E1D129770F1800273902 /* Stable Internships */,
+			);
+			path = "Famous Algorithms";
+			sourceTree = "<group>";
+		};
 		BEB7E54B299AF5AC005582D1 /* 875. Koko Eating Bananas */ = {
 			isa = PBXGroup;
 			children = (
@@ -1220,6 +1240,23 @@
 				BEB7E54E299AF5D4005582D1 /* README.md */,
 			);
 			path = "875. Koko Eating Bananas";
+			sourceTree = "<group>";
+		};
+		BEB7E54F299C0F9D005582D1 /* Supplemental */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6A6AA299FF971000F233A /* Famous Algorithms */,
+				BEA6A6A9299FF963000F233A /* Object Oriented Design */,
+				BEB7E550299C0FAB005582D1 /* Notes */,
+			);
+			path = Supplemental;
+			sourceTree = "<group>";
+		};
+		BEB7E550299C0FAB005582D1 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 		BEBA17BE2988868C00D2E75C /* Day 219 */ = {
@@ -1238,24 +1275,6 @@
 				BEBA17C32988983100D2E75C /* README.md */,
 			);
 			path = "Day 319";
-			sourceTree = "<group>";
-		};
-		BEBA17C62989AA3C00D2E75C /* Cracking The Coding Interview */ = {
-			isa = PBXGroup;
-			children = (
-				BEBA17C72989AA6E00D2E75C /* Chapter 7 */,
-			);
-			path = "Cracking The Coding Interview";
-			sourceTree = "<group>";
-		};
-		BEBA17C72989AA6E00D2E75C /* Chapter 7 */ = {
-			isa = PBXGroup;
-			children = (
-				BEBA17C82989AA7F00D2E75C /* JigsawPuzzle.swift */,
-				BEBA17CA2989B2A500D2E75C /* ParkingLot.swift */,
-				BEBA17CC2989B95600D2E75C /* ElevatorSystem.swift */,
-			);
-			path = "Chapter 7";
 			sourceTree = "<group>";
 		};
 		BEBA17CE2989C4A300D2E75C /* 380. Insert Delete GetRandom O(1) */ = {
@@ -1454,6 +1473,7 @@
 				BE86ED412956787B00ACA2BF /* Day1.swift in Sources */,
 				BE41E1D029770E0200273902 /* KadanesAlgorithm.swift in Sources */,
 				BE41E19F29722C5600273902 /* 297-SerializeAndDeserializeBinaryTree.swift in Sources */,
+				BEA6A6AC299FF9B8000F233A /* iPhoneAppLauncher.swift in Sources */,
 				BE41E188296F4CA900273902 /* Day148.swift in Sources */,
 				BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */,
 				BEBA17CD2989B95600D2E75C /* ElevatorSystem.swift in Sources */,
