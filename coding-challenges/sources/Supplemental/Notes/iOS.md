@@ -296,3 +296,89 @@ In this example, two `Person` instances are created and assigned to the variable
 
 In summary, the difference between weak and unowned references is that a weak reference is optional and can be set to nil automatically, while an unowned reference is non-optional and can result in a runtime error if the referenced object is deallocated before the reference is used.
 </details>
+
+# Design Patterns
+
+<details>
+<summary>What is the delegate pattern?</summary>
+
+The delegate pattern is a common design pattern used in iOS and other software platforms. It is used to define a one-to-one relationship between two objects, where one object acts as a delegate for the other object, and provides custom behavior in response to specific events or requests.
+
+The delegate pattern can be implemented using protocols or closures. Here's an example of each approach:
+
+$ Protocol-based delegate
+In this example, we will define a protocol for a view controller delegate that can be used to customize the behavior of a custom view.
+
+```swift
+protocol CustomViewDelegate: AnyObject {
+    func customViewDidTapButton(_ customView: CustomView)
+}
+```
+
+The protocol defines a single method that will be called when a button in the custom view is tapped.
+
+```swift
+class CustomView: UIView {
+    weak var delegate: CustomViewDelegate?
+    
+    @IBAction func buttonTapped() {
+        delegate?.customViewDidTapButton(self)
+    }
+}
+```
+
+The CustomView class defines a weak reference to a delegate object, and calls the delegate method when the button is tapped.
+
+```swift
+class ViewController: UIViewController, CustomViewDelegate {
+    @IBOutlet weak var customView: CustomView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        customView.delegate = self
+    }
+    
+    func customViewDidTapButton(_ customView: CustomView) {
+        print("Button tapped")
+    }
+}
+```
+
+The view controller implements the CustomViewDelegate protocol, and sets itself as the delegate for the custom view. When the button is tapped, the customViewDidTapButton method is called on the view controller.
+
+# Closure-based delegate
+
+In this example, we will define a closure property that can be used to customize the behavior of a custom view.
+
+```swift
+class CustomView: UIView {
+    var buttonTapHandler: (() -> Void)?
+    
+    @IBAction func buttonTapped() {
+        buttonTapHandler?()
+    }
+}
+```
+
+The CustomView class defines a closure property that will be called when the button is tapped.
+
+```swift
+class ViewController: UIViewController {
+    @IBOutlet weak var customView: CustomView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        customView.buttonTapHandler = {
+            print("Button tapped")
+        }
+    }
+}
+```
+
+The view controller sets the closure property on the custom view, and defines the behavior to be executed when the button is tapped.
+
+Overall, the choice between protocol-based and closure-based delegation depends on the specific requirements of your application. Protocol-based delegation can be more flexible and expressive, but requires more boilerplate code. Closure-based delegation can be more concise and easier to read, but may be less flexible in some cases.
+
+</details>
