@@ -91,6 +91,7 @@
 		BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */; };
 		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
 		BEA6A6AC299FF9B8000F233A /* iPhoneAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */; };
+		BEA6A73329A5727F000F233A /* Day36.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73229A5727F000F233A /* Day36.swift */; };
 		BEB7E54D299AF5C1005582D1 /* 875-KokoEatingBananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */; };
 		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
 		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
@@ -288,6 +289,8 @@
 		BE86EDC1295CB5C700ACA2BF /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneAppLauncher.swift; sourceTree = "<group>"; };
 		BEA6A6AE29A0102B000F233A /* iOS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = iOS.md; sourceTree = "<group>"; };
+		BEA6A73129A5717E000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEA6A73229A5727F000F233A /* Day36.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day36.swift; sourceTree = "<group>"; };
 		BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "875-KokoEatingBananas.swift"; sourceTree = "<group>"; };
 		BEB7E54E299AF5D4005582D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17BF298886A200D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -950,6 +953,7 @@
 				BE41E170296E14C900273902 /* Day 93 */,
 				BE41E16D296E143C00273902 /* Day 74 */,
 				BE41E16B296E140300273902 /* Day 53 */,
+				BEA6A73029A57168000F233A /* Day 36 */,
 				BE41E162296DF3F700273902 /* Day 27 */,
 				BE41E15A296C871E00273902 /* Day 26 */,
 				BE41E156296A881700273902 /* Day 25 */,
@@ -1234,6 +1238,15 @@
 			path = "Famous Algorithms";
 			sourceTree = "<group>";
 		};
+		BEA6A73029A57168000F233A /* Day 36 */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6A73229A5727F000F233A /* Day36.swift */,
+				BEA6A73129A5717E000F233A /* README.md */,
+			);
+			path = "Day 36";
+			sourceTree = "<group>";
+		};
 		BEB7E54B299AF5AC005582D1 /* 875. Koko Eating Bananas */ = {
 			isa = PBXGroup;
 			children = (
@@ -1469,6 +1482,7 @@
 				BE86ED402956787000ACA2BF /* Day2.swift in Sources */,
 				BE6362AC298CDAB000A6F4C3 /* 706-DesignHashMap.swift in Sources */,
 				BE41E1AF29737F5100273902 /* 730-CountDifferentPalindromicSubsequences.swift in Sources */,
+				BEA6A73329A5727F000F233A /* Day36.swift in Sources */,
 				BE34AA692979F3DF0055AB4A /* 722-RemoveComments.swift in Sources */,
 				BE41E10429635C8C00273902 /* Day19.swift in Sources */,
 				BE41E12D2964B93400273902 /* Day20.swift in Sources */,
