@@ -92,6 +92,7 @@
 		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
 		BEA6A6AC299FF9B8000F233A /* iPhoneAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */; };
 		BEA6A73329A5727F000F233A /* Day36.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73229A5727F000F233A /* Day36.swift */; };
+		BEA6A73629A5826C000F233A /* Day39.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73529A5826C000F233A /* Day39.swift */; };
 		BEB7E54D299AF5C1005582D1 /* 875-KokoEatingBananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */; };
 		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
 		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
@@ -291,6 +292,8 @@
 		BEA6A6AE29A0102B000F233A /* iOS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = iOS.md; sourceTree = "<group>"; };
 		BEA6A73129A5717E000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEA6A73229A5727F000F233A /* Day36.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day36.swift; sourceTree = "<group>"; };
+		BEA6A73529A5826C000F233A /* Day39.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day39.swift; sourceTree = "<group>"; };
+		BEA6A73729A58280000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "875-KokoEatingBananas.swift"; sourceTree = "<group>"; };
 		BEB7E54E299AF5D4005582D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17BF298886A200D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -953,6 +956,7 @@
 				BE41E170296E14C900273902 /* Day 93 */,
 				BE41E16D296E143C00273902 /* Day 74 */,
 				BE41E16B296E140300273902 /* Day 53 */,
+				BEA6A73429A5825B000F233A /* Day 39 */,
 				BEA6A73029A57168000F233A /* Day 36 */,
 				BE41E162296DF3F700273902 /* Day 27 */,
 				BE41E15A296C871E00273902 /* Day 26 */,
@@ -1247,6 +1251,15 @@
 			path = "Day 36";
 			sourceTree = "<group>";
 		};
+		BEA6A73429A5825B000F233A /* Day 39 */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6A73529A5826C000F233A /* Day39.swift */,
+				BEA6A73729A58280000F233A /* README.md */,
+			);
+			path = "Day 39";
+			sourceTree = "<group>";
+		};
 		BEB7E54B299AF5AC005582D1 /* 875. Koko Eating Bananas */ = {
 			isa = PBXGroup;
 			children = (
@@ -1512,6 +1525,7 @@
 				BEBA17D52989D22200D2E75C /* 729-MyCalendarI.swift in Sources */,
 				BEF764222995A0150050171B /* 836-RectangleOverlap.swift in Sources */,
 				BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */,
+				BEA6A73629A5826C000F233A /* Day39.swift in Sources */,
 				BE41E1C42974CD6800273902 /* 224-BasicCalculator.swift in Sources */,
 				BEB7E54D299AF5C1005582D1 /* 875-KokoEatingBananas.swift in Sources */,
 				BE41E0FD296215BD00273902 /* Day18.swift in Sources */,
