@@ -97,6 +97,7 @@
 		BEA6A73D29A69E1C000F233A /* CloudStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73C29A69E1C000F233A /* CloudStorageProvider.swift */; };
 		BEA6A76229A7E7B2000F233A /* Day172.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A76029A7E78D000F233A /* Day172.swift */; };
 		BEA6A76729A7ECC7000F233A /* Day207.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A76629A7ECBF000F233A /* Day207.swift */; };
+		BEA6A76C29A7EE1A000F233A /* Day246.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A76A29A7EE1A000F233A /* Day246.swift */; };
 		BEB7E54D299AF5C1005582D1 /* 875-KokoEatingBananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */; };
 		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
 		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
@@ -305,6 +306,8 @@
 		BEA6A76329A7E99B000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEA6A76529A7ECBF000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEA6A76629A7ECBF000F233A /* Day207.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day207.swift; sourceTree = "<group>"; };
+		BEA6A76929A7EE1A000F233A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEA6A76A29A7EE1A000F233A /* Day246.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day246.swift; sourceTree = "<group>"; };
 		BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "875-KokoEatingBananas.swift"; sourceTree = "<group>"; };
 		BEB7E54E299AF5D4005582D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17BF298886A200D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -958,6 +961,7 @@
 				BEBA17C22988981D00D2E75C /* Day 319 */,
 				BE41E17C296E16A500273902 /* Day 318 */,
 				BE41E17A296E165F00273902 /* Day 273 */,
+				BEA6A76829A7EE1A000F233A /* Day 246 */,
 				BE41E178296E161D00273902 /* Day 233 */,
 				BEBA17BE2988868C00D2E75C /* Day 219 */,
 				BE41E176296E15C100273902 /* Day 210 */,
@@ -1302,6 +1306,15 @@
 			path = "Day 207";
 			sourceTree = "<group>";
 		};
+		BEA6A76829A7EE1A000F233A /* Day 246 */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6A76A29A7EE1A000F233A /* Day246.swift */,
+				BEA6A76929A7EE1A000F233A /* README.md */,
+			);
+			path = "Day 246";
+			sourceTree = "<group>";
+		};
 		BEB7E54B299AF5AC005582D1 /* 875. Koko Eating Bananas */ = {
 			isa = PBXGroup;
 			children = (
@@ -1571,6 +1584,7 @@
 				BEF764222995A0150050171B /* 836-RectangleOverlap.swift in Sources */,
 				BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */,
 				BEA6A73629A5826C000F233A /* Day39.swift in Sources */,
+				BEA6A76C29A7EE1A000F233A /* Day246.swift in Sources */,
 				BE41E1C42974CD6800273902 /* 224-BasicCalculator.swift in Sources */,
 				BEB7E54D299AF5C1005582D1 /* 875-KokoEatingBananas.swift in Sources */,
 				BE41E0FD296215BD00273902 /* Day18.swift in Sources */,
