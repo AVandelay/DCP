@@ -98,6 +98,7 @@
 		BEA6A76229A7E7B2000F233A /* Day172.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A76029A7E78D000F233A /* Day172.swift */; };
 		BEA6A76729A7ECC7000F233A /* Day207.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A76629A7ECBF000F233A /* Day207.swift */; };
 		BEA6A76C29A7EE1A000F233A /* Day246.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A76A29A7EE1A000F233A /* Day246.swift */; };
+		BEA6A77029A7EE4B000F233A /* Day212.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A76E29A7EE4B000F233A /* Day212.swift */; };
 		BEB7E54D299AF5C1005582D1 /* 875-KokoEatingBananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */; };
 		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
 		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
@@ -308,6 +309,8 @@
 		BEA6A76629A7ECBF000F233A /* Day207.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day207.swift; sourceTree = "<group>"; };
 		BEA6A76929A7EE1A000F233A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEA6A76A29A7EE1A000F233A /* Day246.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day246.swift; sourceTree = "<group>"; };
+		BEA6A76E29A7EE4B000F233A /* Day212.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day212.swift; sourceTree = "<group>"; };
+		BEA6A76F29A7EE4B000F233A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "875-KokoEatingBananas.swift"; sourceTree = "<group>"; };
 		BEB7E54E299AF5D4005582D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17BF298886A200D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -964,6 +967,7 @@
 				BEA6A76829A7EE1A000F233A /* Day 246 */,
 				BE41E178296E161D00273902 /* Day 233 */,
 				BEBA17BE2988868C00D2E75C /* Day 219 */,
+				BEA6A76D29A7EE4B000F233A /* Day 212 */,
 				BE41E176296E15C100273902 /* Day 210 */,
 				BEA6A76429A7ECBF000F233A /* Day 207 */,
 				BE41E174296E153400273902 /* Day 196 */,
@@ -1315,6 +1319,15 @@
 			path = "Day 246";
 			sourceTree = "<group>";
 		};
+		BEA6A76D29A7EE4B000F233A /* Day 212 */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6A76E29A7EE4B000F233A /* Day212.swift */,
+				BEA6A76F29A7EE4B000F233A /* README.md */,
+			);
+			path = "Day 212";
+			sourceTree = "<group>";
+		};
 		BEB7E54B299AF5AC005582D1 /* 875. Koko Eating Bananas */ = {
 			isa = PBXGroup;
 			children = (
@@ -1598,6 +1611,7 @@
 				BE86ED3F2956786500ACA2BF /* Day3.swift in Sources */,
 				BE41E1D42977126900273902 /* StableInternships.swift in Sources */,
 				BE41E194296F83AC00273902 /* Day337.swift in Sources */,
+				BEA6A77029A7EE4B000F233A /* Day212.swift in Sources */,
 				BE41E18C296F610D00273902 /* Day210.swift in Sources */,
 				BE41E0F3295F552000273902 /* Day16.swift in Sources */,
 				BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */,
