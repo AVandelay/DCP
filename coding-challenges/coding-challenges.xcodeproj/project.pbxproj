@@ -103,6 +103,7 @@
 		BEA6A77A29A7F361000F233A /* Day323.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A77829A7F361000F233A /* Day323.swift */; };
 		BEA6A77E29A7FB92000F233A /* Day330.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A77C29A7FB92000F233A /* Day330.swift */; };
 		BEA6A78329A82C9F000F233A /* 609-FindDuplicateFileInSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A78229A82C9F000F233A /* 609-FindDuplicateFileInSystem.swift */; };
+		BEA6A78B29A88097000F233A /* 695-MaxAreaOfIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A78A29A88097000F233A /* 695-MaxAreaOfIsland.swift */; };
 		BEB7E54D299AF5C1005582D1 /* 875-KokoEatingBananas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */; };
 		BEBA17C1298886C700D2E75C /* Day219.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C0298886C700D2E75C /* Day219.swift */; };
 		BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA17C4298898BC00D2E75C /* Day319.swift */; };
@@ -323,6 +324,8 @@
 		BEA6A77D29A7FB92000F233A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEA6A78129A82C79000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEA6A78229A82C9F000F233A /* 609-FindDuplicateFileInSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "609-FindDuplicateFileInSystem.swift"; sourceTree = "<group>"; };
+		BEA6A78929A88076000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEA6A78A29A88097000F233A /* 695-MaxAreaOfIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "695-MaxAreaOfIsland.swift"; sourceTree = "<group>"; };
 		BEB7E54C299AF5C1005582D1 /* 875-KokoEatingBananas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "875-KokoEatingBananas.swift"; sourceTree = "<group>"; };
 		BEB7E54E299AF5D4005582D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEBA17BF298886A200D2E75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -1110,6 +1113,7 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				BEA6A78829A88065000F233A /* 695. Max Area of Island */,
 				BE86ED4429567A8300ACA2BF /* 1. Two Sum */,
 				BE41E19729709BFC00273902 /* 9. Palindrome Number */,
 				BE41E167296E08C400273902 /* 11. Container With Most Water */,
@@ -1380,6 +1384,15 @@
 			path = "609. Find Duplicate File in System";
 			sourceTree = "<group>";
 		};
+		BEA6A78829A88065000F233A /* 695. Max Area of Island */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6A78929A88076000F233A /* README.md */,
+				BEA6A78A29A88097000F233A /* 695-MaxAreaOfIsland.swift */,
+			);
+			path = "695. Max Area of Island";
+			sourceTree = "<group>";
+		};
 		BEB7E54B299AF5AC005582D1 /* 875. Koko Eating Bananas */ = {
 			isa = PBXGroup;
 			children = (
@@ -1632,6 +1645,7 @@
 				BEA6A77E29A7FB92000F233A /* Day330.swift in Sources */,
 				BEBA17CD2989B95600D2E75C /* ElevatorSystem.swift in Sources */,
 				BE6362B1298CE6C400A6F4C3 /* 981-TimeBasedKey-ValueStore.swift in Sources */,
+				BEA6A78B29A88097000F233A /* 695-MaxAreaOfIsland.swift in Sources */,
 				BEBA17C5298898BC00D2E75C /* Day319.swift in Sources */,
 				BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */,
 				BE41E155296A207200273902 /* Day24.swift in Sources */,
