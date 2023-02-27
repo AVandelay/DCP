@@ -14,6 +14,7 @@
 		BE34AA75297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA74297A26240055AB4A /* 348-DesignTic-Tac-Toe.swift */; };
 		BE34AA81297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA80297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift */; };
 		BE34AA84297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA83297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift */; };
+		BE3AE34629AD72CE004B2358 /* 384-ShuffleAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AE34529AD72CE004B2358 /* 384-ShuffleAnArray.swift */; };
 		BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */; };
 		BE41E0CC295E0E5400273902 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CB295E0E5400273902 /* Day15.swift */; };
 		BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */; };
@@ -147,6 +148,8 @@
 		BE34AA80297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "895-MaximumFrequencyStack .swift"; sourceTree = "<group>"; };
 		BE34AA83297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "823-BinaryTreesWithFactors.swift"; sourceTree = "<group>"; };
 		BE34AA85297B387D0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE3AE34529AD72CE004B2358 /* 384-ShuffleAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "384-ShuffleAnArray.swift"; sourceTree = "<group>"; };
+		BE3AE34729AD72E3004B2358 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-ValidParentheses.swift"; sourceTree = "<group>"; };
 		BE41E0CB295E0E5400273902 /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53-MaximumSubarray.swift"; sourceTree = "<group>"; };
@@ -431,6 +434,15 @@
 				BE34AA85297B387D0055AB4A /* README.md */,
 			);
 			path = "823. Binary Trees With Factors";
+			sourceTree = "<group>";
+		};
+		BE3AE34429AD72B6004B2358 /* 384. Shuffle an Array */ = {
+			isa = PBXGroup;
+			children = (
+				BE3AE34529AD72CE004B2358 /* 384-ShuffleAnArray.swift */,
+				BE3AE34729AD72E3004B2358 /* README.md */,
+			);
+			path = "384. Shuffle an Array";
 			sourceTree = "<group>";
 		};
 		BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */ = {
@@ -1145,6 +1157,7 @@
 				BE41E1A8297370D000273902 /* 362. Design Hit Counter */,
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
 				BEBA17CE2989C4A300D2E75C /* 380. Insert Delete GetRandom O(1) */,
+				BE3AE34429AD72B6004B2358 /* 384. Shuffle an Array */,
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
 				BEA6A78029A82C5C000F233A /* 609. Find Duplicate File in System */,
 				BE41E1B52974987500273902 /* 629. K Inverse Pairs Array */,
@@ -1712,6 +1725,7 @@
 				BE86ED592958FFCA00ACA2BF /* 217-ContainsDuplicate.swift in Sources */,
 				BE41E1BC2974BDB600273902 /* 227-BasicCalculatorII.swift in Sources */,
 				BE41E19A2970B11D00273902 /* 67-AddBinary.swift in Sources */,
+				BE3AE34629AD72CE004B2358 /* 384-ShuffleAnArray.swift in Sources */,
 				BEA6A78F29A9278D000F233A /* 771-JewelsAndStones.swift in Sources */,
 				BE41E10129622D2D00273902 /* 15-3Sum.swift in Sources */,
 				BEA6A77A29A7F361000F233A /* Day323.swift in Sources */,
