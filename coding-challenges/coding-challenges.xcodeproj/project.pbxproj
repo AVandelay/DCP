@@ -15,6 +15,7 @@
 		BE34AA81297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA80297B2BB00055AB4A /* 895-MaximumFrequencyStack .swift */; };
 		BE34AA84297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA83297B386D0055AB4A /* 823-BinaryTreesWithFactors.swift */; };
 		BE3AE34629AD72CE004B2358 /* 384-ShuffleAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AE34529AD72CE004B2358 /* 384-ShuffleAnArray.swift */; };
+		BE3AE34C29AEACAF004B2358 /* 796-RotateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AE34B29AEACAF004B2358 /* 796-RotateString.swift */; };
 		BE41E09F295CD7A400273902 /* 20-ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */; };
 		BE41E0CC295E0E5400273902 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CB295E0E5400273902 /* Day15.swift */; };
 		BE41E0CF295E1E4100273902 /* 53-MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */; };
@@ -150,6 +151,8 @@
 		BE34AA85297B387D0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE3AE34529AD72CE004B2358 /* 384-ShuffleAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "384-ShuffleAnArray.swift"; sourceTree = "<group>"; };
 		BE3AE34729AD72E3004B2358 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE3AE34B29AEACAF004B2358 /* 796-RotateString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "796-RotateString.swift"; sourceTree = "<group>"; };
+		BE3AE34D29AEAD5B004B2358 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-ValidParentheses.swift"; sourceTree = "<group>"; };
 		BE41E0CB295E0E5400273902 /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53-MaximumSubarray.swift"; sourceTree = "<group>"; };
@@ -443,6 +446,15 @@
 				BE3AE34729AD72E3004B2358 /* README.md */,
 			);
 			path = "384. Shuffle an Array";
+			sourceTree = "<group>";
+		};
+		BE3AE34A29AEACA0004B2358 /* 796. Rotate String */ = {
+			isa = PBXGroup;
+			children = (
+				BE3AE34B29AEACAF004B2358 /* 796-RotateString.swift */,
+				BE3AE34D29AEAD5B004B2358 /* README.md */,
+			);
+			path = "796. Rotate String";
 			sourceTree = "<group>";
 		};
 		BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */ = {
@@ -1168,6 +1180,7 @@
 				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
 				BEA6A78C29A92745000F233A /* 771. Jewels and Stones */,
 				BE41E1A429731FDC00273902 /* 772. Basic Calculator III */,
+				BE3AE34A29AEACA0004B2358 /* 796. Rotate String */,
 				BE34AA82297B385B0055AB4A /* 823. Binary Trees With Factors */,
 				BEF7641F29959FE60050171B /* 836. Rectangle Overlap */,
 				BEB7E54B299AF5AC005582D1 /* 875. Koko Eating Bananas */,
@@ -1694,6 +1707,7 @@
 				BEA6A76C29A7EE1A000F233A /* Day246.swift in Sources */,
 				BE41E1C42974CD6800273902 /* 224-BasicCalculator.swift in Sources */,
 				BEB7E54D299AF5C1005582D1 /* 875-KokoEatingBananas.swift in Sources */,
+				BE3AE34C29AEACAF004B2358 /* 796-RotateString.swift in Sources */,
 				BE41E0FD296215BD00273902 /* Day18.swift in Sources */,
 				BE41E1312964F7F400273902 /* 94-BinaryTreeInorderTraversal.swift in Sources */,
 				BE86ED4B2957F40F00ACA2BF /* Day10.swift in Sources */,
