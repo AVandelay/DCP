@@ -153,6 +153,7 @@
 		BE3AE34729AD72E3004B2358 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE3AE34B29AEACAF004B2358 /* 796-RotateString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "796-RotateString.swift"; sourceTree = "<group>"; };
 		BE3AE34D29AEAD5B004B2358 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE3AE36329B15636004B2358 /* GCD.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GCD.md; sourceTree = "<group>"; };
 		BE41E09D295CD5CD00273902 /* 20-ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-ValidParentheses.swift"; sourceTree = "<group>"; };
 		BE41E0CB295E0E5400273902 /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
 		BE41E0CE295E1E4100273902 /* 53-MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "53-MaximumSubarray.swift"; sourceTree = "<group>"; };
@@ -461,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				BEA6A6AE29A0102B000F233A /* iOS.md */,
+				BE3AE36329B15636004B2358 /* GCD.md */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
