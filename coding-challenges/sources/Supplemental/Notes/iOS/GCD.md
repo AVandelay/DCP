@@ -61,3 +61,63 @@ In this example, we schedule two different closures on the `serialQueue` and `co
 
 It's important to note that when you submit a closure to a dispatch queue, it's executed asynchronously. This means that the code that follows the `async` method will continue to execute, even if the closure hasn't finished executing yet.
 </details>
+
+<details>
+<summary>Working with Dispatch Queues: Serial and Concurrent Queues</summary>
+
+#Serial Queues
+A serial queue executes one task at a time. Tasks are executed in the order in which they are submitted to the queue. A serial queue is useful when you want to ensure that tasks are executed in a predictable and deterministic order. If you submit three tasks to a serial queue, task A, task B, and task C, the tasks are executed in the following order:
+
+```swift
+queue.async {
+    print("Task A")
+}
+queue.async {
+    print("Task B")
+}
+queue.async {
+    print("Task C")
+}
+```
+
+Output:
+```swift
+Task A
+Task B
+Task C
+```
+
+In this example, task A is executed first, followed by task B, and finally task C. This is because the tasks are executed in the order in which they are submitted to the queue.
+
+Serial queues are often used for tasks that are dependent on each other. For example, let's say you have an image processing application. You want to resize an image, then apply a filter, and finally save the result to disk. You would submit each task to a serial queue, ensuring that the tasks are executed in the correct order.
+
+#Concurrent Queues
+
+A concurrent queue, on the other hand, executes tasks concurrently. Tasks are executed in the order in which they are submitted to the queue, but because multiple tasks can be executed at the same time, the order in which they complete is not guaranteed.
+
+Concurrent queues are useful when you have a set of independent tasks that can be executed in parallel. For example, let's say you have a list of images that need to be downloaded from a server. You can submit each download task to a concurrent queue, allowing multiple downloads to happen at the same time.
+
+```swift
+let queue = DispatchQueue(label: "com.myapp.concurrent", attributes: .concurrent)
+
+for i in 1...10 {
+    queue.async {
+        print("Task \(i)")
+    }
+}
+```
+Output:
+```swift
+Task 2
+Task 3
+Task 1
+Task 4
+Task 5
+Task 6
+Task 7
+Task 8
+Task 9
+Task 10
+```
+In this example, the tasks are executed concurrently, and because the order in which they complete is not guaranteed, the output is not in numerical order.
+</details>
