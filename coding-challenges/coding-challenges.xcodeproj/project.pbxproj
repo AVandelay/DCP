@@ -457,6 +457,14 @@
 			path = "796. Rotate String";
 			sourceTree = "<group>";
 		};
+		BE3AE36229B1561E004B2358 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6A6AE29A0102B000F233A /* iOS.md */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		BE41E09C295CD5AA00273902 /* 20. Valid Parentheses */ = {
 			isa = PBXGroup;
 			children = (
@@ -1454,7 +1462,7 @@
 		BEB7E550299C0FAB005582D1 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				BEA6A6AE29A0102B000F233A /* iOS.md */,
+				BE3AE36229B1561E004B2358 /* iOS */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
