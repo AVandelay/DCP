@@ -25,3 +25,39 @@ In addition to dispatch queues, GCD provides several other convenient APIs, incl
 
 It's important to understand why it's beneficial for your app to take advantage of GCD. Modern computing devices have a complex architecture, and they are incredibly performant. However, as developers, we need to be careful how the resources of these devices are used. By leveraging GCD, your app can be a good citizen on the platform it runs on, by efficiently using resources and responding to changes in device capabilities.
 </details>
+
+<details>
+<summary>Working With Dispatch Queues</summary>
+
+A dispatch queue is a queue onto which work can be scheduled for execution. It enqueues and dequeues work in FIFO (first in, first out) order. This means that the work submitted to a dispatch queue is executed in the order in which it was submitted.
+
+There are two types of dispatch queues: serial and concurrent. A serial queue executes one task at a time, while a concurrent queue executes multiple tasks at the same time. It's important to understand the difference between these two types of queues because they behave differently and can have a significant impact on the performance of your application.
+
+You can create a dispatch queue using the DispatchQueue class. Here's an example of how to create a serial and a concurrent queue:
+
+```swift
+// Serial queue
+let serialQueue = DispatchQueue(label: "com.example.serialQueue")
+
+// Concurrent queue
+let concurrentQueue = DispatchQueue(label: "com.example.concurrentQueue", attributes: .concurrent)
+```
+
+In the example above, we create a serial queue with the label "com.example.serialQueue" and a concurrent queue with the label "com.example.concurrentQueue".
+
+Once you have a dispatch queue, you can schedule work onto it using different methods. The most common method is using a closure, also known as a block, that contains the work you want to execute. Here's an example of how to schedule a closure onto a dispatch queue:
+
+```swift
+serialQueue.async {
+    print("This code will be executed on a serial queue")
+}
+
+concurrentQueue.async {
+    print("This code will be executed on a concurrent queue")
+}
+```
+
+In this example, we schedule two different closures on the `serialQueue` and `concurrentQueue`, respectively. The first closure will be executed on a serial queue, which means that it will execute one task at a time. The second closure will be executed on a concurrent queue, which means that it can execute multiple tasks at the same time.
+
+It's important to note that when you submit a closure to a dispatch queue, it's executed asynchronously. This means that the code that follows the `async` method will continue to execute, even if the closure hasn't finished executing yet.
+</details>
