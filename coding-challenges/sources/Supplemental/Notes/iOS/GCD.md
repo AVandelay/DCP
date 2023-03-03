@@ -278,3 +278,44 @@ queue.async(execute: taskB)
 In this example, we create three dispatch work items for tasks A, B, and C. We submit task A to the queue first, followed by task B. We then use the `notify(queue:execute:)` method on task B to specify that task C should execute after task B completes.
 
 </details>
+
+<details>
+<summary>Memory Management</summary>
+
+When working with Grand Central Dispatch (GCD), it's important to keep memory management in mind. GCD can help optimize the performance of your application, but if you're not careful, it can also lead to memory leaks and other issues.
+
+One common problem is when you pass an object to a block that's scheduled for execution on a dispatch queue. If you're not careful, the block might hold onto the object longer than it should, resulting in a retain cycle and a memory leak.
+
+To avoid this issue, you should always use weak references when passing objects to blocks. Here's an example:
+
+```swift
+class MyClass {
+    func doWork() {
+        DispatchQueue.global().async { [weak self] in
+            // use `self` here
+        }
+    }
+}
+```
+
+In this example, we use a weak reference to self inside the block. This ensures that if the object is deallocated before the block is executed, the block won't hold onto the object and cause a memory leak.
+
+Another way to manage memory with GCD is to use autorelease pools. Autorelease pools allow you to defer the release of objects until the end of the current iteration of the run loop. This can be useful when you're creating a large number of objects in a loop and don't want to hold onto them indefinitely.
+
+Here's an example:
+
+```swift
+for i in 0..<10000 {
+    autoreleasepool {
+        let object = MyObject()
+        // use `object` here
+    }
+}
+```
+
+In this example, we use an autorelease pool to manage the memory for the objects created in the loop. The autorelease pool ensures that the objects are released at the end of each iteration of the loop, preventing a buildup of unused memory.
+
+It's also important to remember that GCD can execute blocks on different threads, so you should always make sure your code is thread-safe. This includes using locks, atomic operations, and other techniques to prevent race conditions and other issues.
+
+By keeping memory management in mind when working with GCD, you can take advantage of its power and optimize the performance of your application without introducing memory leaks or other issues.
+</details>
