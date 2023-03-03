@@ -121,3 +121,48 @@ Task 10
 ```
 In this example, the tasks are executed concurrently, and because the order in which they complete is not guaranteed, the output is not in numerical order.
 </details>
+
+<details>
+<summary>Main and Global Dispatch Queues</summary>
+
+#Main Queue
+
+The main queue is the default queue that is created for an application. It is the queue that is associated with the main thread of the application. Work submitted to the main queue is executed on the main thread. This is important because all user interface updates should be performed on the main thread.
+
+Let's take a look at an example:
+
+```swift
+DispatchQueue.main.async {
+    self.myLabel.text = "Hello World"
+}
+```
+
+In this example, we ask the `DispatchQueue` class for a reference to the main queue. We then submit a closure to the main queue using the `async` method. Inside the closure, we update a label on the user interface. Because we're submitting the closure to the main queue, we're guaranteed that the label is updated on the main thread.
+
+#Global Queues
+
+In addition to the main queue, Grand Central Dispatch provides several global queues. A global queue is a queue that is shared across the system. There are four different quality of service (QoS) levels for global queues:
+
+- `.userInteractive`: for tasks that require immediate attention, such as animating user interface elements.
+- `.userInitiated`: for tasks that are initiated by the user, such as opening a file.
+- `.utility`: for long-running tasks that the user is aware of, such as exporting a large file.
+- `.background`: for tasks that are not visible to the user, such as downloading a file in the background.
+
+Let's take a look at an example:
+
+```swift
+DispatchQueue.global(qos: .userInitiated).async {
+    // Perform a long-running task
+}
+```
+
+In this example, we ask the `DispatchQueue` class for a reference to a global queue with the `.userInitiated` quality of service. We then submit a closure to the global queue using the async method. Inside the closure, we perform a long-running task.
+
+Global queues are useful when you need to perform work that doesn't require immediate attention or that is not tied to the user interface. By using global queues with the appropriate quality of service, you can ensure that the work is performed in a timely manner without negatively impacting the user experience.
+
+#Choosing the Right Dispatch Queue
+
+Choosing the right dispatch queue for the task at hand is important. The main dispatch queue should be used for tasks that update the user interface. The global dispatch queue should be used for tasks that can be executed in the background.
+
+It's important to remember that the global dispatch queue is a concurrent queue. This means that tasks that are submitted to the global dispatch queue can be executed concurrently. If the tasks depend on each other, a serial queue should be used instead.
+</details>
