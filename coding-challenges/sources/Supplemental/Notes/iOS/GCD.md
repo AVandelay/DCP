@@ -204,3 +204,77 @@ So, when should you choose to dispatch work asynchronously or synchronously? As 
 
 On the other hand, you should choose to dispatch work synchronously when the work needs to block the current thread. This is useful when you need to wait for the work to complete before continuing execution. For example, you might need to wait for a file to be downloaded before displaying it to the user.
 </details>
+
+<details>
+<summary>Adding Flexibility with Dispatch Work Items</summary>
+
+What is a Dispatch Work Item?
+
+A dispatch work item is a block of code that is executed on a dispatch queue. It's a more flexible alternative to submitting blocks directly to a dispatch queue because it allows us to perform additional operations before or after the block executes. We can also use a dispatch work item to cancel a task or add dependency between tasks.
+
+Let's look at an example. Suppose we have two tasks to execute: downloading an image from the internet and applying a filter to that image. We can represent each task as a dispatch work item and submit them to a concurrent queue:
+
+```swift
+let downloadWorkItem = DispatchWorkItem {
+    // Download the image from the internet
+}
+
+let filterWorkItem = DispatchWorkItem {
+    // Apply a filter to the image
+}
+
+let queue = DispatchQueue.global(qos: .userInitiated)
+queue.async(execute: downloadWorkItem)
+queue.async(execute: filterWorkItem)
+```
+
+In this example, we create two dispatch work items for downloading and filtering the image. We then submit them to a global queue with the `.userInitiated` quality of service (QoS) class, which indicates that the tasks are user-initiated and should be executed with a higher priority than the default QoS class.
+
+Managing Dispatch Work Items
+
+Once we create a dispatch work item, we can manage it in a few ways. For example, we can cancel a work item using the `cancel()` method:
+
+```swift
+let workItem = DispatchWorkItem {
+    // Execute some task
+}
+
+// Submit the work item to a queue
+let queue = DispatchQueue.global(qos: .background)
+queue.async(execute: workItem)
+
+// Cancel the work item after 5 seconds
+let deadline = DispatchTime.now() + .seconds(5)
+queue.asyncAfter(deadline: deadline) {
+    workItem.cancel()
+}
+```
+In this example, we create a dispatch work item and submit it to a background queue. We then schedule a block to execute after 5 seconds, which calls the cancel() method on the work item.
+
+We can also use dispatch work items to add dependencies between tasks. For example, suppose we have three tasks: task A, task B, and task C. We want to execute task A first, followed by task B and C in parallel. We can use dispatch work items to achieve this:
+
+```swift
+let taskA = DispatchWorkItem {
+    // Execute task A
+}
+
+let taskB = DispatchWorkItem {
+    // Execute task B
+}
+
+let taskC = DispatchWorkItem {
+    // Execute task C
+}
+
+let queue = DispatchQueue.global(qos: .default)
+taskB.notify(queue: queue) {
+    queue.async(execute: taskC)
+}
+
+queue.async(execute: taskA)
+queue.async(execute: taskB)
+```
+
+In this example, we create three dispatch work items for tasks A, B, and C. We submit task A to the queue first, followed by task B. We then use the `notify(queue:execute:)` method on task B to specify that task C should execute after task B completes.
+
+</details>
