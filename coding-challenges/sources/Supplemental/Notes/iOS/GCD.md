@@ -525,3 +525,45 @@ myGroup.wait()
 
 In this example, we call the `wait()` method on the dispatch group, which blocks the current thread until all tasks have completed. Once all tasks have completed, the method returns, and we can proceed to the next step.
 </details>
+
+<details>
+<summary>Controlling Access With Dispatch Semaphores</summary>
+
+In Grand Central Dispatch, semaphores can be used to manage access to shared resources. A semaphore is a synchronization object that can be used to coordinate access to a shared resource. Semaphores can be used to control the number of threads that can access a resource simultaneously.
+
+A semaphore can be thought of as a gatekeeper. The gatekeeper keeps track of how many threads are allowed to pass through the gate at once. If there are already too many threads inside, the gatekeeper will block any additional threads from entering until some threads leave. Once some threads leave, the gatekeeper will allow additional threads to enter.
+
+In Grand Central Dispatch, a semaphore is represented by the DispatchSemaphore class. To create a semaphore, you need to specify the initial value. The initial value specifies how many threads are allowed to access the shared resource simultaneously.
+
+```swift
+let semaphore = DispatchSemaphore(value: 1)
+```
+
+In this example, we're creating a semaphore with an initial value of 1. This means that only one thread can access the shared resource at any given time.
+
+To use the semaphore, we need to call `wait()` before accessing the shared resource and `signal()` after accessing the shared resource. When `wait()` is called, the semaphore will decrement the value. If the value is already zero, `wait()` will block until another thread calls `signal()`. When `signal()` is called, the semaphore will increment the value. If there are any threads blocked on `wait()`, one of them will be unblocked and allowed to continue.
+
+Here's an example of how we can use a semaphore to limit the number of concurrent downloads to 4:
+
+```swift
+let semaphore = DispatchSemaphore(value: 4)
+
+func download(url: URL) {
+    semaphore.wait()
+    URLSession.shared.downloadTask(with: url) { (url, response, error) in
+        // Handle the download
+        semaphore.signal()
+    }.resume()
+}
+```
+
+In this example, we're creating a semaphore with an initial value of 4. This means that up to 4 downloads can happen simultaneously. When we want to start a download, we first call `semaphore.wait()` to decrement the value. This ensures that no more than 4 downloads are happening at once. Once the download is complete, we call `semaphore.signal()` to increment the value and allow another download to start.
+
+It's important to note that using semaphores can introduce the possibility of deadlocks. A deadlock can occur when two or more threads are waiting for each other to release a semaphore. To avoid deadlocks, it's important to follow a few guidelines:
+
+- Always call `signal()` after accessing the shared resource.
+- Never call `wait()` twice in a row without calling `signal()` in between.
+- Make sure that the initial value of the semaphore is greater than zero.
+
+In summary, semaphores can be a powerful tool for managing access to shared resources in Grand Central Dispatch. By limiting the number of threads that can access a resource simultaneously, we can prevent race conditions and improve the performance and stability of our applications. However, it's important to use semaphores carefully and follow best practices to avoid deadlocks and other issues.
+</details>
