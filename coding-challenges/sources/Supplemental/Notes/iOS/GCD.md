@@ -319,3 +319,152 @@ It's also important to remember that GCD can execute blocks on different threads
 
 By keeping memory management in mind when working with GCD, you can take advantage of its power and optimize the performance of your application without introducing memory leaks or other issues.
 </details>
+
+<details>
+<summary>Beyond the Basics With Dispatch Work Items</summary>
+
+Initialization
+
+Grand Central Dispatch provides an easy way to execute work items asynchronously and concurrently in a safe and efficient manner. A dispatch work item is a task that can be executed on a dispatch queue, and it can be used to perform various kinds of work, such as calling a network API, updating the UI, or performing a long-running computation.
+
+To create a dispatch work item, we use the DispatchWorkItem class provided by the GCD API. This class encapsulates a unit of work that can be executed on a queue, and it can be initialized in various ways.
+
+Initialization Options:
+
+There are different ways to initialize a DispatchWorkItem. Here are some of the most commonly used options:
+
+Using a closure:
+
+```swift
+let workItem = DispatchWorkItem {
+  // work to be performed
+}
+```
+
+This is the simplest way to create a work item. We pass a closure that contains the work to be performed. When the work item is executed, the closure is invoked on the target queue.
+
+Using a closure and a quality of service (QoS) class:
+```swift
+let workItem = DispatchWorkItem(qos: .background) {
+  // work to be performed
+}
+```
+
+This initializes a work item with a QoS class. The QoS class is used to specify the priority of the work item. There are different QoS classes available, ranging from user interactive to background.
+
+Using a closure and a dispatch queue:
+```swift
+let queue = DispatchQueue(label: "com.example.myqueue")
+let workItem = DispatchWorkItem(queue: queue) {
+  // work to be performed
+}
+```
+
+This initializes a work item with a target queue. When the work item is executed, it will be dispatched to the target queue for execution.
+
+Using a closure, a dispatch queue, and a QoS class:
+```swift
+let queue = DispatchQueue(label: "com.example.myqueue", qos: .background)
+let workItem = DispatchWorkItem(queue: queue) {
+  // work to be performed
+}
+```
+
+This initializes a work item with a target queue and a QoS class. The work item will be dispatched to the target queue with the specified QoS class.
+
+Flags:
+
+There are also several flags that can be set when creating a dispatch work item. Here are some of the most commonly used flags:
+
+`.inheritQoS`
+This flag is used to inherit the QoS class of the current thread. When a work item is submitted to a queue and this flag is set, the work item inherits the QoS class of the thread that submitted it.
+
+```swift
+let workItem = DispatchWorkItem(flags: .inheritQoS) {
+  // work to be performed
+}
+```
+
+`.enforceQoS`
+This flag is used to enforce the QoS class of the work item, even if it's submitted to a queue with a different QoS class.
+
+```swift
+let workItem = DispatchWorkItem(flags: .enforceQoS) {
+  // work to be performed
+}
+```
+By using these flags, we can ensure that the work item is executed with the desired QoS class, regardless of the queue it's submitted to.
+
+Performing a Dispatch Work Item
+
+In Grand Central Dispatch, a work item is a block of code that you want to execute on a dispatch queue. You can create a work item by wrapping a block of code inside a `DispatchWorkItem` object. The object provides a few additional features that allow you to control how the work item is executed.
+
+One way to execute a work item is by invoking its `perform()` method. When you call `perform()` on a work item, it gets submitted to the dispatch queue, and the block of code that it contains gets executed. Here's what that looks like:
+
+```swift
+let workItem = DispatchWorkItem {
+    // Your block of code goes here
+}
+
+workItem.perform()
+```
+
+While the `perform()` method looks appealing because it allows you to execute a work item with a single line of code, it's important to understand that the result isn't always what you want.
+
+One problem with using `perform()` is that it blocks the current thread until the work item completes. This means that if you call `perform()` on the main thread, the UI freezes until the work item completes. This defeats the purpose of using Grand Central Dispatch, which is to execute work items in the background to keep the user interface responsive.
+
+Another issue with using `perform()` is that it doesn't allow you to take advantage of the full power of Grand Central Dispatch. For example, it doesn't provide the ability to specify a quality of service class or a dispatch queue.
+
+To avoid these issues, it's best to use the `async(execute:)` method on a dispatch queue to submit a work item. Here's what that looks like:
+
+```swift
+let workItem = DispatchWorkItem {
+    // Your block of code goes here
+}
+
+let queue = DispatchQueue(label: "com.example.myqueue")
+queue.async(execute: workItem)
+```
+By submitting a work item using a dispatch queue, you can specify the queue's quality of service class, which determines how the system schedules the work item for execution. Additionally, using a dispatch queue allows the system to choose the most appropriate thread to execute the work item, which can improve performance.
+
+Waiting for Completion with Notify() and Wait()
+
+When we submit a work item to a dispatch queue, it is usually asynchronous, meaning that the rest of our code can continue executing while the work item is being processed on a separate thread. However, sometimes we need to wait for the work item to finish before continuing with the rest of our code. We can accomplish this using the `notify()` and `wait()` methods provided by Grand Central Dispatch.
+
+The `notify()` Method
+
+The `notify()` method is called on a dispatch queue after all submitted work items have completed. We can use this method to execute additional work after the original work item has finished processing. Here is an example:
+
+```swift
+let queue = DispatchQueue(label: "com.mycompany.myqueue")
+queue.async {
+    // Perform work item
+}
+queue.notify(queue: DispatchQueue.main) {
+    // Additional work to be executed after the work item completes
+}
+```
+
+In this example, we create a new dispatch queue and submit a work item to it. We then call the `notify()` method on the same dispatch queue and pass in a closure to be executed after the work item has completed. In this case, we are executing the closure on the main dispatch queue, but we could use any other queue as well.
+
+The `wait()` Method
+
+The wait() method is called on a dispatch queue and blocks the current thread until all submitted work items have completed. This method should be used with caution, as it can cause our application to become unresponsive if the work items take a long time to complete. Here is an example:
+
+```swift
+let queue = DispatchQueue(label: "com.mycompany.myqueue")
+queue.async {
+    // Perform work item
+}
+queue.wait()
+// Code here is not executed until work item completes
+```
+
+In this example, we create a new dispatch queue and submit a work item to it. We then call the `wait()` method on the same dispatch queue, which blocks the current thread until the work item has completed. Once the work item has completed, the code after the `wait()` method call is executed.
+
+Be Careful with `wait()`
+
+While the `wait()` method may seem appealing because it allows us to wait for a work item to complete before continuing with the rest of our code, we should be careful when using it. If we call `wait()` on the main thread, it can cause our application to become unresponsive and even crash if the work item takes a long time to complete. It is usually better to use the `notify()` method or other synchronization mechanisms, such as semaphores, to manage the execution of our work items.
+
+In summary, the `notify()` and `wait()` methods provide powerful tools for managing the execution of our work items on Grand Central Dispatch. By using these methods, we can synchronize our code and ensure that our work items are executing in the order and at the times that we expect. However, we should be careful when using the wait() method and make sure to use it only in appropriate situations.
+</details>
