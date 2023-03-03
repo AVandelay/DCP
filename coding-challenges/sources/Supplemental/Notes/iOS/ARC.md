@@ -357,6 +357,7 @@ class Apartment {
         print("Apartment \(unit) is being deinitialized")
     }
 }
+```
 
 This tells Swift that the tenant property is a weak reference, which means it won't keep the Person instance alive. This breaks the strong reference cycle between the Person and Apartment instances.
 
@@ -365,7 +366,6 @@ Another way to break a strong reference cycle is by using an unowned reference. 
 However, you need to be careful when using unowned references. If you try to access an unowned reference that has been deallocated, your app will crash. To use an unowned reference safely, you need to make sure that the referenced object is still alive.
 
 In summary, turning strong references into weak references is one way to break strong reference cycles in Swift. A weak reference is a reference that doesn't increase the reference count of an object and becomes nil automatically when the object is deallocated. To use a weak reference, you can declare it as a weak var. If you need a reference that's assumed to always have a value, you can use an unowned reference instead. However, you need to be careful when using unowned references to avoid crashing your app.
-```
 </details>
 
 <details>
