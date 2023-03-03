@@ -417,3 +417,49 @@ When working with weak and unowned references, it's important to use defensive p
 
 In summary, strong, weak, and unowned references each have their own characteristics and use cases in Swift. By using these types of references appropriately, we can help Swift's ARC mechanism manage memory and avoid memory leaks in our code. When working with weak and unowned references, it's important to use defensive programming techniques to avoid unexpected crashes.
 </details>
+
+<details>
+<summary>How to Use a Capture List to Break a Retain Cycle</summary>
+
+In Swift, closures can cause retain cycles when they capture strong references to objects that hold strong references back to the closure. To break these retain cycles, we can use a capture list.
+
+Capturing Values:
+
+When a closure captures a value, it creates a strong reference to the value. If the value holds a strong reference back to the closure, a retain cycle is created. To avoid this, we can use a capture list to capture weak or unowned references to the values that the closure needs.
+
+Defining a Capture List:
+
+A capture list is a way to explicitly capture values in a closure without creating a strong reference cycle. A capture list is defined using square brackets [] immediately after the closure's parameter list.
+
+A capture list can capture either weak or unowned references to values. To capture a weak reference, use the weak keyword followed by the value to capture. To capture an unowned reference, use the unowned keyword followed by the value to capture.
+
+Here's an example of a closure that captures a weak reference to self:
+
+```swift
+class ViewController: UIViewController {
+    var button = UIButton()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        button.addTarget(self, action: { [weak self] in
+            self?.buttonTapped()
+        }, for: .touchUpInside)
+    }
+    
+    func buttonTapped() {
+        print("Button tapped")
+    }
+}
+```
+
+In this example, the closure is capturing a weak reference to self to avoid a strong reference cycle. This ensures that the ViewController can be deallocated even if the closure is still alive.
+
+Debugging Memory Issues:
+
+When using capture lists, it's important to be aware of potential memory issues. If you capture a weak reference to a value that has already been deallocated, the weak reference will be nil. This can cause unexpected behavior or crashes if you try to access the nil reference.
+
+To debug memory issues with capture lists, you can use Xcode's Debug Memory Graph tool. This tool allows you to see the objects in memory and their relationships to each other. By examining the memory graph, you can identify strong reference cycles and use capture lists to break them.
+
+In summary, capture lists are a powerful tool for breaking retain cycles in closures. By capturing weak or unowned references to values, we can avoid creating strong reference cycles that can lead to memory leaks in our Swift code. When using capture lists, it's important to be aware of potential memory issues and to use Xcode's Debug Memory Graph tool to debug any issues that arise.
+</details>
