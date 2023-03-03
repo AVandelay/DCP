@@ -290,3 +290,80 @@ viewController?.updateLabelClosure?()
 viewController = nil
 ```
 </details>
+
+<details>
+<summary>How to Break a Strong Reference Cycle</summary>
+
+Strong reference cycles can cause memory leaks in our Swift code, so it's important to know how to break them. One way to do this is by turning strong references into weak references.
+
+A weak reference is a reference that doesn't increase the reference count of an object. If the object is deallocated, the weak reference becomes nil automatically. This makes weak references ideal for breaking strong reference cycles.
+
+Let's take a look at an example. Suppose we have a Person class and a Apartment class, where a Person can live in an Apartment and an Apartment can have a tenant who is a Person. We can create a strong reference cycle between these two classes like this:
+
+```swift
+class Person {
+    var name: String
+    var apartment: Apartment?
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    deinit {
+        print("\(name) is being deinitialized")
+    }
+}
+
+class Apartment {
+    var unit: String
+    var tenant: Person?
+    
+    init(unit: String) {
+        self.unit = unit
+    }
+    
+    deinit {
+        print("Apartment \(unit) is being deinitialized")
+    }
+}
+
+var john: Person?
+var unit4A: Apartment?
+
+john = Person(name: "John")
+unit4A = Apartment(unit: "4A")
+
+john?.apartment = unit4A
+unit4A?.tenant = john
+
+john = nil
+unit4A = nil
+```
+
+In this example, we create a Person instance named John and an Apartment instance named unit4A. We then create a strong reference cycle by setting john's apartment property to unit4A, and unit4A's tenant property to john.
+
+To break this strong reference cycle, we can use weak references. We can turn the strong reference from Apartment to Person into a weak reference by changing the tenant property in the Apartment class to a weak var:
+
+```swift 
+class Apartment {
+    var unit: String
+    weak var tenant: Person?
+    
+    init(unit: String) {
+        self.unit = unit
+    }
+    
+    deinit {
+        print("Apartment \(unit) is being deinitialized")
+    }
+}
+
+This tells Swift that the tenant property is a weak reference, which means it won't keep the Person instance alive. This breaks the strong reference cycle between the Person and Apartment instances.
+
+Another way to break a strong reference cycle is by using an unowned reference. An unowned reference is similar to a weak reference, but it's assumed to always have a value. This means that you don't need to check if the reference is nil before using it.
+
+However, you need to be careful when using unowned references. If you try to access an unowned reference that has been deallocated, your app will crash. To use an unowned reference safely, you need to make sure that the referenced object is still alive.
+
+In summary, turning strong references into weak references is one way to break strong reference cycles in Swift. A weak reference is a reference that doesn't increase the reference count of an object and becomes nil automatically when the object is deallocated. To use a weak reference, you can declare it as a weak var. If you need a reference that's assumed to always have a value, you can use an unowned reference instead. However, you need to be careful when using unowned references to avoid crashing your app.
+```
+</details>
