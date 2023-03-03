@@ -367,3 +367,53 @@ However, you need to be careful when using unowned references. If you try to acc
 In summary, turning strong references into weak references is one way to break strong reference cycles in Swift. A weak reference is a reference that doesn't increase the reference count of an object and becomes nil automatically when the object is deallocated. To use a weak reference, you can declare it as a weak var. If you need a reference that's assumed to always have a value, you can use an unowned reference instead. However, you need to be careful when using unowned references to avoid crashing your app.
 ```
 </details>
+
+<details>
+<summary>What Is the Difference Between Strong, Weak, and Unowned References</summary>
+
+In Swift, there are three types of references that you can use to manage memory: strong, weak, and unowned references. Each type of reference has its own characteristics and use cases.
+
+Helping Automatic Reference Counting:
+
+Before we dive into the different types of references, let's briefly talk about how they help Swift's Automatic Reference Counting (ARC) mechanism manage memory. ARC keeps track of the number of strong references to an object. When the count goes to zero, the object is deallocated. By using weak and unowned references, we can break strong reference cycles and ensure that objects are deallocated properly.
+
+What Is the Difference Between Strong and Weak/Unowned References?
+
+A strong reference is a reference that increases the reference count of an object, keeping it alive as long as there is at least one strong reference to it. A weak reference, on the other hand, doesn't increase the reference count of an object. If the object is deallocated, the weak reference becomes nil automatically. An unowned reference is similar to a weak reference, but it's assumed to always have a value. This means that you don't need to check if the reference is nil before using it.
+
+What Is the Difference Between Weak and Unowned References?
+
+The main difference between weak and unowned references is that a weak reference can become nil automatically when the object it points to is deallocated, while an unowned reference can't. This means that you need to make sure that the referenced object is still alive before using an unowned reference.
+
+What Is a Weak Reference?
+
+A weak reference is a reference that doesn't increase the reference count of an object and becomes nil automatically when the object is deallocated. Weak references are useful for breaking strong reference cycles.
+
+You declare a weak reference by using the weak keyword in front of the reference declaration. For example, if you have a reference to a Person object in your code, you could declare it as a weak reference like this:
+
+```swift
+weak var person: Person?
+```
+
+What Is an Unowned Reference?
+
+An unowned reference is a reference that doesn't increase the reference count of an object and is assumed to always have a value. This means that you don't need to check if the reference is nil before using it.
+
+You declare an unowned reference by using the unowned keyword in front of the reference declaration. For example, if you have a reference to a Person object in your code, you could declare it as an unowned reference like this:
+
+```swift
+unowned let person: Person
+```
+
+Rules of Thumb:
+
+- Use strong references when you want to keep an object alive as long as there is at least one strong reference to it.
+- Use weak references to break strong reference cycles between two or more objects.
+- Use unowned references when you know that the referenced object will always be alive as long as the reference is in use.
+
+Defensive Programming:
+
+When working with weak and unowned references, it's important to use defensive programming techniques to avoid unexpected crashes. This means checking that a weak reference is not nil before using it, and using guard statements or optional binding to safely unwrap optional values.
+
+In summary, strong, weak, and unowned references each have their own characteristics and use cases in Swift. By using these types of references appropriately, we can help Swift's ARC mechanism manage memory and avoid memory leaks in our code. When working with weak and unowned references, it's important to use defensive programming techniques to avoid unexpected crashes.
+</details>
