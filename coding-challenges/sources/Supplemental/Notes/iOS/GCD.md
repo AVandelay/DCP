@@ -166,3 +166,41 @@ Choosing the right dispatch queue for the task at hand is important. The main di
 
 It's important to remember that the global dispatch queue is a concurrent queue. This means that tasks that are submitted to the global dispatch queue can be executed concurrently. If the tasks depend on each other, a serial queue should be used instead.
 </details>
+
+<details>
+<summary>Synchronous and Asynchronous Execution</summary>
+
+#Asynchronous Execution
+
+When you dispatch work asynchronously, the block is submitted to the dispatch queue and the method returns immediately. The block is then executed on a background thread. This means that the block is executed concurrently with the rest of your application. The thread that is used to execute the block is managed by Grand Central Dispatch.
+
+Here's an example of how to dispatch work asynchronously:
+
+```swift
+DispatchQueue.global(qos: .userInitiated).async {
+    // Perform work here
+}
+```
+
+This dispatches the block to a global queue with the user-initiated QoS (Quality of Service) class. The block is executed on a background thread and the method returns immediately.
+
+#Synchronous Execution
+
+When you dispatch work synchronously, the method blocks until the block has been executed. This means that the block is executed on the current thread, which can be either the main thread or a background thread. The method doesn't return until the block has been executed.
+
+Here's an example of how to dispatch work synchronously:
+
+```swift
+DispatchQueue.main.sync {
+    // Perform work here
+}
+```
+
+This dispatches the block to the main queue and blocks the current thread until the block has been executed. The block is executed on the main thread.
+
+#Choosing Between Asynchronous and Synchronous Execution
+
+So, when should you choose to dispatch work asynchronously or synchronously? As a rule of thumb, you should choose to dispatch work asynchronously when the work doesn't need to block the current thread. This allows your application to continue executing while the work is being performed in the background.
+
+On the other hand, you should choose to dispatch work synchronously when the work needs to block the current thread. This is useful when you need to wait for the work to complete before continuing execution. For example, you might need to wait for a file to be downloaded before displaying it to the user.
+</details>
