@@ -63,3 +63,230 @@ To solve this problem, Swift uses Automatic Reference Counting (ARC). ARC is a m
 
 ARC keeps a count of the number of strong references to an object. When the count goes to zero, the object is deallocated. ARC is able to handle strong reference cycles, but we need to be careful when using reference types to avoid creating these cycles.
 </details>
+
+<details>
+<summary>What Are Strong Reference Cycles</summary>
+In Swift, a strong reference is a reference that keeps an object alive. When you create a new instance of a class, a strong reference is automatically created to that instance. As long as there is at least one strong reference to an object, it will remain alive in memory.
+
+However, this can lead to a problem called a strong reference cycle. A strong reference cycle occurs when two or more objects hold strong references to each other, creating a loop that prevents either object from being deallocated. Let's explore a few examples of how this can happen.
+
+Delegation is a common design pattern in which one object delegates certain tasks or responsibilities to another object. Let's say we have a Person object that has a Car object, and we want to delegate the responsibility of driving the car to the Person. We might set up our code like this:
+```swift
+class Person {
+    var car: Car?
+    
+    func drive() {
+        car?.startEngine()
+    }
+    
+    deinit {
+        print("Person is being deinitialized")
+    }
+}
+
+class Car {
+    var owner: Person?
+    
+    func startEngine() {
+        print("Engine started")
+    }
+    
+    deinit {
+        print("Car is being deinitialized")
+    }
+}
+
+var john: Person?
+var honda: Car?
+
+john = Person()
+honda = Car()
+
+john?.car = honda
+honda?.owner = john
+
+john = nil
+honda = nil
+```
+In this example, we have a Person object and a Car object. The Person object has a strong reference to the Car object via the car property, and the Car object has a strong reference to the Person object via the owner property. This creates a strong reference cycle between john and honda.
+
+Another way strong reference cycles can occur is through dependencies. Let's say we have a Game object that depends on a Player object, and the Player object depends on the Game object. We might set up our code like this:
+```swift
+class Game {
+    var player: Player?
+    
+    func start() {
+        player?.play()
+    }
+    
+    deinit {
+        print("Game is being deinitialized")
+    }
+}
+
+class Player {
+    var game: Game?
+    
+    func play() {
+        print("Playing the game")
+    }
+    
+    deinit {
+        print("Player is being deinitialized")
+    }
+}
+
+var game: Game?
+var player: Player?
+
+game = Game()
+player = Player()
+
+game?.player = player
+player?.game = game
+
+game = nil
+player = nil
+```
+In this example, we have a Game object and a Player object. The Game object has a strong reference to the Player object via the player property, and the Player object has a strong reference to the Game object via the game property. This creates a strong reference cycle between game and player.
+
+Finally, closures can also create strong reference cycles. Let's say we have a ViewController object that has a closure that updates a label on the view controller. We might set up our code like this:
+
+```swift
+class ViewController {
+    var updateLabelClosure: (() -> Void)?
+    
+    func viewDidLoad() {
+        super.viewDidLoad()
+        
+        updateLabelClosure = { [weak self] in
+            self?.label.text = "Updated Label"
+        }
+    }
+    
+    deinit {
+        print("ViewController is being deinitialized")
+    }
+    
+    lazy var label: UILabel = {
+        let label = UILabel()
+        label.text = "Initial Label"
+        return label
+    }()
+}
+
+var viewController: ViewController?
+
+viewController = ViewController()
+viewController?.updateLabelClosure?()
+
+viewController = nil
+```
+In this example, we have a ViewController object with a label property that is updated by a closure. The closure captures a weak reference to the ViewController object to avoid creating a strong reference cycle. By capturing a weak reference to self, we ensure that the ViewController can be deallocated even if the closure is still alive.
+
+In order to break a strong reference cycle, we need to use weak or unowned references. A weak reference is a reference that doesn't increase the retain count of an object. If the object is deallocated, the weak reference becomes nil. An unowned reference is a reference that is assumed to always have a value, but doesn't increase the retain count of an object.
+
+In the first example with delegation, we could break the strong reference cycle by using a weak reference instead of a strong reference for the car property in the Person class:
+```swift
+class Person {
+    weak var car: Car?
+    
+    func drive() {
+        car?.startEngine()
+    }
+    
+    deinit {
+        print("Person is being deinitialized")
+    }
+}
+
+var john: Person?
+var honda: Car?
+
+john = Person()
+honda = Car()
+
+john?.car = honda
+honda?.owner = john
+
+john = nil
+honda = nil
+```
+
+In the second example with dependencies, we could break the strong reference cycle by using an unowned reference instead of a strong reference for the player property in the Game class:
+
+```swift
+class Game {
+    var player: Player?
+    
+    func start() {
+        player?.play()
+    }
+    
+    deinit {
+        print("Game is being deinitialized")
+    }
+}
+
+class Player {
+    unowned var game: Game
+    
+    init(game: Game) {
+        self.game = game
+    }
+    
+    func play() {
+        print("Playing the game")
+    }
+    
+    deinit {
+        print("Player is being deinitialized")
+    }
+}
+
+var game: Game?
+var player: Player?
+
+game = Game()
+player = Player(game: game!)
+
+game?.player = player
+player?.game = game!
+
+game = nil
+player = nil
+```
+
+In the third example with closures, we could break the strong reference cycle by capturing a weak reference to self in the closure:
+
+```swift
+class ViewController {
+    var updateLabelClosure: (() -> Void)?
+    
+    func viewDidLoad() {
+        super.viewDidLoad()
+        
+        updateLabelClosure = { [weak self] in
+            self?.label.text = "Updated Label"
+        }
+    }
+    
+    deinit {
+        print("ViewController is being deinitialized")
+    }
+    
+    lazy var label: UILabel = {
+        let label = UILabel()
+        label.text = "Initial Label"
+        return label
+    }()
+}
+
+var viewController: ViewController?
+
+viewController = ViewController()
+viewController?.updateLabelClosure?()
+
+viewController = nil
+```
+</details>
