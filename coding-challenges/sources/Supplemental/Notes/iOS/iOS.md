@@ -156,6 +156,60 @@ struct Dog: Animal {
 In this example, the Dog struct conforms to the Animal protocol by providing implementations for the name property and the makeSound() method. By using protocols, you can create types that conform to a specific interface or behavior, while also providing the flexibility to swap out different implementations as needed.
 </details>
 
+<details>
+<summary>What is the difference between self and Self?</summary>
+In Swift, `self` (with a lowercase "s") refers to the current instance of a class or struct, while `Self` (with an uppercase "S") refers to the type of the current instance.
+
+For example, consider the following code:
+
+```swift
+class MyClass {
+    var value: Int = 0
+    
+    func setValue(_ value: Int) {
+        self.value = value
+    }
+    
+    func getValue() -> Int {
+        return self.value
+    }
+    
+    func createAnotherInstance() -> Self {
+        return type(of: self).init()
+    }
+}
+
+class MySubclass: MyClass {
+    var name: String = ""
+    
+    func setName(_ name: String) {
+        self.name = name
+    }
+    
+    override func createAnotherInstance() -> MySubclass {
+        return MySubclass()
+    }
+}
+
+let instance1 = MyClass()
+instance1.setValue(10)
+print(instance1.getValue()) // Output: 10
+
+let instance2 = MySubclass()
+instance2.setName("John")
+let instance3 = instance2.createAnotherInstance()
+print(type(of: instance3)) // Output: MySubclass
+```
+
+In the above code, `self` is used to refer to the current instance of the class, while `Self` is used to refer to the type of the current instance.
+
+We should use `Self` when we want to return the type of the current instance in a method, rather than hardcoding the type. This is useful for supporting subclassing and making code more generic. In the example above, the `createAnotherInstance` method returns an instance of the same type as the current instance, so it uses `Self` instead of hardcoding the class name.
+
+On the other hand, we should use `self` to refer to the current instance's properties and methods within the same class or struct. In the example above, the setValue and getValue methods use `self` to refer to the `value` property of the current instance.
+
+`self` is like a container that that holds the properties and methods of the current instance of a class or struct, while `Self` is like a label that identifies the type of the container.
+</details>
+
 # Memory Management
 
 <details>
