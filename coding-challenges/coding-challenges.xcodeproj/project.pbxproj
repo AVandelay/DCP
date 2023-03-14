@@ -70,6 +70,7 @@
 		BE41E1E329789C4000273902 /* 146-LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1E229789C4000273902 /* 146-LRUCache.swift */; };
 		BE41E1E72978A5E700273902 /* 916-WordSubsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */; };
 		BE46115029885C5800DAE7B1 /* Day132.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46114F29885C5800DAE7B1 /* Day132.swift */; };
+		BE4F177B29BFCBA5008B2F67 /* 642-DesignSearchAutocompleteSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4F177A29BFCBA5008B2F67 /* 642-DesignSearchAutocompleteSystem.swift */; };
 		BE6362A4298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362A3298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift */; };
 		BE6362AC298CDAB000A6F4C3 /* 706-DesignHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362AB298CDAB000A6F4C3 /* 706-DesignHashMap.swift */; };
 		BE6362B1298CE6C400A6F4C3 /* 981-TimeBasedKey-ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362B0298CE40700A6F4C3 /* 981-TimeBasedKey-ValueStore.swift */; };
@@ -282,6 +283,7 @@
 		BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "916-WordSubsets.swift"; sourceTree = "<group>"; };
 		BE46114E29885C0C00DAE7B1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE46114F29885C5800DAE7B1 /* Day132.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day132.swift; sourceTree = "<group>"; };
+		BE4F177A29BFCBA5008B2F67 /* 642-DesignSearchAutocompleteSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "642-DesignSearchAutocompleteSystem.swift"; sourceTree = "<group>"; };
 		BE6362A3298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1774-ClosestDessertCost.swift"; sourceTree = "<group>"; };
 		BE6362A5298A433600A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE6362AB298CDAB000A6F4C3 /* 706-DesignHashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "706-DesignHashMap.swift"; sourceTree = "<group>"; };
@@ -964,6 +966,14 @@
 			path = "Day 132";
 			sourceTree = "<group>";
 		};
+		BE4F177929BFCB73008B2F67 /* 642. Design Search Autocomplete System */ = {
+			isa = PBXGroup;
+			children = (
+				BE4F177A29BFCBA5008B2F67 /* 642-DesignSearchAutocompleteSystem.swift */,
+			);
+			path = "642. Design Search Autocomplete System";
+			sourceTree = "<group>";
+		};
 		BE6362A2298A42DC00A6F4C3 /* 1774. Closest Dessert Cost */ = {
 			isa = PBXGroup;
 			children = (
@@ -1161,6 +1171,7 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				BE4F177929BFCB73008B2F67 /* 642. Design Search Autocomplete System */,
 				BE86ED4429567A8300ACA2BF /* 1. Two Sum */,
 				BE41E19729709BFC00273902 /* 9. Palindrome Number */,
 				BE41E167296E08C400273902 /* 11. Container With Most Water */,
@@ -1704,6 +1715,7 @@
 				BE41E188296F4CA900273902 /* Day148.swift in Sources */,
 				BE41E1A229722CA200273902 /* SerializeAndDeserializeLinkedList.swift in Sources */,
 				BEA6A77E29A7FB92000F233A /* Day330.swift in Sources */,
+				BE4F177B29BFCBA5008B2F67 /* 642-DesignSearchAutocompleteSystem.swift in Sources */,
 				BEBA17CD2989B95600D2E75C /* ElevatorSystem.swift in Sources */,
 				BE6362B1298CE6C400A6F4C3 /* 981-TimeBasedKey-ValueStore.swift in Sources */,
 				BEA6A78B29A88097000F233A /* 695-MaxAreaOfIsland.swift in Sources */,
