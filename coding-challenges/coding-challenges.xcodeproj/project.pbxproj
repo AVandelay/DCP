@@ -283,6 +283,7 @@
 		BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "916-WordSubsets.swift"; sourceTree = "<group>"; };
 		BE46114E29885C0C00DAE7B1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE46114F29885C5800DAE7B1 /* Day132.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day132.swift; sourceTree = "<group>"; };
+		BE4C9D1B29C2808100B6C81A /* CV.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CV.md; sourceTree = "<group>"; };
 		BE4F177A29BFCBA5008B2F67 /* 642-DesignSearchAutocompleteSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "642-DesignSearchAutocompleteSystem.swift"; sourceTree = "<group>"; };
 		BE6362A3298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1774-ClosestDessertCost.swift"; sourceTree = "<group>"; };
 		BE6362A5298A433600A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -966,6 +967,14 @@
 			path = "Day 132";
 			sourceTree = "<group>";
 		};
+		BE4C9D1A29C2806400B6C81A /* Course Work */ = {
+			isa = PBXGroup;
+			children = (
+				BE4C9D1B29C2808100B6C81A /* CV.md */,
+			);
+			path = "Course Work";
+			sourceTree = "<group>";
+		};
 		BE4F177929BFCB73008B2F67 /* 642. Design Search Autocomplete System */ = {
 			isa = PBXGroup;
 			children = (
@@ -1486,6 +1495,7 @@
 		BEB7E550299C0FAB005582D1 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				BE4C9D1A29C2806400B6C81A /* Course Work */,
 				BE3AE36529B29821004B2358 /* Options */,
 				BE3AE36229B1561E004B2358 /* iOS */,
 			);
