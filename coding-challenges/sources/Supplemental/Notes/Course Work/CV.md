@@ -345,3 +345,89 @@ Deep learning-based methods use convolutional neural networks (CNNs) or other ma
 
 When selecting a 3D reconstruction or depth estimation technique, consider factors such as the type of input data, the desired depth map density, the complexity of the scene, and the accuracy
 </details>
+
+<details>
+<summary>
+<b>Camera calibration and intrinsic parameters</b>
+<br>Camera calibration is the process of estimating the camera's intrinsic and extrinsic parameters. Intrinsic parameters are properties of the camera itself, such as focal length, principal point, and lens distortion coefficients, while extrinsic parameters describe the camera's position and orientation in the world.
+</summary>
+
+## Pinhole camera model:
+The pinhole camera model is a simple geometric model that relates the 3D world coordinates of a point to its 2D image coordinates using perspective projection. The model is parameterized by the camera's intrinsic parameters, including the focal length, the principal point, and the skew factor.
+
+## Lens distortion:
+Real-world cameras exhibit various types of lens distortion, such as radial and tangential distortion, which cause straight lines in the world to appear curved in the image. Radial distortion is characterized by a center of distortion and distortion coefficients, while tangential distortion is caused by the lens not being perfectly parallel to the image plane.
+
+## Calibration methods:
+Camera calibration methods estimate the intrinsic parameters by observing a calibration object with known geometry (e.g., a checkerboard pattern) in multiple images. Popular calibration methods include:
+- Direct Linear Transformation (DLT): A linear algebraic method that estimates the camera matrix by solving a system of linear equations obtained from the correspondences between world and image coordinates.
+- Zhang's method: A flexible method that uses multiple images of a planar pattern in various orientations to estimate the camera's intrinsic parameters and radial distortion coefficients.
+- Bundler: A Structure from Motion (SfM) pipeline that estimates both the intrinsic and extrinsic parameters of the camera by jointly optimizing the camera's pose, 3D structure, and reprojection error.
+
+## Camera calibration in OpenCV:
+OpenCV is a popular open-source computer vision library that provides functions for camera calibration, including finding the checkerboard corners, estimating the camera matrix and distortion coefficients, and correcting the lens distortion in images.
+
+When calibrating a camera, consider factors such as the type of camera (e.g., pinhole, fisheye), the type and degree of lens distortion, the desired accuracy and precision of the calibration, and the computational efficiency of the calibration method.
+</details>
+
+<details>
+<summary>
+<b>Deep learning techniques:</b>
+<br>Deep learning techniques have revolutionized computer vision by enabling state-of-the-art performance in various tasks, such as object recognition, segmentation, and scene understanding
+</summary>
+
+## Convolutional Neural Networks (CNNs):
+CNNs are a type of deep learning model specifically designed for processing grid-like data, such as images. They consist of convolutional layers, which learn local features by applying filters to small regions of the input, followed by pooling layers that reduce spatial dimensions and increase the network's receptive field. CNNs are used in various computer vision tasks, such as image classification, object detection, and semantic segmentation.
+
+### Popular CNN architectures:
+- LeNet: An early CNN architecture for handwritten digit recognition
+- AlexNet: The breakthrough architecture that demonstrated the power of CNNs in the ImageNet challenge
+- VGGNet: A deeper architecture with small convolutional filters for improved accuracy
+- ResNet: A deep residual network that introduces skip connections to alleviate the vanishing gradient problem
+
+## Object detection:
+Object detection models aim to locate and classify objects within an image. Some popular deep learning-based object detection models are:
+- R-CNN: The Region-based Convolutional Neural Network (R-CNN) combines selective search for region proposal generation with a CNN for feature extraction and classification.
+- Fast R-CNN: An improvement over R-CNN that shares the computation of the convolutional layers among all the region proposals for faster processing.
+- Faster R-CNN: A further improvement that replaces selective search with a Region Proposal Network (RPN) for generating region proposals, resulting in even faster object detection.
+- YOLO (You Only Look Once): A real-time object detection model that divides the image into a grid and predicts bounding boxes and class probabilities for each grid cell in a single forward pass.
+- SSD (Single Shot MultiBox Detector): Another real-time object detection model that predicts bounding boxes and class probabilities directly from different feature maps at multiple scales in a single forward pass.
+
+## Semantic segmentation:
+Semantic segmentation models assign a class label to each pixel in the image. Some popular deep learning-based semantic segmentation models are:
+- FCN (Fully Convolutional Network): A CNN architecture that replaces the fully connected layers with convolutional layers, allowing it to process images of arbitrary size and produce dense class predictions.
+- SegNet: A deep encoder-decoder network that uses pooling indices from the encoder to perform upsampling in the decoder, resulting in better boundary delineation.
+- U-Net: A symmetric encoder-decoder network with skip connections that enable precise localization and high-resolution output.
+
+## Generative models:
+Generative models aim to learn the underlying data distribution and generate new samples. Some popular deep learning-based generative models in computer vision are:
+- Variational Autoencoders (VAEs): A type of generative model that learns a latent representation of the input data and can generate new samples by sampling from the latent space.
+- Generative Adversarial Networks (GANs): A framework where a generator network produces fake samples, and a discriminator network distinguishes between real and fake samples. The two networks are trained in a min-max adversarial fashion, resulting in the generator producing increasingly realistic samples.
+</details>
+
+<details>
+<summary>
+<b>Evaluation metrics for computer vision tasks</b>
+<br>Selecting appropriate evaluation metrics is crucial for assessing the performance of computer vision models and comparing them with other methods.
+</summary>
+
+## Classification:
+- Accuracy: The proportion of correctly classified instances out of the total instances. Accuracy is a straightforward metric but may not be suitable for imbalanced datasets.
+- Precision: The proportion of true positive instances among all instances predicted as positive. Precision is also known as positive predictive value (PPV).
+- Recall: The proportion of true positive instances among all actual positive instances. Recall is also known as sensitivity or true positive rate (TPR).
+- F1 score: The harmonic mean of precision and recall, which provides a balanced measure of both metrics. F1 score is particularly useful when dealing with imbalanced datasets.
+- AUC-ROC: Area under the receiver operating characteristic (ROC) curve measures the performance of a binary classifier across different classification thresholds. It quantifies the trade-off between true positive rate (TPR) and false positive rate (FPR).
+
+## Object detection:
+- Intersection over Union (IoU): A measure of the overlap between two bounding boxes, calculated as the area of their intersection divided by the area of their union.
+- Average Precision (AP): The average of precision values at different recall levels. AP is often used to evaluate object detection models, with IoU thresholds commonly set at 0.5 or higher.
+- Mean Average Precision (mAP): The mean of average precision values across multiple object classes. mAP is a widely used metric for object detection tasks, providing a single performance measure that balances precision and recall.
+
+## Semantic segmentation:
+- Pixel accuracy: The proportion of correctly classified pixels out of the total number of pixels. Pixel accuracy is a simple metric but may not be suitable for imbalanced datasets or cases where some classes are more important than others.
+- Intersection over Union (IoU) for segmentation: Also known as the Jaccard index, it measures the overlap between the predicted segmentation and the ground truth segmentation.
+- Mean Intersection over Union (mIoU): The mean of the IoU values across multiple object classes. mIoU is a commonly used metric for semantic segmentation tasks, providing a single performance measure that considers the quality of the segmentation.
+- Dice coefficient: The harmonic mean of precision and recall for segmentation tasks, calculated as 2 times the area of intersection between the predicted and ground truth segmentations divided by the sum of their areas.
+
+Selecting appropriate evaluation metrics depends on the specific computer vision task, the nature of the dataset, and the desired trade-offs between different aspects of the model's performance. In many cases, it is helpful to report multiple evaluation metrics to provide a comprehensive view of the model's performance.
+</details>
