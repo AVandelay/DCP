@@ -89,6 +89,8 @@ ORB is another fast binary descriptor that combines the FAST keypoint detector a
 ### Limitations:
 - Less distinctive than SIFT and SURF descriptors
 - Not fully scale-invariant
+
+Each of these feature extraction techniques has its advantages and limitations. When selecting a method, consider factors such as computational efficiency, distinctiveness, invariance properties, and the specific requirements of your application.
 </details>
 
 
@@ -157,6 +159,8 @@ SSD is another real-time object detection algorithm that combines the ideas of Y
 ### Limitations:
 - Slightly slower than YOLO
 - Requires a large labeled dataset for training
+
+When choosing an object recognition or detection technique, consider the trade-offs between accuracy, computational efficiency, robustness to variations, and the specific requirements of your application.
 </details>
 
 <details>
@@ -220,6 +224,8 @@ K-means and hierarchical clustering are general clustering algorithms that can b
 - Requires the number of clusters (segments) to be specified in advance for k-means
 - Computationally expensive for large images or high-dimensional feature spaces
 - Sensitive to initialization and the choice of distance metric
+
+When selecting an image segmentation or clustering technique, consider factors such as the complexity of the image, the desired properties of the segments, and the computational efficiency of the algorithm.
 </details>
 
 <details>
@@ -271,4 +277,6 @@ Deep learning-based methods, such as FlowNet and PWC-Net, use convolutional neur
 ### Limitations:
 - Require large labeled datasets for training
 - Computationally expensive compared to traditional methods
+
+When selecting an optical flow or motion analysis technique, consider factors such as the type of motion, the presence of noise, the desired flow field density, and the computational efficiency of the algorithm.
 </details>
