@@ -158,3 +158,66 @@ SSD is another real-time object detection algorithm that combines the ideas of Y
 - Slightly slower than YOLO
 - Requires a large labeled dataset for training
 </details>
+
+<details>
+<summary>
+<b>Image segmentation and clustering</b>
+<br>These techniques aim to partition an image into multiple segments or regions with similar properties, such as color, texture, or object boundaries.
+</summary>
+
+## Thresholding:
+Thresholding is a simple segmentation method that converts an image into a binary image by setting a global or local threshold. Pixels with intensities above the threshold are set to one (foreground), and those below the threshold are set to zero (background). Thresholding works well for images with distinct foreground and background regions.
+
+### Advantages:
+- Simple and fast
+- Effective for images with high contrast between regions
+
+### Limitations:
+- Sensitive to changes in illumination
+- Not suitable for images with complex backgrounds or overlapping objects
+
+## Region growing:
+Region growing is a segmentation technique that starts from seed points and iteratively adds neighboring pixels to the regions based on a similarity criterion, such as intensity or color. This method is useful for segmenting images with well-defined regions and clear boundaries.
+
+### Advantages:
+- Can produce accurate segmentation for well-defined regions
+- Less sensitive to noise compared to edge-based methods
+
+### Limitations:
+- Requires seed points, which may need to be manually selected
+- Sensitive to the choice of similarity criteria
+
+## Watershed algorithm:
+The watershed algorithm is a region-based segmentation technique that treats the image as a topographic surface and finds the catchment basins and watershed lines. The algorithm floods the image from the local minima and merges adjacent regions when they meet at watershed lines.
+
+### Advantages:
+- Can segment complex images with multiple regions
+- Robust to noise and illumination changes
+
+### Limitations:
+- May produce over-segmentation, especially in the presence of noise
+- Requires post-processing to merge over-segmented regions
+
+## Mean-shift segmentation:
+Mean-shift is a non-parametric clustering technique that can be used for image segmentation. The algorithm iteratively shifts each pixel to the mode (peak) of the local probability density function in the feature space, which is estimated using a kernel function. The shifted pixels form clusters that correspond to image segments.
+
+### Advantages:
+- Can automatically determine the number of segments
+- Robust to noise and outliers
+
+### Limitations:
+- Computationally expensive, especially for large images
+- Sensitive to the choice of bandwidth parameter
+
+## K-means and hierarchical clustering:
+K-means and hierarchical clustering are general clustering algorithms that can be applied to image segmentation by treating pixel intensities, colors, or other features as data points in a feature space.
+
+### Advantages:
+- Can segment images based on various features (color, texture, etc.)
+- Relatively simple to implement
+
+### Limitations:
+- Requires the number of clusters (segments) to be specified in advance for k-means
+- Computationally expensive for large images or high-dimensional feature spaces
+- Sensitive to initialization and the choice of distance metric
+</details>
