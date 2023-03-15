@@ -280,3 +280,68 @@ Deep learning-based methods, such as FlowNet and PWC-Net, use convolutional neur
 
 When selecting an optical flow or motion analysis technique, consider factors such as the type of motion, the presence of noise, the desired flow field density, and the computational efficiency of the algorithm.
 </details>
+
+
+<details>
+<summary>
+<b>3D reconstruction and depth estimation</b>
+<br>These techniques aim to recover the 3D structure of a scene or estimate the depth of objects in the scene from 2D images or image sequences.
+</summary>
+
+## Stereoscopic vision and depth estimation:
+Stereoscopic vision is based on the principle of triangulation, where the depth of a point in the scene can be estimated by finding the corresponding point in two or more images taken from different viewpoints (e.g., stereo cameras). The disparity between the corresponding points is inversely proportional to the depth. Popular algorithms for stereo matching include block matching, dynamic programming, and graph cuts.
+
+### Advantages:
+- Can provide dense depth maps
+- Suitable for structured environments and well-textured surfaces
+
+### Limitations:
+- Requires calibrated stereo cameras or multiple images with known camera poses
+- Sensitive to occlusions, illumination changes, and textureless surfaces
+
+## Structure from Motion (SfM):
+Structure from Motion is a technique that recovers the 3D structure of a scene and the camera motion from a sequence of 2D images. SfM combines feature extraction, feature matching, and bundle adjustment to estimate the camera poses and 3D coordinates of the feature points. Popular SfM pipelines include VisualSFM and COLMAP.
+
+### Advantages:
+- Can reconstruct large-scale scenes with a single moving camera
+- Provides both camera poses and 3D structure
+
+### Limitations:
+- Requires a sequence of images with sufficient overlap and well-textured surfaces
+- Can be sensitive to outliers and mismatches in the feature matching stage
+
+## Depth from focus/defocus:
+Depth from focus and depth from defocus techniques estimate the depth of objects in a scene based on the degree of blur or focus. Depth from focus methods capture a stack of images with varying focus distances and estimate the depth by finding the most in-focus image for each pixel. Depth from defocus methods use a single or a pair of defocused images and estimate the depth by analyzing the blur's characteristics.
+
+### Advantages:
+- Can provide dense depth maps
+- Suitable for scenes with varying depth and textureless surfaces
+
+### Limitations:
+- Requires a controlled focus or a known point spread function (PSF)
+- Sensitive to noise and artifacts in the images
+
+## Time-of-Flight (ToF) cameras:
+Time-of-Flight cameras estimate depth by measuring the time it takes for emitted light (usually infrared) to travel to the scene and back to the camera. ToF cameras can provide real-time depth maps with relatively low computational complexity.
+
+### Advantages:
+- Real-time depth estimation
+- Works well in various lighting conditions and with textureless surfaces
+
+### Limitations:
+- Limited range and accuracy compared to other methods
+- Can be affected by multi-path interference and ambient light
+
+## Deep learning-based methods:
+Deep learning-based methods use convolutional neural networks (CNNs) or other machine learning models to estimate depth from single or multiple images. These methods are trained on large datasets with ground truth depth maps and can learn to predict depth for complex, natural scenes. Popular deep learning-based methods include Monodepth, DepthNet, and DeMoN.
+
+### Advantages:
+- Can estimate depth from a single image (monocular depth estimation)
+- Can handle complex scenes and textureless surfaces
+
+### Limitations:
+- Require large labeled datasets for training
+- May not generalize well to unseen environments or conditions
+
+When selecting a 3D reconstruction or depth estimation technique, consider factors such as the type of input data, the desired depth map density, the complexity of the scene, and the accuracy
+</details>
