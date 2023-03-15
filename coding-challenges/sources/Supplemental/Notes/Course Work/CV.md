@@ -221,3 +221,54 @@ K-means and hierarchical clustering are general clustering algorithms that can b
 - Computationally expensive for large images or high-dimensional feature spaces
 - Sensitive to initialization and the choice of distance metric
 </details>
+
+<details>
+<summary>
+<b>Optical flow and motion analysis</b>
+<br>Optical flow is the apparent motion of objects, surfaces, and edges in a scene caused by the relative motion between the observer and the scene. Motion analysis techniques estimate the optical flow to understand the movement of objects in a sequence of images or video frames.
+</summary>
+
+## Differential methods:
+Differential methods for optical flow estimation are based on the assumption that the intensity of a moving object remains constant over time. The most well-known differential method is the Lucas-Kanade algorithm, which uses a local linear approximation of the intensity and assumes that the flow is constant in a small neighborhood around each pixel. Another popular differential method is the Horn-Schunck algorithm, which enforces global smoothness constraints on the flow field.
+
+### Advantages:
+- Can provide dense flow fields
+- Suitable for small, incremental motion
+
+### Limitations:
+- Sensitive to noise
+- Can be affected by the aperture problem (ambiguous flow for one-dimensional structures)
+
+## Feature-based methods:
+Feature-based methods for optical flow estimation first detect and track distinctive features, such as corners or keypoints, across the image sequence. The KLT (Kanade-Lucas-Tomasi) tracker is a well-known feature-based method that combines the Lucas-Kanade algorithm with the Shi-Tomasi corner detector to track keypoints over time.
+
+### Advantages:
+- Robust to noise and partial occlusion
+- Can handle large displacements
+
+### Limitations:
+- Provide sparse flow fields (only at feature locations)
+- Can be affected by the aperture problem
+
+## Phase correlation:
+Phase correlation is a frequency-domain technique for estimating the relative motion between two images. It is based on the Fourier shift theorem, which states that the phase difference between the Fourier transforms of two translated images is linearly proportional to their spatial offset. By computing the inverse Fourier transform of the normalized cross-power spectrum, the motion can be estimated as the peak location in the resulting phase correlation surface.
+
+### Advantages:
+- Robust to illumination changes and noise
+- Suitable for estimating global motion (e.g., camera motion)
+
+### Limitations:
+- Assumes that the motion is constant across the entire image
+- Not suitable for estimating complex or non-rigid motion
+
+## Deep learning-based methods:
+Deep learning-based methods, such as FlowNet and PWC-Net, use convolutional neural networks (CNNs) to estimate optical flow. These methods are trained on large datasets with ground truth flow fields and can learn to estimate complex, non-rigid motion patterns.
+
+### Advantages:
+- Can handle complex and non-rigid motion
+- Can provide dense flow fields
+
+### Limitations:
+- Require large labeled datasets for training
+- Computationally expensive compared to traditional methods
+</details>
