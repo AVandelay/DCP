@@ -18,7 +18,7 @@ def checkValidString(s):
     
     while leftStack and starStack:
         # If the last left parenthesis index is greater than the last star index
-        if leftStack.pop() > starStack.pop():
+        if leftStack[-1] > starStack[-1]:
             return False
         else: # Pop the last parenhesis and star index
             leftStack.pop()
