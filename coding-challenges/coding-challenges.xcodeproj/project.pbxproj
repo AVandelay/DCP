@@ -71,6 +71,7 @@
 		BE41E1E72978A5E700273902 /* 916-WordSubsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41E1E62978A5E700273902 /* 916-WordSubsets.swift */; };
 		BE46115029885C5800DAE7B1 /* Day132.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46114F29885C5800DAE7B1 /* Day132.swift */; };
 		BE4C9D2129C3853800B6C81A /* 811-SubdomainVisitCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C9D2029C3853800B6C81A /* 811-SubdomainVisitCount.swift */; };
+		BE4C9D2429C390ED00B6C81A /* 678-ValidParenthesisString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C9D2329C390ED00B6C81A /* 678-ValidParenthesisString.swift */; };
 		BE4F177B29BFCBA5008B2F67 /* 642-DesignSearchAutocompleteSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4F177A29BFCBA5008B2F67 /* 642-DesignSearchAutocompleteSystem.swift */; };
 		BE6362A4298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362A3298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift */; };
 		BE6362AC298CDAB000A6F4C3 /* 706-DesignHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6362AB298CDAB000A6F4C3 /* 706-DesignHashMap.swift */; };
@@ -139,6 +140,7 @@
 /* Begin PBXFileReference section */
 		BE0878A4299ADDFB0025D974 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE0878A5299ADE1C0025D974 /* 33-SearchInRotatedSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "33-SearchInRotatedSortedArray.swift"; sourceTree = "<group>"; };
+		BE2327A729C3A66700C574D4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE34AA672979F3CE0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE34AA682979F3DF0055AB4A /* 722-RemoveComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "722-RemoveComments.swift"; sourceTree = "<group>"; };
 		BE34AA6B2979FFEE0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 		BE4C9D1E29C3851C00B6C81A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE4C9D1F29C3851C00B6C81A /* 811-SubdomainVisitCount.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "811-SubdomainVisitCount.py"; sourceTree = "<group>"; };
 		BE4C9D2029C3853800B6C81A /* 811-SubdomainVisitCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "811-SubdomainVisitCount.swift"; sourceTree = "<group>"; };
+		BE4C9D2329C390ED00B6C81A /* 678-ValidParenthesisString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "678-ValidParenthesisString.swift"; sourceTree = "<group>"; };
 		BE4F177A29BFCBA5008B2F67 /* 642-DesignSearchAutocompleteSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "642-DesignSearchAutocompleteSystem.swift"; sourceTree = "<group>"; };
 		BE6362A3298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1774-ClosestDessertCost.swift"; sourceTree = "<group>"; };
 		BE6362A5298A433600A6F4C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -989,6 +992,15 @@
 			path = "811. Subdomain Visit Count";
 			sourceTree = "<group>";
 		};
+		BE4C9D2229C390D200B6C81A /* 678. Valid Parenthesis String */ = {
+			isa = PBXGroup;
+			children = (
+				BE4C9D2329C390ED00B6C81A /* 678-ValidParenthesisString.swift */,
+				BE2327A729C3A66700C574D4 /* README.md */,
+			);
+			path = "678. Valid Parenthesis String";
+			sourceTree = "<group>";
+		};
 		BE4F177929BFCB73008B2F67 /* 642. Design Search Autocomplete System */ = {
 			isa = PBXGroup;
 			children = (
@@ -1228,6 +1240,7 @@
 				BEA6A78029A82C5C000F233A /* 609. Find Duplicate File in System */,
 				BE41E1B52974987500273902 /* 629. K Inverse Pairs Array */,
 				BE4F177929BFCB73008B2F67 /* 642. Design Search Autocomplete System */,
+				BE4C9D2229C390D200B6C81A /* 678. Valid Parenthesis String */,
 				BEA6A78829A88065000F233A /* 695. Max Area of Island */,
 				BE6362AA298CDA9000A6F4C3 /* 706. Design HashMap */,
 				BE34AA662979F3B00055AB4A /* 722. Remove Comments */,
@@ -1798,6 +1811,7 @@
 				BE41E1A72973203000273902 /* 772-BasicCalculatorIII.swift in Sources */,
 				BE86ED592958FFCA00ACA2BF /* 217-ContainsDuplicate.swift in Sources */,
 				BE41E1BC2974BDB600273902 /* 227-BasicCalculatorII.swift in Sources */,
+				BE4C9D2429C390ED00B6C81A /* 678-ValidParenthesisString.swift in Sources */,
 				BE41E19A2970B11D00273902 /* 67-AddBinary.swift in Sources */,
 				BE3AE34629AD72CE004B2358 /* 384-ShuffleAnArray.swift in Sources */,
 				BEA6A78F29A9278D000F233A /* 771-JewelsAndStones.swift in Sources */,
