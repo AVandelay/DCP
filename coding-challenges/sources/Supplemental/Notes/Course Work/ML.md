@@ -461,3 +461,43 @@ ICA is a linear transformation technique that aims to find a set of statisticall
 
 Feature transformation is a process that maps the original feature space to a new feature space, often to improve the performance or interpretability of a machine learning model. PCA and ICA are two popular linear feature transformation techniques, each with its advantages and disadvantages. The choice of feature transformation method depends on the specific problem, the nature of the data, and the desired properties of the transformed features.
 </details>
+
+<details>
+<summary>
+<b>Markov Decision Process</b>
+</summary>
+
+# What is a Markov Decision Process (MDP)?
+A Markov Decision Process (MDP) is a mathematical framework used to model decision-making problems in stochastic, sequential environments. MDPs are particularly useful for modeling and solving problems in reinforcement learning, robotics, and control systems, where an agent interacts with an environment and makes decisions over time to achieve a goal. An MDP is defined by a tuple (S, A, P, R, γ), where:
+
+- S: A finite set of states representing the possible situations or configurations of the environment.
+- A: A finite set of actions representing the possible decisions the agent can make.
+- P: The transition probability function, P(s'|s, a), which defines the probability of transitioning from state s to state s' when the agent takes action a.
+- R: The reward function, R(s, a, s'), which specifies the immediate reward the agent receives for taking action a in state s and transitioning to state s'.
+- γ: The discount factor (0 ≤ γ ≤ 1), which determines the relative importance of immediate rewards versus future rewards.
+
+# Key Concepts in MDPs
+a. Policy (π): A policy is a mapping from states to actions, defining the agent's behavior in the environment. A policy tells the agent which action to take in each state to maximize its long-term reward.
+
+b. Value Function (V): The value function V(s) represents the expected long-term reward the agent can obtain, starting from state s and following a given policy π.
+
+c. Q-Function (Q): The Q-function, also known as the state-action value function, Q(s, a), represents the expected long-term reward the agent can obtain by taking action a in state s and following a given policy π thereafter.
+
+d. Bellman Equation: The Bellman equation is a recursive relationship between the value function and the Q-function, expressing the value of a state as the sum of the immediate reward and the expected value of the next state, given a policy π.
+
+# Advantages of MDPs
+a. Formalism: MDPs provide a formal mathematical framework for modeling and solving sequential decision-making problems under uncertainty.
+
+b. Generality: MDPs can model a wide range of problems in various domains, such as robotics, control systems, economics, and game theory.
+
+c. Optimal Policy: MDPs allow for the computation of an optimal policy, which maximizes the expected long-term reward for the agent.
+
+# Disadvantages of MDPs
+a. Computational Complexity: Solving an MDP to find the optimal policy can be computationally expensive, especially for large state and action spaces.
+
+b. Markov Property: MDPs assume that the environment follows the Markov property, meaning that the future state depends only on the current state and action, and not on the history of previous states and actions. This assumption may not hold for all real-world problems.
+
+c. Fully Observable Environment: MDPs assume that the agent has full knowledge of the current state of the environment. In cases where the agent has only partial observability, the MDP framework may need to be extended to a Partially Observable Markov Decision Process (POMDP).
+
+Markov Decision Processes are a mathematical framework for modeling decision-making problems in stochastic, sequential environments. MDPs provide a formalism for representing the environment, the agent's actions, and the rewards, allowing for the computation of optimal policies. However, MDPs have limitations, such as computational complexity and assumptions about the environment, which may need to be addressed in specific problem settings.
+</details>
