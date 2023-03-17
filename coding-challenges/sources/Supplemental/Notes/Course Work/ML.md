@@ -100,3 +100,37 @@ Regression and classification are two fundamental types of supervised learning t
 
 Regression and classification are fundamental supervised learning tasks with wide applicability across various domains. While they have some disadvantages, such as the need for feature engineering and potential issues with imbalanced data, they can be approached with a variety of models that offer varying levels of complexity and interpretability. The choice of algorithm depends on the specific problem, data, and desired level of model complexity.
 </details>
+
+<details>
+<summary>
+<b>Ensemble Learning</b>
+</summary>
+
+# What is Ensemble Learning?
+Ensemble learning is a machine learning technique that combines multiple models (called base learners) to improve predictive performance. The idea is that the combined predictions of several models are often more accurate and robust than the prediction of a single model. Common ensemble learning methods include bagging, boosting, and stacking.
+
+### Advantages of Ensemble Learning
+    a. Improved accuracy: Ensemble methods often yield higher accuracy than individual models, as they can capture diverse patterns in the data and reduce the likelihood of overfitting.
+
+    b. Robustness: By combining the predictions of multiple models, ensemble methods can be more robust to noise, outliers, and model-specific errors.
+
+    c. Handling diverse data: Ensemble learning can effectively handle diverse datasets, as each base learner can be trained on a specific subset of data or focus on a particular aspect of the problem.
+
+    d. Flexibility: Ensemble methods can combine different types of models, allowing for the exploration of various model architectures and the incorporation of domain-specific knowledge.
+
+### Disadvantages of Ensemble Learning
+    a. Increased complexity: Ensemble methods typically require training multiple models, which can lead to increased computational complexity and longer training times.
+
+    b. Reduced interpretability: Ensembles of multiple models are generally less interpretable than individual models, making it more challenging to understand and explain the decision-making process.
+
+    c. Hyperparameter tuning: Ensemble learning methods often involve additional hyperparameters (e.g., the number of base learners or the combination strategy), which may require careful tuning for optimal performance.
+
+### Limitations of Related Algorithms
+    a. Bagging (Bootstrap Aggregating): Bagging reduces variance by averaging the predictions of multiple base learners, each trained on a random subset of the data with replacement. While it can improve the stability and accuracy of unstable models like decision trees, it may not be as effective with more stable models or when dealing with high bias.
+
+    b. Boosting: Boosting is an iterative process that combines multiple weak learners into a strong learner by assigning weights to the training instances and updating them at each iteration. Boosting can achieve high accuracy but can be more prone to overfitting, especially when using complex base learners, and requires careful tuning of hyperparameters.
+
+    c. Stacking: Stacking combines the predictions of multiple base learners using another model (called a meta-learner) trained on their outputs. The performance of stacking depends on the choice of base learners and the meta-learner, and the method can be computationally expensive.
+
+Ensemble learning is a powerful technique that combines multiple models to improve predictive performance and robustness. However, it has some disadvantages, such as increased complexity and reduced interpretability. The choice of ensemble method depends on the specific problem, data, and desired trade-offs between accuracy and complexity.
+</details>
