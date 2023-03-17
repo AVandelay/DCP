@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE0878A6299ADE1C0025D974 /* 33-SearchInRotatedSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0878A5299ADE1C0025D974 /* 33-SearchInRotatedSortedArray.swift */; };
+		BE2327AB29C3BF9300C574D4 /* 2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2327AA29C3BF9300C574D4 /* 2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift */; };
 		BE34AA692979F3DF0055AB4A /* 722-RemoveComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA682979F3DF0055AB4A /* 722-RemoveComments.swift */; };
 		BE34AA6D297A002F0055AB4A /* 13-RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA6C297A002F0055AB4A /* 13-RomanToInteger.swift */; };
 		BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA70297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift */; };
@@ -141,6 +142,8 @@
 		BE0878A4299ADDFB0025D974 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE0878A5299ADE1C0025D974 /* 33-SearchInRotatedSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "33-SearchInRotatedSortedArray.swift"; sourceTree = "<group>"; };
 		BE2327A729C3A66700C574D4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE2327A929C3BF4B00C574D4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE2327AA29C3BF9300C574D4 /* 2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift"; sourceTree = "<group>"; };
 		BE34AA672979F3CE0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE34AA682979F3DF0055AB4A /* 722-RemoveComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "722-RemoveComments.swift"; sourceTree = "<group>"; };
 		BE34AA6B2979FFEE0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -396,6 +399,15 @@
 				BE0878A4299ADDFB0025D974 /* README.md */,
 			);
 			path = "33. Search in Rotated Sorted Array";
+			sourceTree = "<group>";
+		};
+		BE2327A829C3BF3E00C574D4 /* 2035. Partition Array Into Two Arrays to Minimize Sum Difference  */ = {
+			isa = PBXGroup;
+			children = (
+				BE2327AA29C3BF9300C574D4 /* 2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift */,
+				BE2327A929C3BF4B00C574D4 /* README.md */,
+			);
+			path = "2035. Partition Array Into Two Arrays to Minimize Sum Difference ";
 			sourceTree = "<group>";
 		};
 		BE34AA662979F3B00055AB4A /* 722. Remove Comments */ = {
@@ -1260,6 +1272,7 @@
 				BEBA17DA298A248900D2E75C /* 1166. Design File System */,
 				BE41E13D2966122A00273902 /* 1228. Missing Number In Arithmetic Progression */,
 				BE6362A2298A42DC00A6F4C3 /* 1774. Closest Dessert Cost */,
+				BE2327A829C3BF3E00C574D4 /* 2035. Partition Array Into Two Arrays to Minimize Sum Difference  */,
 				BEBA17DE298A3AC900D2E75C /* 2193. Minimum Number of Moves to Make Palindrome */,
 			);
 			path = leetcode;
@@ -1795,6 +1808,7 @@
 				BE41E194296F83AC00273902 /* Day337.swift in Sources */,
 				BEA6A77029A7EE4B000F233A /* Day212.swift in Sources */,
 				BE41E18C296F610D00273902 /* Day210.swift in Sources */,
+				BE2327AB29C3BF9300C574D4 /* 2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift in Sources */,
 				BE41E0F3295F552000273902 /* Day16.swift in Sources */,
 				BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */,
 				BE41E1352964F8A100273902 /* 145-BinaryTreePostorderTraversal.swift in Sources */,
