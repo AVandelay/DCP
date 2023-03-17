@@ -218,7 +218,7 @@ However, a high VC dimension can also lead to overfitting, as the model may capt
 
 <details>
 <summary>
-<b></b>
+<b>Supervised Learning</b>
 </summary>
 
 # What is Supervised Learning?
