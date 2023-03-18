@@ -10,6 +10,7 @@
 		BE0878A6299ADE1C0025D974 /* 33-SearchInRotatedSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0878A5299ADE1C0025D974 /* 33-SearchInRotatedSortedArray.swift */; };
 		BE2327AB29C3BF9300C574D4 /* 2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2327AA29C3BF9300C574D4 /* 2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift */; };
 		BE2327B029C5047300C574D4 /* 1770-MaximumScoreFromPerformingMultiplicationOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2327AF29C5047300C574D4 /* 1770-MaximumScoreFromPerformingMultiplicationOperations.swift */; };
+		BE2327B429C527C600C574D4 /* 716-MaxStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2327B329C527C600C574D4 /* 716-MaxStack.swift */; };
 		BE34AA692979F3DF0055AB4A /* 722-RemoveComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA682979F3DF0055AB4A /* 722-RemoveComments.swift */; };
 		BE34AA6D297A002F0055AB4A /* 13-RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA6C297A002F0055AB4A /* 13-RomanToInteger.swift */; };
 		BE34AA71297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34AA70297A07960055AB4A /* 158-ReadNCharactersGivenread4II-CallMultipleTimes.swift */; };
@@ -147,6 +148,8 @@
 		BE2327AA29C3BF9300C574D4 /* 2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift"; sourceTree = "<group>"; };
 		BE2327AE29C5043700C574D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE2327AF29C5047300C574D4 /* 1770-MaximumScoreFromPerformingMultiplicationOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1770-MaximumScoreFromPerformingMultiplicationOperations.swift"; sourceTree = "<group>"; };
+		BE2327B229C5279D00C574D4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE2327B329C527C600C574D4 /* 716-MaxStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "716-MaxStack.swift"; sourceTree = "<group>"; };
 		BE34AA672979F3CE0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE34AA682979F3DF0055AB4A /* 722-RemoveComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "722-RemoveComments.swift"; sourceTree = "<group>"; };
 		BE34AA6B2979FFEE0055AB4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -420,6 +423,15 @@
 				BE2327AE29C5043700C574D4 /* README.md */,
 			);
 			path = "1770. Maximum Score from Performing Multiplication Operations";
+			sourceTree = "<group>";
+		};
+		BE2327B129C5276C00C574D4 /* 716. Max Stack */ = {
+			isa = PBXGroup;
+			children = (
+				BE2327B329C527C600C574D4 /* 716-MaxStack.swift */,
+				BE2327B229C5279D00C574D4 /* README.md */,
+			);
+			path = "716. Max Stack";
 			sourceTree = "<group>";
 		};
 		BE34AA662979F3B00055AB4A /* 722. Remove Comments */ = {
@@ -1230,6 +1242,7 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				BE2327B129C5276C00C574D4 /* 716. Max Stack */,
 				BE86ED4429567A8300ACA2BF /* 1. Two Sum */,
 				BE41E19729709BFC00273902 /* 9. Palindrome Number */,
 				BE41E167296E08C400273902 /* 11. Container With Most Water */,
@@ -1748,6 +1761,7 @@
 				BE86ED3D2956785400ACA2BF /* Day5.swift in Sources */,
 				BE41E0F6295F6C1500273902 /* 238-ProductOfArrayExceptSelf.swift in Sources */,
 				BE4C9D2129C3853800B6C81A /* 811-SubdomainVisitCount.swift in Sources */,
+				BE2327B429C527C600C574D4 /* 716-MaxStack.swift in Sources */,
 				BE41E14829677E8800273902 /* Day22.swift in Sources */,
 				BE41E14C2968A2D600273902 /* Day23.swift in Sources */,
 				BE41E1CC29761E5500273902 /* 284-PeekingIterator.swift in Sources */,
