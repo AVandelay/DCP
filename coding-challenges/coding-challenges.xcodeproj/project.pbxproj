@@ -98,6 +98,7 @@
 		BE86ED8D295B7B7400ACA2BF /* FindToppledBricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */; };
 		BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */; };
 		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
+		BE9E494429CE4C290053DFD7 /* 296-BestMeetingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E494229CE4C230053DFD7 /* 296-BestMeetingPoint.swift */; };
 		BEA6A6AC299FF9B8000F233A /* iPhoneAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */; };
 		BEA6A73329A5727F000F233A /* Day36.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73229A5727F000F233A /* Day36.swift */; };
 		BEA6A73629A5826C000F233A /* Day39.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73529A5826C000F233A /* Day39.swift */; };
@@ -328,6 +329,8 @@
 		BE86ED8C295B7B7400ACA2BF /* FindToppledBricks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindToppledBricks.swift; sourceTree = "<group>"; };
 		BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242-ValidAnagram.swift"; sourceTree = "<group>"; };
 		BE86EDC1295CB5C700ACA2BF /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
+		BE9E494229CE4C230053DFD7 /* 296-BestMeetingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "296-BestMeetingPoint.swift"; sourceTree = "<group>"; };
+		BE9E494529CE4C420053DFD7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneAppLauncher.swift; sourceTree = "<group>"; };
 		BEA6A6AE29A0102B000F233A /* iOS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = iOS.md; sourceTree = "<group>"; };
 		BEA6A73129A5717E000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -1242,7 +1245,6 @@
 		BE86ED4329567A5E00ACA2BF /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				BE2327B129C5276C00C574D4 /* 716. Max Stack */,
 				BE86ED4429567A8300ACA2BF /* 1. Two Sum */,
 				BE41E19729709BFC00273902 /* 9. Palindrome Number */,
 				BE41E167296E08C400273902 /* 11. Container With Most Water */,
@@ -1264,6 +1266,7 @@
 				BE41E1C12974CD4300273902 /* 224. Basic Calculator */,
 				BE41E1B92974BD7700273902 /* 227. Basic Calculator II */,
 				BE41E0F4295F6BEB00273902 /* 238. Product of Array Except Self */,
+				BE9E494129CE4BF30053DFD7 /* 239. Best Meeting Point */,
 				BE86ED8F295B91D800ACA2BF /* 242. Valid Anagram */,
 				BE41E1C929761E3200273902 /* 284. Peeking Iterator */,
 				BEBA17D62989F91D00D2E75C /* 295. Find Median from Data Stream */,
@@ -1280,6 +1283,7 @@
 				BE4C9D2229C390D200B6C81A /* 678. Valid Parenthesis String */,
 				BEA6A78829A88065000F233A /* 695. Max Area of Island */,
 				BE6362AA298CDA9000A6F4C3 /* 706. Design HashMap */,
+				BE2327B129C5276C00C574D4 /* 716. Max Stack */,
 				BE34AA662979F3B00055AB4A /* 722. Remove Comments */,
 				BEBA17D22989D1F400D2E75C /* 729. My Calendar I */,
 				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
@@ -1400,6 +1404,15 @@
 				BE41E1162964AC2F00273902 /* README.md */,
 			);
 			path = "Day 14";
+			sourceTree = "<group>";
+		};
+		BE9E494129CE4BF30053DFD7 /* 239. Best Meeting Point */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E494229CE4C230053DFD7 /* 296-BestMeetingPoint.swift */,
+				BE9E494529CE4C420053DFD7 /* README.md */,
+			);
+			path = "239. Best Meeting Point";
 			sourceTree = "<group>";
 		};
 		BEA6A6A9299FF963000F233A /* Object Oriented Design */ = {
@@ -1835,6 +1848,7 @@
 				BE41E1D42977126900273902 /* StableInternships.swift in Sources */,
 				BE41E194296F83AC00273902 /* Day337.swift in Sources */,
 				BEA6A77029A7EE4B000F233A /* Day212.swift in Sources */,
+				BE9E494429CE4C290053DFD7 /* 296-BestMeetingPoint.swift in Sources */,
 				BE41E18C296F610D00273902 /* Day210.swift in Sources */,
 				BE2327AB29C3BF9300C574D4 /* 2035-PartitionArrayIntoTwoArraysToMinimizeSumDifference.swift in Sources */,
 				BE41E0F3295F552000273902 /* Day16.swift in Sources */,
