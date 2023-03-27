@@ -99,6 +99,7 @@
 		BE86ED91295B91F600ACA2BF /* 242-ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86ED90295B91F600ACA2BF /* 242-ValidAnagram.swift */; };
 		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
 		BE9E494429CE4C290053DFD7 /* 296-BestMeetingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E494229CE4C230053DFD7 /* 296-BestMeetingPoint.swift */; };
+		BE9E494829D21DEA0053DFD7 /* 759-EmployeeFreeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E494729D21DEA0053DFD7 /* 759-EmployeeFreeTime.swift */; };
 		BEA6A6AC299FF9B8000F233A /* iPhoneAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */; };
 		BEA6A73329A5727F000F233A /* Day36.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73229A5727F000F233A /* Day36.swift */; };
 		BEA6A73629A5826C000F233A /* Day39.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73529A5826C000F233A /* Day39.swift */; };
@@ -331,6 +332,8 @@
 		BE86EDC1295CB5C700ACA2BF /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		BE9E494229CE4C230053DFD7 /* 296-BestMeetingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "296-BestMeetingPoint.swift"; sourceTree = "<group>"; };
 		BE9E494529CE4C420053DFD7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE9E494729D21DEA0053DFD7 /* 759-EmployeeFreeTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "759-EmployeeFreeTime.swift"; sourceTree = "<group>"; };
+		BE9E494929D21DFB0053DFD7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneAppLauncher.swift; sourceTree = "<group>"; };
 		BEA6A6AE29A0102B000F233A /* iOS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = iOS.md; sourceTree = "<group>"; };
 		BEA6A73129A5717E000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -1287,6 +1290,7 @@
 				BE34AA662979F3B00055AB4A /* 722. Remove Comments */,
 				BEBA17D22989D1F400D2E75C /* 729. My Calendar I */,
 				BE41E1AC29737E9F00273902 /* 730. Count Different Palindromic Subsequences */,
+				BE9E494629D21DD80053DFD7 /* 759. Employee Free Time */,
 				BEA6A78C29A92745000F233A /* 771. Jewels and Stones */,
 				BE41E1A429731FDC00273902 /* 772. Basic Calculator III */,
 				BE3AE34A29AEACA0004B2358 /* 796. Rotate String */,
@@ -1413,6 +1417,15 @@
 				BE9E494529CE4C420053DFD7 /* README.md */,
 			);
 			path = "239. Best Meeting Point";
+			sourceTree = "<group>";
+		};
+		BE9E494629D21DD80053DFD7 /* 759. Employee Free Time */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E494729D21DEA0053DFD7 /* 759-EmployeeFreeTime.swift */,
+				BE9E494929D21DFB0053DFD7 /* README.md */,
+			);
+			path = "759. Employee Free Time";
 			sourceTree = "<group>";
 		};
 		BEA6A6A9299FF963000F233A /* Object Oriented Design */ = {
@@ -1780,6 +1793,7 @@
 				BE41E1CC29761E5500273902 /* 284-PeekingIterator.swift in Sources */,
 				BEBA17C1298886C700D2E75C /* Day219.swift in Sources */,
 				BEA6A73B29A5989B000F233A /* Day54.swift in Sources */,
+				BE9E494829D21DEA0053DFD7 /* 759-EmployeeFreeTime.swift in Sources */,
 				BE86ED552958FBE900ACA2BF /* Day11.swift in Sources */,
 				BE6362A4298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift in Sources */,
 				BE86ED3E2956785F00ACA2BF /* Day4.swift in Sources */,
