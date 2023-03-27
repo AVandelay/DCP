@@ -100,6 +100,7 @@
 		BE86EDC2295CB5C700ACA2BF /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86EDC1295CB5C700ACA2BF /* Day14.swift */; };
 		BE9E494429CE4C290053DFD7 /* 296-BestMeetingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E494229CE4C230053DFD7 /* 296-BestMeetingPoint.swift */; };
 		BE9E494829D21DEA0053DFD7 /* 759-EmployeeFreeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E494729D21DEA0053DFD7 /* 759-EmployeeFreeTime.swift */; };
+		BE9E494E29D24B540053DFD7 /* 399-EvaluateDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E494D29D24B540053DFD7 /* 399-EvaluateDivision.swift */; };
 		BEA6A6AC299FF9B8000F233A /* iPhoneAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */; };
 		BEA6A73329A5727F000F233A /* Day36.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73229A5727F000F233A /* Day36.swift */; };
 		BEA6A73629A5826C000F233A /* Day39.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6A73529A5826C000F233A /* Day39.swift */; };
@@ -334,6 +335,8 @@
 		BE9E494529CE4C420053DFD7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE9E494729D21DEA0053DFD7 /* 759-EmployeeFreeTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "759-EmployeeFreeTime.swift"; sourceTree = "<group>"; };
 		BE9E494929D21DFB0053DFD7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE9E494C29D24B360053DFD7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BE9E494D29D24B540053DFD7 /* 399-EvaluateDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "399-EvaluateDivision.swift"; sourceTree = "<group>"; };
 		BEA6A6AB299FF9B8000F233A /* iPhoneAppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneAppLauncher.swift; sourceTree = "<group>"; };
 		BEA6A6AE29A0102B000F233A /* iOS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = iOS.md; sourceTree = "<group>"; };
 		BEA6A73129A5717E000F233A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -1279,6 +1282,7 @@
 				BE41E141296647F800273902 /* 366. Find Leaves of Binary Tree */,
 				BEBA17CE2989C4A300D2E75C /* 380. Insert Delete GetRandom O(1) */,
 				BE3AE34429AD72B6004B2358 /* 384. Shuffle an Array */,
+				BE9E494A29D24B220053DFD7 /* 399. Evaluate Division */,
 				BE41E15E296CB40300273902 /* 496. Next Greater Element I */,
 				BEA6A78029A82C5C000F233A /* 609. Find Duplicate File in System */,
 				BE41E1B52974987500273902 /* 629. K Inverse Pairs Array */,
@@ -1426,6 +1430,15 @@
 				BE9E494929D21DFB0053DFD7 /* README.md */,
 			);
 			path = "759. Employee Free Time";
+			sourceTree = "<group>";
+		};
+		BE9E494A29D24B220053DFD7 /* 399. Evaluate Division */ = {
+			isa = PBXGroup;
+			children = (
+				BE9E494D29D24B540053DFD7 /* 399-EvaluateDivision.swift */,
+				BE9E494C29D24B360053DFD7 /* README.md */,
+			);
+			path = "399. Evaluate Division";
 			sourceTree = "<group>";
 		};
 		BEA6A6A9299FF963000F233A /* Object Oriented Design */ = {
@@ -1794,6 +1807,7 @@
 				BEBA17C1298886C700D2E75C /* Day219.swift in Sources */,
 				BEA6A73B29A5989B000F233A /* Day54.swift in Sources */,
 				BE9E494829D21DEA0053DFD7 /* 759-EmployeeFreeTime.swift in Sources */,
+				BE9E494E29D24B540053DFD7 /* 399-EvaluateDivision.swift in Sources */,
 				BE86ED552958FBE900ACA2BF /* Day11.swift in Sources */,
 				BE6362A4298A42FC00A6F4C3 /* 1774-ClosestDessertCost.swift in Sources */,
 				BE86ED3E2956785F00ACA2BF /* Day4.swift in Sources */,
